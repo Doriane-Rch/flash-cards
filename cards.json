@@ -13,7 +13,7 @@
       "label": "Contrôle de gestion"
     },
     {
-      "id": "système",
+      "id": "systeme",
       "label": "Système"
     }
   ],
@@ -21,42 +21,42 @@
     {
       "q": "Qu'est-ce qu'un moniteur Java ?",
       "a": "Un objet Java dont les méthodes synchronized partagent un verrou implicite. On utilise wait() pour attendre et notifyAll() pour réveiller les threads.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence wait() vs sleep()",
       "a": "wait() libère le verrou de l'objet et attend un notify(). sleep() maintient tous les verrous et attend une durée fixe.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un sémaphore ?",
       "a": "Un compteur de permis. acquire() décrémente (bloque si 0), release() incrémente. Contrôle l'accès à des ressources partagées.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Section critique : 3 propriétés ?",
       "a": "(1) Exclusion mutuelle : un seul thread à la fois. (2) Progression : si libre, un thread peut entrer. (3) Attente bornée : pas d'attente infinie.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un interblocage ?",
       "a": "Deux threads s'attendent mutuellement : T1 attend R2 tenu par T2, T2 attend R1 tenu par T1. Aucun ne peut progresser.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Inversion de priorité ?",
       "a": "Un thread haute priorité attend un verrou tenu par un thread basse priorité, lui-même préempté par un thread intermédiaire.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
@@ -105,196 +105,196 @@
     {
       "q": "notifyAll() vs notify() ?",
       "a": "notify() réveille un seul thread (aléatoire), risque de livelock. notifyAll() réveille tous, plus sûr.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Micro-noyau vs monolithique ?",
       "a": "Micro-noyau : services en espace utilisateur (modulaire, sûr, lent). Monolithique : tout dans le noyau (rapide, mais fragile).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les 2 rôles principaux d'un système d'exploitation ?",
       "a": "(1) Adaptation d'interface : masquer la complexité matérielle derrière des abstractions. (2) Gestion de ressources : allocation, protection et partage des ressources physiques et logiques.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelles sont les 3 formes de virtualisation ?",
       "a": "(a) Multiplexage : partager une ressource entre plusieurs utilisateurs. (b) Agrégation : combiner plusieurs ressources en une seule. (c) Émulation : simuler une ressource différente.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les 2 types d'interfaces exportées par un OS ?",
       "a": "Interface de commande (shell, GUI) pour les utilisateurs. Interface programmatique (API/ABI, appels système) pour les applications.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelle est la différence entre API et ABI ?",
       "a": "API (Application Programming Interface) : interface au niveau du code source (ex: norme POSIX). ABI (Application Binary Interface) : interface au niveau du code binaire (ex: ABI Linux x86 32 bits).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les 4 grands domaines de fonctions d'un OS ?",
       "a": "(1) Gestion d'activités (processus). (2) Gestion d'information (mémoire virtuelle, fichiers). (3) Gestion des communications (E/S, réseau). (4) Protection (domaines de protection).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un processus ?",
       "a": "Abstraction d'une instance de programme en cours d'exécution. Virtualise un CPU. Composé d'un contexte d'exécution, d'une pile, d'un espace mémoire virtuel et d'un état (prêt, en cours, bloqué, terminé).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les états possibles d'un processus ?",
       "a": "En cours d'exécution → Prêt (attend un CPU) → Bloqué (attend une ressource) → Terminé. Transitions déclenchées par l'ordonnanceur, les appels système ou les interruptions.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce que le PCB (Process Control Block) ?",
       "a": "Structure de données du noyau stockant l'état d'un processus : état courant, PID, registres (dont PC et SP), limites mémoire, fichiers ouverts, priorité...",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelles sont les 2 techniques clés pour la protection dans un OS ?",
       "a": "(1) Préemption : reprendre une ressource (ex: CPU) de force si besoin. (2) Interposition : le noyau est passage obligé entre les applications et les ressources (ex: appels système).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Comment fonctionne un appel système ?",
       "a": "L'application exécute une instruction spéciale (trap) → basculement en mode privilégié → le noyau vérifie et exécute le service demandé → retour en mode utilisateur. Ressemble à un appel de fonction mais change le mode d'exécution.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelles sont les 2 façons de passer du mode utilisateur au mode noyau ?",
       "a": "(1) Appels système / exceptions (synchrones) : déclenchés volontairement ou par une erreur (ex: faute mémoire). (2) Interruptions (asynchrones) : signal matériel externe (timer, E/S), indépendant du code en cours.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Pourquoi le timer matériel est-il indispensable à un OS ?",
       "a": "Il génère des interruptions périodiques (ex: toutes les 10 ms) qui permettent au noyau de reprendre le contrôle du CPU (préemption). Sans timer, un processus pourrait monopoliser le CPU indéfiniment.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un changement de contexte (context switch) ?",
       "a": "Séquence : (1) sauvegarde du contexte du processus P1 dans son PCB, (2) restauration du contexte de P2, (3) retour en mode utilisateur dans P2. Coût non-négligeable, à ne pas confondre avec le changement de mode.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence entre changement de contexte et changement de mode ?",
       "a": "Changement de contexte : transition entre deux processus/threads différents (coûteux). Changement de mode : passage mode utilisateur ↔ mode noyau dans le même contexte d'exécution (aussi coûteux mais distinct).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Comment fonctionne fork() ?",
       "a": "Crée un processus fils identique au père. Un appel, deux retours : fork() retourne le PID du fils pour le père, et 0 pour le fils. Chaque processus a son propre espace mémoire virtuel.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Comment fonctionne execve() ?",
       "a": "Remplace le programme d'un processus : efface et réinitialise l'espace mémoire, charge le nouveau code. Si succès, pas de retour (le processus exécute désormais le nouveau programme).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les mécanismes de communication entre processus ?",
       "a": "Canaux (pipes, sockets stream/datagram), files de messages, fichiers partagés, mémoire partagée (mmap). Attention : fichiers et mémoire partagée nécessitent une synchronisation explicite.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un thread ? Que partage-t-il avec les autres threads du même processus ?",
       "a": "Contexte d'exécution (registres, pile) au sein d'un processus. Partage : code, données globales, tas, fichiers ouverts. Propre à chaque thread : registres, pile, état d'ordonnancement.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Threads vs processus : quels sont les avantages des threads ?",
       "a": "Plus légers (1 seul espace mémoire), création/destruction plus rapides, communications plus efficaces (mémoire partagée directe), meilleur passage à l'échelle sur multiprocesseurs.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les inconvénients des threads par rapport aux processus ?",
       "a": "Un bogue dans un thread peut corrompre tous les autres (même espace mémoire). Programmation correcte par mémoire partagée non-triviale (risques de race conditions, interblocages).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Threads préemptifs vs threads coopératifs : quelle différence ?",
       "a": "Préemptifs : suspension possible à n'importe quel moment (via interruptions/signaux), permettent le vrai parallélisme. Coopératifs : ne cèdent le CPU que volontairement ou sur appel système bloquant, pas de parallélisme réel.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Threads noyau vs threads utilisateur : avantages et inconvénients ?",
       "a": "Noyau : vrai parallélisme (multi-cœurs), mais coûteux (appel système par opération). Utilisateur : rapides/légers, mais pas de parallélisme matériel et un appel système bloquant bloque tous les threads du processus.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce que le modèle hybride N:M pour les threads ?",
       "a": "N threads utilisateur multiplexés sur M threads noyau (N > M). Compromis entre performances des threads utilisateur et parallélisme des threads noyau. Difficile à implémenter efficacement.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quels sont les 3 types de machines virtuelles ?",
       "a": "(1) Hyperviseur type I (natif, ex: VMware ESX, Xen). (2) Hyperviseur type II (hébergé, ex: VirtualBox). (3) VM applicative/langage (ex: JVM). Aussi : conteneurs OS (ex: Docker).",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence entre hyperviseur type I et type II ?",
       "a": "Type I (natif) : couche la plus basse, plus efficace, c'est lui-même un OS spécialisé. Type II (hébergé) : s'appuie sur un OS hôte, moins efficace mais plus simple à installer.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence entre hyperviseur et conteneur (Docker) ?",
       "a": "Hyperviseur : chaque VM a son propre noyau → plus d'isolation, plus flexible mais plus lourd. Conteneur : noyau partagé entre tous les conteneurs → plus léger et rapide, mais moins isolé et moins flexible.",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
@@ -343,259 +343,259 @@
     {
       "q": "Qu'est-ce qu'une section critique ?",
       "a": "Séquence d'instructions qui doit être exécutée en exclusion mutuelle",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelles sont les 3 propriétés requises pour la section critique ?",
       "a": "Exclusion mutuelle, Progrès, Attente bornée",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que garantit l'exclusion mutuelle ?",
       "a": "Un seul processus dans la section critique à la fois",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce que la propriété de progrès ?",
       "a": "Si aucun processus en SC, un candidat finit par être admis en temps borné",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce que l'attente bornée ?",
       "a": "Limite sur le nombre d'admissions d'autres processus entre une demande et son acceptation",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Pourquoi l'attente active est-elle inefficace sur monoprocesseur ?",
       "a": "Le processeur est monopolisé à boucler sans rien faire d'utile",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quel algorithme résout l'exclusion mutuelle par attente active à 2 processus ?",
       "a": "Algorithme de Peterson (1981)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelle instruction matérielle lit et écrit atomiquement un booléen ?",
       "a": "Test & Set (TestAndSet)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que fait l'instruction Swap ?",
       "a": "Échange atomiquement les valeurs de deux variables",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Pourquoi masquer les interruptions ne suffit pas sur multiprocesseur ?",
       "a": "Plusieurs CPU exécutent des instructions en parallèle indépendamment des interruptions",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence entre attente active et attente passive ?",
       "a": "Active : boucle jusqu'à obtenir le verrou. Passive : le processus est bloqué et réveillé",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Quelles primitives offre un mutex ?",
       "a": "mutex_init, mutex_lock (bloquant), mutex_trylock (non bloquant), mutex_unlock",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un sémaphore ?",
       "a": "Compteur entier synchronisé + file d'attente, avec primitives P (wait) et V (signal)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que fait la primitive P (wait) d'un sémaphore ?",
       "a": "Décrémente le compteur ; bloque le processus si le compteur devient négatif",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que fait la primitive V (signal) d'un sémaphore ?",
       "a": "Incrémente le compteur ; réveille un processus bloqué si compteur ≤ 0. Jamais bloquante",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Un sémaphore initialisé à 1 est-il identique à un mutex ?",
       "a": "Non : le mutex offre réentrance et détection d'erreurs en plus",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un moniteur ?",
       "a": "Type de données abstrait avec méthodes exécutées en exclusion mutuelle automatique",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'une variable de condition ?",
       "a": "File d'attente associée à une condition logique ; opérations : wait, signal, broadcast",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que fait wait sur une variable de condition ?",
       "a": "Bloque le processus et libère le verrou du moniteur",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Différence entre signal et broadcast ?",
       "a": "signal réveille un seul processus, broadcast réveille tous les processus bloqués sur la condition",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un réveil intempestif (spurious wakeup) ?",
       "a": "Réveil non déclenché par signal/broadcast ; oblige à retester la condition dans un while",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Pourquoi utiliser while et non if autour d'un wait ?",
       "a": "La condition peut avoir changé entre le signal et la reprise du processus",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Deux sémantiques de signal dans un moniteur ?",
       "a": "Signal and wait (priorité au signalé) vs Signal and continue (priorité au signalant)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Java : comment est géré le moniteur ?",
       "a": "Mot-clé synchronized (implicite) + une variable de condition via wait/notify/notifyAll",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'une section critique conditionnelle (POSIX) ?",
       "a": "Mutex + variable de condition (pthread_cond_wait/signal) ; exclusion mutuelle manuelle",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Pourquoi cond_wait doit-il libérer le verrou atomiquement ?",
       "a": "Sinon, signal peut être émis entre unlock et wait → signal perdu, blocage infini",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Les mécanismes mutex, sémaphore, moniteur sont-ils équivalents ?",
       "a": "Oui, on peut implémenter chacun à partir des autres",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un verrou lecteurs-rédacteurs ?",
       "a": "Permet lectures concurrentes mais écriture exclusive (aucun autre lecteur/rédacteur)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'une barrière de synchronisation ?",
       "a": "Bloque les N-1 premiers threads ; le dernier débloque tous pour passer à la phase suivante",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce que l'inversion de priorité ?",
       "a": "Processus haute priorité bloqué par un verrou détenu par un processus de priorité inférieure",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Deux solutions à l'inversion de priorité ?",
       "a": "Héritage de priorité (élever P2) ou tirage aléatoire parmi les détenteurs de verrous",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Trois techniques de prévention des interblocages ?",
       "a": "Réservation globale à l'avance, ordre global sur les demandes, détection/refus du cycle fatal",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Qu'est-ce qu'un livelock ?",
       "a": "Variante de deadlock : processus actifs mais sans progression (se bloquent mutuellement en boucle)",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Principe des mémoires transactionnelles ?",
       "a": "Le programmeur déclare les frontières de la SC (transaction) ; le système gère la concurrence",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Hiérarchie des critères de progrès des algorithmes non bloquants ?",
       "a": "Blocking < Obstruction-free < Lock-free < Wait-free",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Que garantit un algorithme wait-free ?",
       "a": "Chaque opération de chaque thread se termine en un nombre fini d'étapes",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     },
     {
       "q": "Avantage des algorithmes non bloquants vis-à-vis des interblocages ?",
       "a": "Pas de risque de deadlock, livelock ou inversion de priorité",
-      "cat": "Système",
+      "cat": "systeme",
       "score": 0,
       "next": 0
     }
