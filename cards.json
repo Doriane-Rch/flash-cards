@@ -103,6 +103,6 @@
   {"q":"Principe des mémoires transactionnelles ?",                                   "a":"Le programmeur déclare les frontières de la SC (transaction) ; le système gère la concurrence", "cat":"Système", "score":0, "next":0},
   {"q":"Hiérarchie des critères de progrès des algorithmes non bloquants ?",          "a":"Blocking < Obstruction-free < Lock-free < Wait-free", "cat":"Système", "score":0, "next":0},
   {"q":"Que garantit un algorithme wait-free ?",                                      "a":"Chaque opération de chaque thread se termine en un nombre fini d'étapes", "cat":"Système", "score":0, "next":0},
-  {"q":"Avantage des algorithmes non bloquants vis-à-vis des interblocages ?",        "a":"Pas de risque de deadlock, livelock ou inversion de priorité", "cat":"Système", "score":0, "next":0},
+  {"q":"Avantage des algorithmes non bloquants vis-à-vis des interblocages ?",        "a":"Pas de risque de deadlock, livelock ou inversion de priorité", "cat":"Système", "score":0, "next":0}
  ]
 }
