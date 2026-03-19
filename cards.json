@@ -2036,7 +2036,7 @@
     },
     {
       "q": "Qu'est-ce qu'une charge fixe ? Donnez des exemples.",
-      "a": "Une charge fixe est liée à l'existence de l'entreprise et est relativement indépendante du volume d'activité. Exemples : amortissements des immobilisations, loyers, charges du personnel administratif et d'encadrement, publicité.",
+      "a": "Une charge fixe est liée à l'existence de l'entreprise et est relativement indépendante du volume d'activité. Exemples : loyers, charges du personnel et publicité.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
