@@ -964,21 +964,16 @@ pre {
       <input id="gh-token" type="password" class="gh-input" placeholder="ghp_xxxxxxxxxxxx">
     </div>
     <div style="display:flex;gap:0.6rem;margin-top:0.9rem;flex-wrap:wrap">
-      <button class="btn-gh-action" onclick="githubPull()">⬇️ Récupérer (pull)</button>
-      <button class="btn-gh-action btn-gh-push" onclick="githubPush()">⬆️ Envoyer (push)</button>
+      <button class="btn-gh-action" onclick="githubPull()">⬇️ Récupérer</button>
+      <button class="btn-gh-action btn-gh-push" onclick="githubPush()">⬆️ Envoyer</button>
     </div>
     <div id="gh-status" style="font-family:var(--mono);font-size:0.72rem;margin-top:0.7rem;min-height:1.2rem"></div>
-    <div style="font-family:var(--mono);font-size:0.65rem;color:var(--ink2);margin-top:0.8rem;opacity:0.6;line-height:1.5">
-      ⬇️ Pull : charge cards.json depuis GitHub → écrase les données locales<br>
-      ⬆️ Push : envoie tes données locales → met à jour cards.json sur GitHub
-    </div>
-
-    <!-- Gestion des catégories -->
-    <div id="cat-manager" style="margin-top:2rem"></div>
   </div>
 
   <!-- Onglets Réviser / Gérer -->
   <div class="fc-tabs">
+    <!-- Gestion des catégories -->
+    <div id="cat-manager" style="margin-top:2rem"></div>
     <button class="fc-tab active" id="tab-study" onclick="switchTab('study')">📖 Réviser</button>
     <button class="fc-tab" id="tab-list"  onclick="switchTab('list')">📋 Gérer les cartes</button>
   </div>
