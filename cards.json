@@ -2294,57 +2294,57 @@
       "next": 0
     },
     {
-      "q": "QCM : La formule du seuil de rentabilité en valeur est : a) CA - CF - CV, b) CF / MCV, c) CF / TMSCV",
-      "a": "La bonne réponse est c) CF / TMSCV (Charges fixes divisées par le Taux de Marge sur Coût Variable).",
+      "q": "La formule du seuil de rentabilité en valeur est ?",
+      "a": "CF / TMSCV \n(Charges fixes divisées par le Taux de Marge sur Coût Variable)",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : Le calcul du SR nécessite : a) MCV et CF, b) CA et CF, c) CA, CV et CF",
-      "a": "Les bonnes réponses sont a) et c). En pratique, on a besoin du CA, des CV et des CF pour calculer d'abord la MCV, puis le TMSCV, puis le SR.",
+      "q": "Le calcul du SR nécessite ?",
+      "a": "En pratique, on a besoin du CA, des CV et des CF pour calculer d'abord la MCV, puis le TMSCV, puis le SR.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : Le résultat par variabilité peut être calculé par : a) CA - CV - CF, b) CF + CV, c) MCV - CF",
-      "a": "Les bonnes réponses sont a) et c). Résultat = CA - CV - CF = MCV - CF.",
+      "q": "Le calcul du résultat par variabilité est ?",
+      "a": "Résultat = CA - CV - CF = MCV - CF.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : La marge sur coût variable est égale à : a) Résultat + CV, b) CA - CV, c) Résultat + CF",
-      "a": "La bonne réponse est b) CA - CV. La MCV = Chiffre d'affaires - Charges variables.",
+      "q": "Le calcul de la marge sur coût variable est ?",
+      "a": "CA - CV\nLa MCV = Chiffre d'affaires - Charges variables.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : Le seuil de rentabilité représente : a) le niveau de résultat maximal, b) le CA à partir duquel l'entreprise devient bénéficiaire, c) le CA qui couvre les charges variables.",
-      "a": "La bonne réponse est b) : le SR est le CA à partir duquel l'activité de l'entreprise devient bénéficiaire.",
+      "q": "Le seuil de rentabilité représente quoi ?",
+      "a": "Le SR est le CA à partir duquel l'activité de l'entreprise devient bénéficiaire.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : Le calcul du point mort permet de déterminer : a) la date à partir de laquelle l'entreprise réalise des bénéfices, b) le résultat prévisionnel, c) le CA prévisionnel.",
-      "a": "La bonne réponse est a) : le point mort est la date à partir de laquelle l'entreprise commence à réaliser des bénéfices.",
+      "q": "Le calcul du point mort permet de déterminer quoi ?",
+      "a": "La date à partir de laquelle l'entreprise commence à réaliser des bénéfices.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : Sur la représentation graphique, le SR est atteint lorsque : a) les droites CF et CV se croisent, b) les droites CF et MCV se croisent, c) les droites CV et CA se croisent.",
-      "a": "La bonne réponse est b) : le SR est atteint lorsque la droite de la marge sur coût variable (y1 = ax) croise la droite des charges fixes (y2 = b).",
+      "q": "Sur la représentation graphique, le SR est atteint lorsque ?",
+      "a": "Le SR est atteint lorsque la droite de la marge sur coût variable (y1 = ax) croise la droite des charges fixes (y2 = b).",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
     },
     {
-      "q": "QCM : La marge de sécurité est égale à : a) SR - résultat net, b) résultat net - CA, c) CA - SR.",
-      "a": "La bonne réponse est c) CA - SR. La marge de sécurité = Chiffre d'affaires - Seuil de rentabilité.",
+      "q": "Comment se calcul la marge de sécurité ?",
+      "a": "CA - SR\nLa marge de sécurité = Chiffre d'affaires - Seuil de rentabilité.",
       "cat": "controle-de-gestion",
       "score": 0,
       "next": 0
