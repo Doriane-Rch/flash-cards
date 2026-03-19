@@ -11,6 +11,10 @@
     {
       "id": "2025",
       "label": "Sujet 2025"
+    },
+    {
+      "id": "controle-de-gestion",
+      "label": "Contrôle de gestion"
     }
   ],
   "cards": [
