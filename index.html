@@ -503,7 +503,9 @@ pre { background:#1a1410; color:#e8dfc8; font-family:var(--mono); font-size:0.71
         <button class="btn-add" onclick="addCard()">Ajouter</button>
       </div>
     </div>
-    <div id="cat-manager" style="margin-top:1.5rem"></div>
+    <div class="add-section">
+      <div id="cat-manager" style="margin-top:1.5rem"></div>
+    </div>
   </div>
 
   <div id="panel-list" style="display:none">
@@ -764,13 +766,13 @@ function renderList(){
 }
 
 function renderCatManager(){
-  const wrap=document.getElementById('cat-manager');if(!wrap)return;
+  const wrap=document.getElementById('cat-manager');if(!wrap)return;  
   wrap.innerHTML=`
-    <div class="cat-mgr-title">Catégories</div>
+    <h4>+ AJOUTER UNE CATEGORIE</div>
     <div class="cat-chips">${cats.map(c=>`<span class="cat-chip" style="${catStyle(c.id)}">${esc(c.label)}<button class="cat-chip-del" onclick="deleteCategory('${c.id}')">×</button></span>`).join('')}</div>
     <div class="cat-add-row">
-      <input id="new-cat-inp" type="text" placeholder="Nouvelle catégorie…" maxlength="40" onkeydown="if(event.key==='Enter')addCategory()">
-      <button class="btn-add" onclick="addCategory()">+ Ajouter</button>
+      <input id="new-cat-inp" type="text" placeholder="Nouvelle catégorie…">
+      <button class="btn-add" onclick="addCategory()">Ajouter</button>
     </div>`;
 }
 function addCategory(){
