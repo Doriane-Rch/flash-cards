@@ -1002,6 +1002,9 @@ pre {
 
   <!-- ── PANEL LISTE / GÉRER ── -->
   <div id="panel-list" style="display:none">
+    <!-- Gestion des catégories -->
+    <div id="cat-manager" style="margin-top:2rem"></div>
+
     <div class="list-toolbar">
       <select id="list-filter" onchange="renderList()"></select>
       <button class="btn-danger" onclick="askDeleteAll()">🗑 Supprimer la sélection</button>
@@ -1022,9 +1025,6 @@ pre {
         Aucune carte dans cette catégorie.
       </p>
     </div>
-
-    <!-- Gestion des catégories -->
-    <div id="cat-manager" style="margin-top:2rem"></div>
   </div>
 
 </div>
