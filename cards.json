@@ -346,7 +346,7 @@
       "q": "Que fait l'instruction Swap ?",
       "a": "Échange atomiquement les valeurs de deux variables",
       "cat": "systeme",
-      "status": "known"
+      "status": "new"
     },
     {
       "q": "Pourquoi masquer les interruptions ne suffit pas sur multiprocesseur ?",
@@ -418,7 +418,7 @@
       "q": "Qu'est-ce qu'un réveil intempestif (spurious wakeup) ?",
       "a": "Réveil non déclenché par signal/broadcast ; oblige à retester la condition dans un while",
       "cat": "systeme",
-      "status": "known"
+      "status": "new"
     },
     {
       "q": "Pourquoi utiliser while et non if autour d'un wait ?",
@@ -1660,7 +1660,7 @@
       "q": "Comment la méthode ABC s'applique-t-elle à une entreprise de services comme MIXPI ?",
       "a": "Pour une entreprise de services, la méthode ABC identifie les activités du processus de réalisation des prestations (réception appels, évaluation, planning, intervention, rapport...), choisit un inducteur par activité, regroupe les activités par inducteur commun, calcule le coût unitaire de chaque inducteur et l'affecte à chaque segment de clientèle selon sa consommation réelle.",
       "cat": "controle-de-gestion",
-      "status": "review"
+      "status": "new"
     },
     {
       "q": "Comment représente-t-on le processus de réalisation chez MIXPI ?",
@@ -1768,7 +1768,7 @@
       "q": "Comment calcule-t-on la Marge sur Coût Variable (MCV) ?",
       "a": "MCV = Chiffre d'affaires - Charges variables.",
       "cat": "controle-de-gestion",
-      "status": "known"
+      "status": "new"
     },
     {
       "q": "Comment calcule-t-on le Taux de Marge sur Coût Variable (TMSCV) ?",
@@ -1942,7 +1942,7 @@
       "q": "Comment classer les charges de personnel dans le calcul charges fixes / variables ?",
       "a": "La partie fixe correspond aux salaires de base du personnel administratif et d'encadrement. La partie variable correspond aux primes liées aux performances (ex : 20 % des charges de personnel si elles correspondent à des primes sur ventes).",
       "cat": "controle-de-gestion",
-      "status": "known"
+      "status": "new"
     },
     {
       "q": "Comment classer les 'autres achats et charges externes' quand elles sont à 50 % fixes et 50 % variables ?",
