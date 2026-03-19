@@ -544,7 +544,7 @@
       "q": "Avec quels services le contrôleur de gestion travaille-t-il ?",
       "a": "Il travaille en lien direct avec le service comptable ou financier, ainsi qu'avec les unités opérationnelles présentes sur le terrain.",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Pourquoi les unités opérationnelles sont-elles indispensables au contrôle de gestion ?",
@@ -916,7 +916,7 @@
       "q": "Quelle est la différence entre une charge fixe et une charge variable ?",
       "a": "Une charge fixe reste constante quel que soit le niveau de production (ex : loyer), tandis qu'une charge variable augmente ou diminue proportionnellement au volume produit ou vendu (ex : matières premières).",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Qu'est-ce que le LOA / leasing en contrôle de gestion ?",
@@ -994,7 +994,7 @@
       "q": "Comment calcule-t-on le coût d'une unité d'œuvre ?",
       "a": "Coût de l'UO = Total des charges du centre d'analyse / Nombre d'unités d'œuvre du centre.",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Qu'est-ce que la répartition primaire des charges indirectes ?",
@@ -1522,7 +1522,7 @@
       "q": "Comment se calcule la marge nette dans une entreprise commerciale ?",
       "a": "Marge nette (entreprise commerciale) = Chiffre d'affaires (ventes de marchandises) - Coût d'achat des marchandises vendues - Coût de distribution - Coût d'administration.",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Qu'est-ce que la méthode ABC (Activity Based Costing) ?",
@@ -1636,7 +1636,7 @@
       "q": "Dans l'exemple PTITIDEE, comment identifie-t-on qu'il s'agit d'une entreprise de services ?",
       "a": "PTITIDEE est une entreprise de services car son bilan ne contient pas de stocks, son actif est uniquement constitué de créances clients et de banque, et son compte de résultat montre des salaires comme principale charge face à une 'production vendue de prestations de services'.",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Qu'est-ce que la marge brute dans une entreprise commerciale ?",
@@ -1660,7 +1660,7 @@
       "q": "Comment la méthode ABC s'applique-t-elle à une entreprise de services comme MIXPI ?",
       "a": "Pour une entreprise de services, la méthode ABC identifie les activités du processus de réalisation des prestations (réception appels, évaluation, planning, intervention, rapport...), choisit un inducteur par activité, regroupe les activités par inducteur commun, calcule le coût unitaire de chaque inducteur et l'affecte à chaque segment de clientèle selon sa consommation réelle.",
       "cat": "controle-de-gestion",
-      "status": "new"
+      "status": "review"
     },
     {
       "q": "Comment représente-t-on le processus de réalisation chez MIXPI ?",
