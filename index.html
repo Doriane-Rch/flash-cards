@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Révision – Programmation Concurrente</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f0e8;
+  --ink: #1a1410;
+  --ink2: #4a3f35;
+  --paper: #fdfaf4;
+  --paper2: #f0ead8;
+  --accent: #c84b2f;
+  --accent2: #2f6bc8;
+  --accent3: #2f9c5a;
+  --border: #c8b89a;
+  --mono: 'IBM Plex Mono', monospace;
+  --serif: 'Fraunces', serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+nav {
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 1.5rem;
+  position: sticky; top:0; z-index:100;
+}
+nav .logo {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--bg);
+  opacity: 0.5;
+  padding: 1rem 0;
+  margin-right: auto;
+  letter-spacing: 0.1em;
+}
+.nav-btn {
+  background: none; border: none;
+  color: var(--bg); opacity: 0.5;
+  font-family: var(--mono); font-size: 0.78rem;
+  padding: 1rem 1.2rem; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s; letter-spacing: 0.05em;
+}
+.nav-btn.active, .nav-btn:hover {
+  opacity: 1; border-bottom-color: var(--accent);
+}
+
+/* ── PAGES ── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ══════════════════════════════════════
+   CORRECTION PAGE
+══════════════════════════════════════ */
+.corr-layout {
+  max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem;
+}
+.corr-title {
+  font-size: 2.2rem; font-weight: 700;
+  line-height: 1.1; margin-bottom: 0.3rem;
+}
+.corr-sub {
+  font-family: var(--mono); font-size: 0.75rem;
+  color: var(--ink2); letter-spacing: 0.1em;
+  margin-bottom: 2.5rem;
+}
+.subject-tabs {
+  display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap;
+}
+.stab {
+  background: var(--paper2); border: 1.5px solid var(--border);
+  font-family: var(--mono); font-size: 0.8rem; color: var(--ink2);
+  padding: 0.5rem 1.2rem; border-radius: 4px; cursor: pointer;
+  transition: all 0.15s;
+}
+.stab.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.subj { display: none; }
+.subj.active { display: block; }
+
+.card {
+  background: var(--paper);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.card-head {
+  background: var(--paper2);
+  border-bottom: 1.5px solid var(--border);
+  padding: 0.8rem 1.2rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.tag {
+  font-family: var(--mono); font-size: 0.7rem; font-weight: 600;
+  padding: 0.2rem 0.55rem; border-radius: 3px;
+  background: var(--accent); color: white;
+}
+.tag.blue { background: var(--accent2); }
+.tag.green { background: var(--accent3); }
+.card-head h3 { font-size: 0.95rem; font-weight: 700; }
+.card-body { padding: 1.2rem; }
+
+.note-box {
+  background: #fff8f0;
+  border-left: 3px solid var(--accent);
+  padding: 0.8rem 1rem;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem; color: var(--ink2);
+  margin-bottom: 1rem; line-height: 1.6;
+}
+.note-box.blue { border-color: var(--accent2); background: #f0f5ff; }
+.note-box.green { border-color: var(--accent3); background: #f0fff5; }
+
+pre {
+  background: #1a1410;
+  color: #e8dfc8;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  padding: 1.2rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  tab-size: 4;
+}
+.kw { color: #e8956d; }
+.ty { color: #7ec8e3; }
+.cm { color: #6a6050; font-style: italic; }
+.st { color: #a8d8a8; }
+.nm { color: #f0c070; }
+
+/* ══════════════════════════════════════
+   FLASHCARDS PAGE
+══════════════════════════════════════ */
+.fc-layout {
+  max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem;
+}
+.fc-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; margin-bottom: 1.5rem; gap: 1rem;
+  flex-wrap: wrap;
+}
+.fc-title { font-size: 1.8rem; font-weight: 700; }
+.fc-stats {
+  font-family: var(--mono); font-size: 0.75rem; color: var(--ink2);
+  text-align: right; line-height: 1.8;
+}
+.stat-val { color: var(--ink); font-weight: 600; }
+
+/* Tabs réviser / gérer */
+.fc-tabs {
+  display: flex;
+  border-bottom: 1.5px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.fc-tab {
+  font-family: var(--mono); font-size: 0.78rem;
+  padding: 0.6rem 1.2rem;
+  border: none; background: none; cursor: pointer;
+  color: var(--ink2);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1.5px;
+  transition: all 0.15s;
+}
+.fc-tab.active { color: var(--ink); border-bottom-color: var(--ink); font-weight: 600; }
+
+/* Progress bar */
+.progress-bar {
+  height: 4px; background: var(--paper2);
+  border-radius: 2px; margin-bottom: 1.5rem; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: var(--accent3);
+  border-radius: 2px; transition: width 0.4s ease;
+}
+
+/* Card flip */
+.fc-scene {
+  perspective: 1000px;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+.fc-card {
+  width: 100%; min-height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fc-card.flipped { transform: rotateY(180deg); }
+
+.fc-face {
+  position: absolute; inset: 0;
+  backface-visibility: hidden;
+  background: var(--paper);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.fc-face.back {
+  transform: rotateY(180deg);
+  border-color: var(--accent2);
+  background: #f8faff;
+}
+.fc-face-label {
+  font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.15em;
+  color: var(--ink2); opacity: 0.6; text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.fc-question {
+  font-size: 1.25rem; font-weight: 700; line-height: 1.4;
+  color: var(--ink);
+}
+.fc-answer {
+  font-size: 1rem; line-height: 1.6; color: var(--ink2);
+}
+.fc-answer code {
+  font-family: var(--mono); font-size: 0.85em;
+  background: var(--paper2); padding: 0.1em 0.3em; border-radius: 3px;
+  color: var(--accent);
+}
+.fc-hint {
+  font-family: var(--mono); font-size: 0.7rem;
+  color: var(--ink2); opacity: 0.4;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.fc-actions {
+  display: flex; gap: 0.8rem; margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.fc-btn {
+  flex: 1; min-width: 120px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px; border: 2px solid;
+  font-family: var(--mono); font-size: 0.8rem; font-weight: 600;
+  cursor: pointer; transition: all 0.15s; letter-spacing: 0.05em;
+}
+.btn-ko {
+  background: #fff0ee; border-color: var(--accent); color: var(--accent);
+}
+.btn-ko:hover { background: var(--accent); color: white; }
+.btn-ok {
+  background: #f0fff5; border-color: var(--accent3); color: var(--accent3);
+}
+.btn-ok:hover { background: var(--accent3); color: white; }
+.btn-secondary {
+  background: var(--paper2); border-color: var(--border); color: var(--ink2);
+}
+.btn-secondary:hover { background: var(--border); }
+
+/* Mode selector */
+.fc-modes {
+  display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;
+}
+.mode-btn {
+  font-family: var(--mono); font-size: 0.72rem;
+  padding: 0.4rem 0.9rem; border-radius: 4px;
+  border: 1.5px solid var(--border);
+  background: var(--paper2); color: var(--ink2);
+  cursor: pointer; transition: all 0.15s;
+}
+.mode-btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+/* Done screen */
+.done-screen {
+  text-align: center; padding: 3rem 1rem;
+}
+.done-screen h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+.done-screen p { color: var(--ink2); margin-bottom: 1.5rem; line-height: 1.6; }
+.done-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem; margin: 1.5rem 0;
+}
+.done-stat {
+  background: var(--paper); border: 1.5px solid var(--border);
+  border-radius: 6px; padding: 1rem;
+  font-family: var(--mono);
+}
+.done-stat .big { font-size: 2rem; font-weight: 600; }
+.done-stat .label { font-size: 0.65rem; color: var(--ink2); margin-top: 0.2rem; }
+
+/* Add card form */
+.add-section {
+  background: var(--paper); border: 1.5px solid var(--border);
+  border-radius: 6px; padding: 1.2rem; margin-top: 1.5rem;
+}
+.add-section h4 {
+  font-family: var(--mono); font-size: 0.75rem; color: var(--ink2);
+  letter-spacing: 0.1em; margin-bottom: 0.8rem;
+}
+.add-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.add-row input, .add-row select {
+  flex: 1; min-width: 160px;
+  background: var(--bg); border: 1.5px solid var(--border);
+  font-family: var(--serif); font-size: 0.9rem; color: var(--ink);
+  padding: 0.5rem 0.7rem; border-radius: 4px;
+}
+.add-row input:focus, .add-row select:focus {
+  outline: none; border-color: var(--accent2);
+}
+.btn-add {
+  background: var(--ink); color: var(--bg);
+  border: none; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.78rem; font-weight: 600;
+  padding: 0.5rem 1rem; cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn-add:hover { opacity: 0.8; }
+
+/* ══════════════════════════════════════
+   LISTE DES CARTES (onglet Gérer)
+══════════════════════════════════════ */
+#panel-list { display: none; }
+#panel-list.active { display: block; }
+#panel-study { display: block; }
+#panel-study.hidden { display: none; }
+
+.list-toolbar {
+  display: flex; align-items: center; gap: 0.7rem;
+  margin-bottom: 1.2rem; flex-wrap: wrap;
+}
+.list-toolbar select {
+  font-family: var(--mono); font-size: 0.76rem;
+  padding: 0.4rem 0.7rem; border: 1.5px solid var(--border);
+  border-radius: 4px; background: var(--paper2); color: var(--ink2); cursor: pointer;
+}
+.list-toolbar .list-count {
+  font-family: var(--mono); font-size: 0.72rem; color: var(--ink2); margin-left: auto;
+}
+.btn-danger {
+  font-family: var(--mono); font-size: 0.74rem;
+  padding: 0.4rem 0.9rem; border-radius: 4px;
+  border: 1.5px solid var(--accent); background: #fff0ee;
+  color: var(--accent); cursor: pointer; transition: all 0.15s;
+}
+.btn-danger:hover { background: var(--accent); color: white; }
+
+.card-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.card-table th {
+  font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em;
+  text-align: left; color: var(--ink2);
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1.5px solid var(--border);
+  background: var(--paper2);
+}
+.card-table td {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid var(--paper2);
+  vertical-align: top;
+  color: var(--ink);
+}
+.card-table tr:hover td { background: var(--paper2); }
+.card-table .td-q { max-width: 280px; }
+.card-table .td-a { max-width: 220px; color: var(--ink2); font-size: 0.82rem; }
+.card-table .td-cat {
+  font-family: var(--mono); font-size: 0.68rem;
+  white-space: nowrap;
+}
+.card-table .td-score {
+  font-family: var(--mono); font-size: 0.72rem; text-align: center;
+}
+.score-pip {
+  display: inline-block; width: 8px; height: 8px;
+  border-radius: 50%; background: var(--border); margin: 0 1px;
+}
+.score-pip.filled { background: var(--accent3); }
+.td-actions { white-space: nowrap; }
+.btn-row-edit {
+  font-family: var(--mono); font-size: 0.68rem;
+  padding: 0.25rem 0.6rem; border-radius: 3px;
+  border: 1px solid var(--border); background: none;
+  color: var(--ink2); cursor: pointer; transition: all 0.15s;
+  margin-right: 0.3rem;
+}
+.btn-row-edit:hover { border-color: var(--accent2); color: var(--accent2); background: #f0f5ff; }
+.btn-row-del {
+  font-family: var(--mono); font-size: 0.68rem;
+  padding: 0.25rem 0.6rem; border-radius: 3px;
+  border: 1px solid var(--border); background: none;
+  color: var(--ink2); cursor: pointer; transition: all 0.15s;
+}
+.btn-row-del:hover { border-color: var(--accent); color: var(--accent); background: #fff0ee; }
+
+/* Texte tronqué avec tooltip */
+.truncate {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  max-width: 260px; display: block;
+}
+
+/* Cat badge */
+.cat-badge {
+  display: inline-block;
+  padding: 0.15rem 0.45rem; border-radius: 3px;
+  font-family: var(--mono); font-size: 0.65rem;
+}
+.cat-general  { background: #ede9fe; color: #5b21b6; }
+.cat-2024     { background: #dbeafe; color: #1d4ed8; }
+.cat-2025     { background: #d1fae5; color: #065f46; }
+
+/* ── GitHub sync ── */
+.btn-github {
+  font-family: var(--mono); font-size: 0.72rem;
+  padding: 0.35rem 0.8rem; border-radius: 4px;
+  border: 1.5px solid var(--border);
+  background: var(--paper2); color: var(--ink2);
+  cursor: pointer; transition: all 0.15s; white-space: nowrap;
+}
+.btn-github:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.gh-row { margin-bottom: 0.6rem; }
+.gh-label {
+  display: block; font-family: var(--mono); font-size: 0.68rem;
+  color: var(--ink2); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.gh-input {
+  width: 100%; padding: 0.45rem 0.7rem;
+  border: 1.5px solid var(--border); border-radius: 4px;
+  font-family: var(--mono); font-size: 0.82rem;
+  background: var(--bg); color: var(--ink);
+}
+.gh-input:focus { outline: none; border-color: var(--accent2); }
+.btn-gh-action {
+  font-family: var(--mono); font-size: 0.76rem;
+  padding: 0.45rem 1rem; border-radius: 4px;
+  border: 1.5px solid var(--border);
+  background: var(--paper2); color: var(--ink2);
+  cursor: pointer; transition: all 0.15s;
+}
+.btn-gh-action:hover { background: var(--border); }
+.btn-gh-push { background: #f0fff5; border-color: var(--accent3); color: var(--accent3); }
+.btn-gh-push:hover { background: var(--accent3); color: white; }
+.gh-ok   { color: var(--accent3); }
+.gh-err  { color: var(--accent);  }
+.gh-info { color: var(--accent2); }
+.cat-mgr-title {
+  font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.1em;
+  color: var(--ink2); margin-bottom: 0.8rem; text-transform: uppercase;
+}
+.cat-chips {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.9rem;
+}
+.cat-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.8rem;
+  border-radius: 20px; font-family: var(--mono); font-size: 0.75rem;
+  font-weight: 600;
+}
+.cat-chip-del {
+  background: none; border: none; cursor: pointer;
+  font-size: 1rem; line-height: 1; opacity: 0.5;
+  padding: 0; transition: opacity 0.15s;
+  color: inherit;
+}
+.cat-chip-del:hover { opacity: 1; }
+.cat-add-row {
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+}
+.cat-add-row input {
+  flex: 1; min-width: 160px;
+  background: var(--bg); border: 1.5px solid var(--border);
+  font-family: var(--serif); font-size: 0.9rem; color: var(--ink);
+  padding: 0.45rem 0.7rem; border-radius: 4px;
+}
+.cat-add-row input:focus { outline: none; border-color: var(--accent2); }
+
+/* Confirm overlay */
+.confirm-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(26,20,16,0.5); z-index: 200;
+  align-items: center; justify-content: center;
+}
+.confirm-overlay.open { display: flex; }
+.confirm-box {
+  background: var(--paper); border: 1.5px solid var(--border);
+  border-radius: 8px; padding: 1.8rem 2rem;
+  max-width: 380px; width: 90%; text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.confirm-box h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.confirm-box p { font-size: 0.88rem; color: var(--ink2); margin-bottom: 1.4rem; line-height: 1.5; }
+.confirm-btns { display: flex; gap: 0.7rem; justify-content: center; }
+.btn-confirm-ok {
+  font-family: var(--mono); font-size: 0.8rem;
+  padding: 0.55rem 1.3rem; border-radius: 4px;
+  border: none; background: var(--accent); color: white; cursor: pointer;
+}
+.btn-confirm-cancel {
+  font-family: var(--mono); font-size: 0.8rem;
+  padding: 0.55rem 1.3rem; border-radius: 4px;
+  border: 1.5px solid var(--border); background: var(--paper2);
+  color: var(--ink2); cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">UGA · M1 MIAGE</span>
+  <button class="nav-btn active" onclick="showPage('corr',event)">📄 Correction</button>
+  <button class="nav-btn" onclick="showPage('flash',event)">🃏 Flashcards</button>
+</nav>
+
+<!-- ══════════════════════════════════════
+     PAGE CORRECTION
+══════════════════════════════════════ -->
+<div id="corr" class="page active">
+<div class="corr-layout">
+  <div class="corr-title">Correction<br><em style="font-weight:300">Programmation Concurrente</em></div>
+  <div class="corr-sub">M1 MIAGE & MEEF NSI · UGA · Sessions 2024 & 2025</div>
+
+  <div class="subject-tabs">
+    <button class="stab active" onclick="showSubj('s2024',this)">Sujet déc. 2024 — SessionList</button>
+    <button class="stab" onclick="showSubj('s2025',this)">Sujet déc. 2025 — VideoCatalog</button>
+  </div>
+
+  <!-- ── SUJET 2024 ── -->
+  <div id="s2024" class="subj active">
+
+    <div class="card">
+      <div class="card-head"><span class="tag">II.2</span><h3>SessionList — Moniteurs Java</h3></div>
+      <div class="card-body">
+        <div class="note-box">
+          On reste <strong>fidèle au squelette</strong> : <code>buf</code> est un <code>ArrayList&lt;Session&gt;</code>,
+          le constructeur itère de 0 à nbSlots avec <code>buf.add(i, null)</code>.
+          La moitié du buffer (indices 0..n/2-1) est réservée aux profs, l'autre moitié aux étudiants.
+          On utilise <code>synchronized</code> + <code>wait()</code> / <code>notifyAll()</code>.
+        </div>
+<pre><span class="kw">public class</span> <span class="ty">SessionList</span>&lt;<span class="ty">Session</span>&gt; {
+
+    <span class="kw">private</span> <span class="ty">ArrayList</span>&lt;<span class="ty">Session</span>&gt; buf;
+
+    <span class="ty">SessionList</span>(<span class="kw">int</span> nbSlots) {
+        <span class="kw">int</span> i;
+        <span class="kw">this</span>.buf = <span class="kw">new</span> <span class="ty">ArrayList</span>&lt;<span class="ty">SessionList</span>&gt;(nbSlots);
+        <span class="kw">for</span> (i = <span class="nm">0</span>; i &lt; nbSlots; i++) {
+            buf.add(i, <span class="kw">null</span>);
+        }
+    }
+
+    <span class="cm">// Indices 0 .. nbSlots/2 - 1  →  zone "prof"</span>
+    <span class="cm">// Indices nbSlots/2 .. nbSlots-1  →  zone "student"</span>
+
+    <span class="kw">public synchronized</span> <span class="ty">Session</span> getProfSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="kw">int</span> slot = <span class="nm">-1</span>;
+        <span class="cm">// cherche un slot prof occupé (index &lt; buf.size()/2)</span>
+        <span class="kw">while</span> (slot == <span class="nm">-1</span>) {
+            <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">0</span>; i &lt; buf.size() / <span class="nm">2</span>; i++) {
+                <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) { slot = i; <span class="kw">break</span>; }
+            }
+            <span class="kw">if</span> (slot == <span class="nm">-1</span>) wait();
+        }
+        <span class="ty">Session</span> s = buf.get(slot);
+        buf.set(slot, <span class="kw">null</span>);   <span class="cm">// libère la place (remet null)</span>
+        notifyAll();
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public synchronized</span> <span class="ty">Session</span> getStudentSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="kw">int</span> slot = <span class="nm">-1</span>;
+        <span class="kw">while</span> (slot == <span class="nm">-1</span>) {
+            <span class="kw">for</span> (<span class="kw">int</span> i = buf.size() / <span class="nm">2</span>; i &lt; buf.size(); i++) {
+                <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) { slot = i; <span class="kw">break</span>; }
+            }
+            <span class="kw">if</span> (slot == <span class="nm">-1</span>) wait();
+        }
+        <span class="ty">Session</span> s = buf.get(slot);
+        buf.set(slot, <span class="kw">null</span>);
+        notifyAll();
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public synchronized void</span> addSession(<span class="ty">Session</span> s)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="kw">int</span> debut, fin, slot;
+        <span class="kw">if</span> (s.type.equals(<span class="st">"prof"</span>)) {
+            debut = <span class="nm">0</span>;  fin = buf.size() / <span class="nm">2</span>;
+        } <span class="kw">else</span> {
+            debut = buf.size() / <span class="nm">2</span>;  fin = buf.size();
+        }
+        slot = <span class="nm">-1</span>;
+        <span class="kw">while</span> (slot == <span class="nm">-1</span>) {
+            <span class="kw">for</span> (<span class="kw">int</span> i = debut; i &lt; fin; i++) {
+                <span class="kw">if</span> (buf.get(i) == <span class="kw">null</span>) { slot = i; <span class="kw">break</span>; }
+            }
+            <span class="kw">if</span> (slot == <span class="nm">-1</span>) wait();
+        }
+        buf.set(slot, s);
+        notifyAll();
+    }
+}</pre>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="tag blue">II.3</span><h3>SessionList — Sémaphores Java</h3></div>
+      <div class="card-body">
+        <div class="note-box blue">
+          Même structure de <code>buf</code> avec indices. On remplace <code>synchronized/wait/notifyAll</code>
+          par des <code>Semaphore</code> : un sémaphore de places libres et un de places occupées, par zone.
+          Le <code>mutex</code> protège les accès concurrents à <code>buf</code>.
+        </div>
+<pre><span class="kw">import</span> java.util.concurrent.Semaphore;
+
+<span class="kw">public class</span> <span class="ty">SessionList</span>&lt;<span class="ty">Session</span>&gt; {
+
+    <span class="kw">private</span> <span class="ty">ArrayList</span>&lt;<span class="ty">Session</span>&gt; buf;
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> mutex        = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">1</span>);
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> videProf;    <span class="cm">// places libres zone prof</span>
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> pleinProf    = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">0</span>); <span class="cm">// sessions dispo</span>
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> videStudent;
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> pleinStudent = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">0</span>);
+
+    <span class="ty">SessionList</span>(<span class="kw">int</span> nbSlots) {
+        <span class="kw">int</span> i;
+        <span class="kw">this</span>.buf = <span class="kw">new</span> <span class="ty">ArrayList</span>&lt;<span class="ty">SessionList</span>&gt;(nbSlots);
+        <span class="kw">for</span> (i = <span class="nm">0</span>; i &lt; nbSlots; i++) {
+            buf.add(i, <span class="kw">null</span>);
+        }
+        <span class="kw">this</span>.videProf    = <span class="kw">new</span> <span class="ty">Semaphore</span>(nbSlots / <span class="nm">2</span>);
+        <span class="kw">this</span>.videStudent = <span class="kw">new</span> <span class="ty">Semaphore</span>(nbSlots / <span class="nm">2</span>);
+    }
+
+    <span class="kw">public</span> <span class="ty">Session</span> getProfSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        pleinProf.acquire();       <span class="cm">// attend une session prof dispo</span>
+        mutex.acquire();
+        <span class="ty">Session</span> s = <span class="kw">null</span>;
+        <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">0</span>; i &lt; buf.size() / <span class="nm">2</span>; i++) {
+            <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) {
+                s = buf.get(i);
+                buf.set(i, <span class="kw">null</span>);
+                <span class="kw">break</span>;
+            }
+        }
+        mutex.release();
+        videProf.release();        <span class="cm">// libère une place prof</span>
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public</span> <span class="ty">Session</span> getStudentSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        pleinStudent.acquire();
+        mutex.acquire();
+        <span class="ty">Session</span> s = <span class="kw">null</span>;
+        <span class="kw">for</span> (<span class="kw">int</span> i = buf.size() / <span class="nm">2</span>; i &lt; buf.size(); i++) {
+            <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) {
+                s = buf.get(i);
+                buf.set(i, <span class="kw">null</span>);
+                <span class="kw">break</span>;
+            }
+        }
+        mutex.release();
+        videStudent.release();
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public void</span> addSession(<span class="ty">Session</span> s)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="kw">int</span> debut, fin;
+        <span class="ty">Semaphore</span> vide, plein;
+        <span class="kw">if</span> (s.type.equals(<span class="st">"prof"</span>)) {
+            debut = <span class="nm">0</span>;  fin = buf.size() / <span class="nm">2</span>;
+            vide = videProf;  plein = pleinProf;
+        } <span class="kw">else</span> {
+            debut = buf.size() / <span class="nm">2</span>;  fin = buf.size();
+            vide = videStudent;  plein = pleinStudent;
+        }
+        vide.acquire();            <span class="cm">// attend une place libre</span>
+        mutex.acquire();
+        <span class="kw">for</span> (<span class="kw">int</span> i = debut; i &lt; fin; i++) {
+            <span class="kw">if</span> (buf.get(i) == <span class="kw">null</span>) {
+                buf.set(i, s);
+                <span class="kw">break</span>;
+            }
+        }
+        mutex.release();
+        plein.release();           <span class="cm">// signale une session disponible</span>
+    }
+}</pre>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="tag green">II.4</span><h3>SessionList — Sans exclusion mutuelle entre types</h3></div>
+      <div class="card-body">
+        <div class="note-box green">
+          Deux sémaphores mutex séparés (<code>mutexProf</code> et <code>mutexStudent</code>) protègent chaque zone indépendamment.
+          Un <code>ProfSessionHandler</code> et un <code>StudentSessionHandler</code> peuvent donc s'exécuter simultanément
+          sans se bloquer mutuellement.
+        </div>
+<pre><span class="kw">import</span> java.util.concurrent.Semaphore;
+
+<span class="kw">public class</span> <span class="ty">SessionList</span>&lt;<span class="ty">Session</span>&gt; {
+
+    <span class="kw">private</span> <span class="ty">ArrayList</span>&lt;<span class="ty">Session</span>&gt; buf;
+    <span class="cm">// Un mutex par zone → pas d'exclusion mutuelle entre types</span>
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> mutexProf    = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">1</span>);
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> mutexStudent = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">1</span>);
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> videProf;
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> pleinProf    = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">0</span>);
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> videStudent;
+    <span class="kw">private final</span> <span class="ty">Semaphore</span> pleinStudent = <span class="kw">new</span> <span class="ty">Semaphore</span>(<span class="nm">0</span>);
+
+    <span class="ty">SessionList</span>(<span class="kw">int</span> nbSlots) {
+        <span class="kw">int</span> i;
+        <span class="kw">this</span>.buf = <span class="kw">new</span> <span class="ty">ArrayList</span>&lt;<span class="ty">SessionList</span>&gt;(nbSlots);
+        <span class="kw">for</span> (i = <span class="nm">0</span>; i &lt; nbSlots; i++) {
+            buf.add(i, <span class="kw">null</span>);
+        }
+        <span class="kw">this</span>.videProf    = <span class="kw">new</span> <span class="ty">Semaphore</span>(nbSlots / <span class="nm">2</span>);
+        <span class="kw">this</span>.videStudent = <span class="kw">new</span> <span class="ty">Semaphore</span>(nbSlots / <span class="nm">2</span>);
+    }
+
+    <span class="kw">public</span> <span class="ty">Session</span> getProfSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        pleinProf.acquire();
+        mutexProf.acquire();       <span class="cm">// verrou zone prof uniquement</span>
+        <span class="ty">Session</span> s = <span class="kw">null</span>;
+        <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">0</span>; i &lt; buf.size() / <span class="nm">2</span>; i++) {
+            <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) {
+                s = buf.get(i);  buf.set(i, <span class="kw">null</span>);  <span class="kw">break</span>;
+            }
+        }
+        mutexProf.release();
+        videProf.release();
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public</span> <span class="ty">Session</span> getStudentSession()
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        pleinStudent.acquire();
+        mutexStudent.acquire();    <span class="cm">// verrou zone student uniquement</span>
+        <span class="ty">Session</span> s = <span class="kw">null</span>;
+        <span class="kw">for</span> (<span class="kw">int</span> i = buf.size() / <span class="nm">2</span>; i &lt; buf.size(); i++) {
+            <span class="kw">if</span> (buf.get(i) != <span class="kw">null</span>) {
+                s = buf.get(i);  buf.set(i, <span class="kw">null</span>);  <span class="kw">break</span>;
+            }
+        }
+        mutexStudent.release();
+        videStudent.release();
+        <span class="kw">return</span> s;
+    }
+
+    <span class="kw">public void</span> addSession(<span class="ty">Session</span> s)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="kw">if</span> (s.type.equals(<span class="st">"prof"</span>)) {
+            videProf.acquire();
+            mutexProf.acquire();
+            <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">0</span>; i &lt; buf.size() / <span class="nm">2</span>; i++) {
+                <span class="kw">if</span> (buf.get(i) == <span class="kw">null</span>) { buf.set(i, s); <span class="kw">break</span>; }
+            }
+            mutexProf.release();
+            pleinProf.release();
+        } <span class="kw">else</span> {
+            videStudent.acquire();
+            mutexStudent.acquire();
+            <span class="kw">for</span> (<span class="kw">int</span> i = buf.size() / <span class="nm">2</span>; i &lt; buf.size(); i++) {
+                <span class="kw">if</span> (buf.get(i) == <span class="kw">null</span>) { buf.set(i, s); <span class="kw">break</span>; }
+            }
+            mutexStudent.release();
+            pleinStudent.release();
+        }
+    }
+}</pre>
+      </div>
+    </div>
+
+  </div><!-- fin s2024 -->
+
+  <!-- ── SUJET 2025 ── -->
+  <div id="s2025" class="subj">
+
+    <div class="card">
+      <div class="card-head"><span class="tag">II.2</span><h3>VideoCatalog — Priorité aux lecteurs (moniteurs Java)</h3></div>
+      <div class="card-body">
+        <div class="note-box">
+          On reste fidèle au squelette : <code>metadata</code> est un <code>HashMap</code>, les deux méthodes sont
+          <code>readMetadata</code> et <code>updateMetadata</code>. On ajoute <code>nbReaders</code> et <code>writing</code>.
+          Les lecteurs ne bloquent que si un rédacteur écrit. Les rédacteurs attendent <code>nbReaders == 0 &amp;&amp; !writing</code>.
+        </div>
+<pre><span class="kw">public class</span> <span class="ty">VideoCatalog</span> {
+
+    <span class="kw">private</span> <span class="ty">HashMap</span>&lt;<span class="ty">String</span>, <span class="ty">VideoMetadata</span>&gt; metadata;
+    <span class="kw">private int</span>     nbReaders = <span class="nm">0</span>;
+    <span class="kw">private boolean</span> writing   = <span class="kw">false</span>;
+
+    <span class="ty">VideoCatalog</span>() {
+        <span class="kw">this</span>.metadata = <span class="kw">new</span> <span class="ty">HashMap</span>&lt;&gt;();
+    }
+
+    <span class="cm">// Lecture des metadonnees d'une video (peut etre concurrent avec d'autres lectures)</span>
+    <span class="kw">public synchronized</span> <span class="ty">VideoMetadata</span> readMetadata(<span class="ty">String</span> videoId)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="cm">// Priorité lecteurs : on bloque seulement si un rédacteur écrit</span>
+        <span class="kw">while</span> (writing)
+            wait();
+        nbReaders++;               <span class="cm">// on entre en lecture</span>
+        notifyAll();
+
+        <span class="cm">// Acces a la ressource partagee</span>
+        <span class="ty">VideoMetadata</span> result = metadata.get(videoId);
+
+        nbReaders--;
+        <span class="kw">if</span> (nbReaders == <span class="nm">0</span>) notifyAll(); <span class="cm">// réveille les rédacteurs si plus de lecteurs</span>
+        <span class="kw">return</span> result;
+    }
+
+    <span class="cm">// Mise a jour des metadonnees (doit etre exclusif)</span>
+    <span class="kw">public synchronized void</span> updateMetadata(<span class="ty">String</span> videoId,
+                                              <span class="ty">VideoMetadata</span> newData)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="cm">// Attend qu'aucun lecteur ne lise et qu'aucun rédacteur n'écrive</span>
+        <span class="kw">while</span> (writing || nbReaders &gt; <span class="nm">0</span>)
+            wait();
+        writing = <span class="kw">true</span>;
+
+        <span class="cm">// Acces exclusif a la ressource partagee</span>
+        metadata.put(videoId, newData);
+
+        writing = <span class="kw">false</span>;
+        notifyAll();
+    }
+}</pre>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="tag blue">II.3</span><h3>VideoCatalog — Priorité aux rédacteurs</h3></div>
+      <div class="card-body">
+        <div class="note-box blue">
+          Modification : ajout de <code>nbWritersWaiting</code>. Dans <code>readMetadata</code>, on bloque aussi
+          si des rédacteurs attendent (<code>nbWritersWaiting &gt; 0</code>), même si personne n'écrit encore.
+          Ainsi, dès qu'un rédacteur annonce son intention, les nouveaux lecteurs sont mis en attente.
+        </div>
+<pre><span class="kw">public class</span> <span class="ty">VideoCatalog</span> {
+
+    <span class="kw">private</span> <span class="ty">HashMap</span>&lt;<span class="ty">String</span>, <span class="ty">VideoMetadata</span>&gt; metadata;
+    <span class="kw">private int</span>     nbReaders        = <span class="nm">0</span>;
+    <span class="kw">private boolean</span> writing          = <span class="kw">false</span>;
+    <span class="kw">private int</span>     nbWritersWaiting = <span class="nm">0</span>; <span class="cm">// NOUVEAU</span>
+
+    <span class="ty">VideoCatalog</span>() {
+        <span class="kw">this</span>.metadata = <span class="kw">new</span> <span class="ty">HashMap</span>&lt;&gt;();
+    }
+
+    <span class="cm">// Lecture des metadonnees d'une video (peut etre concurrent avec d'autres lectures)</span>
+    <span class="kw">public synchronized</span> <span class="ty">VideoMetadata</span> readMetadata(<span class="ty">String</span> videoId)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        <span class="cm">// Priorité rédacteurs : bloqué si un rédacteur écrit OU attend</span>
+        <span class="kw">while</span> (writing || nbWritersWaiting &gt; <span class="nm">0</span>)
+            wait();
+        nbReaders++;
+        notifyAll();
+
+        <span class="cm">// Acces a la ressource partagee</span>
+        <span class="ty">VideoMetadata</span> result = metadata.get(videoId);
+
+        nbReaders--;
+        <span class="kw">if</span> (nbReaders == <span class="nm">0</span>) notifyAll();
+        <span class="kw">return</span> result;
+    }
+
+    <span class="cm">// Mise a jour des metadonnees (doit etre exclusif)</span>
+    <span class="kw">public synchronized void</span> updateMetadata(<span class="ty">String</span> videoId,
+                                              <span class="ty">VideoMetadata</span> newData)
+            <span class="kw">throws</span> <span class="ty">InterruptedException</span> {
+        nbWritersWaiting++;        <span class="cm">// annonce l'intention d'écrire</span>
+        <span class="kw">while</span> (writing || nbReaders &gt; <span class="nm">0</span>)
+            wait();
+        nbWritersWaiting--;        <span class="cm">// on va maintenant écrire</span>
+        writing = <span class="kw">true</span>;
+
+        <span class="cm">// Acces exclusif a la ressource partagee</span>
+        metadata.put(videoId, newData);
+
+        writing = <span class="kw">false</span>;
+        notifyAll();
+    }
+}</pre>
+        <div class="note-box blue" style="margin-top:1rem">
+          <strong>Modifications par rapport à II.2 :</strong> (1) ajout du champ <code>nbWritersWaiting</code>,
+          (2) condition de blocage de <code>readMetadata</code> élargie à <code>|| nbWritersWaiting &gt; 0</code>,
+          (3) incrément avant l'attente et décrément juste avant d'écrire dans <code>updateMetadata</code>.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="tag green">II.4</span><h3>Risques de famine & accès équitable</h3></div>
+      <div class="card-body">
+        <div class="note-box green">
+          <strong>Priorité lecteurs → famine des rédacteurs.</strong> Si les lectures arrivent en continu,
+          <code>nbReaders</code> ne revient jamais à 0, et un rédacteur attend indéfiniment.<br><br>
+          <strong>Priorité rédacteurs → famine des lecteurs.</strong> Si les mises à jour arrivent en continu,
+          <code>nbWritersWaiting &gt; 0</code> en permanence, et les lecteurs n'entrent jamais.<br><br>
+          <strong>Solution équitable :</strong> maintenir une file FIFO globale. En Java, on peut utiliser
+          <code>ReentrantReadWriteLock(true)</code> (mode <em>fair</em>) qui garantit l'ordre d'arrivée
+          indépendamment du type d'opération, sans modifier la logique métier.
+        </div>
+      </div>
+    </div>
+
+  </div><!-- fin s2025 -->
+
+</div>
+</div><!-- fin corr -->
+
+
+<!-- ══════════════════════════════════════
+     PAGE FLASHCARDS
+══════════════════════════════════════ -->
+<div id="flash" class="page">
+<div class="fc-layout">
+
+  <div class="fc-header">
+    <div>
+      <div class="fc-title">Flashcards</div>
+      <div style="font-family:var(--mono);font-size:0.75rem;color:var(--ink2);margin-top:0.2rem">Programmation Concurrente · UGA</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
+      <div class="fc-stats" id="stats"></div>
+      <button class="btn-github" onclick="openGithubPanel()" title="Synchroniser avec GitHub">
+        ☁️ Sync GitHub
+      </button>
+    </div>
+  </div>
+
+  <!-- ── PANNEAU GITHUB ── -->
+  <div id="github-panel" style="display:none;background:var(--paper);border:1.5px solid var(--border);border-radius:6px;padding:1.2rem;margin-bottom:1.5rem">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+      <span style="font-family:var(--mono);font-size:0.78rem;font-weight:600">☁️ Synchronisation GitHub</span>
+      <button onclick="closeGithubPanel()" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--ink2)">×</button>
+    </div>
+    <div class="gh-row">
+      <label class="gh-label">Nom d'utilisateur GitHub</label>
+      <input id="gh-user" type="text" class="gh-input" placeholder="ex: monpseudo">
+    </div>
+    <div class="gh-row">
+      <label class="gh-label">Nom du dépôt</label>
+      <input id="gh-repo" type="text" class="gh-input" placeholder="ex: mes-flashcards">
+    </div>
+    <div class="gh-row">
+      <label class="gh-label">Token GitHub <span style="opacity:0.5;font-size:0.65rem">(ghp_...)</span></label>
+      <input id="gh-token" type="password" class="gh-input" placeholder="ghp_xxxxxxxxxxxx">
+    </div>
+    <div style="display:flex;gap:0.6rem;margin-top:0.9rem;flex-wrap:wrap">
+      <button class="btn-gh-action" onclick="githubPull()">⬇️ Récupérer (pull)</button>
+      <button class="btn-gh-action btn-gh-push" onclick="githubPush()">⬆️ Envoyer (push)</button>
+    </div>
+    <div id="gh-status" style="font-family:var(--mono);font-size:0.72rem;margin-top:0.7rem;min-height:1.2rem"></div>
+    <div style="font-family:var(--mono);font-size:0.65rem;color:var(--ink2);margin-top:0.8rem;opacity:0.6;line-height:1.5">
+      ⬇️ Pull : charge cards.json depuis GitHub → écrase les données locales<br>
+      ⬆️ Push : envoie tes données locales → met à jour cards.json sur GitHub
+    </div>
+  </div>
+
+  <!-- Onglets Réviser / Gérer -->
+  <div class="fc-tabs">
+    <button class="fc-tab active" id="tab-study" onclick="switchTab('study')">📖 Réviser</button>
+    <button class="fc-tab" id="tab-list"  onclick="switchTab('list')">📋 Gérer les cartes</button>
+  </div>
+
+  <!-- ── PANEL RÉVISER ── -->
+  <div id="panel-study">
+    <!-- Boutons de filtre par catégorie (générés dynamiquement) -->
+    <div class="fc-modes" id="fc-modes"></div>
+
+    <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+
+    <div id="fc-main"></div>
+
+    <div class="add-section">
+      <h4>+ AJOUTER UNE CARTE</h4>
+      <div class="add-row">
+        <input id="inp-q" type="text" placeholder="Question / mot à définir">
+        <input id="inp-a" type="text" placeholder="Réponse / définition">
+        <select id="inp-cat"></select>
+        <button class="btn-add" onclick="addCard()">Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PANEL LISTE / GÉRER ── -->
+  <div id="panel-list" style="display:none">
+    <div class="list-toolbar">
+      <select id="list-filter" onchange="renderList()"></select>
+      <button class="btn-danger" onclick="askDeleteAll()">🗑 Supprimer la sélection</button>
+      <span class="list-count" id="list-count"></span>
+    </div>
+
+    <table class="card-table" id="card-table">
+      <thead>
+        <tr>
+          <th>#</th><th>Question</th><th>Réponse</th><th>Catégorie</th><th>Niveau</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="card-tbody"></tbody>
+    </table>
+
+    <div id="list-empty" style="display:none;text-align:center;padding:3rem 1rem">
+      <p style="font-family:var(--mono);font-size:0.85rem;color:var(--ink2)">
+        Aucune carte dans cette catégorie.
+      </p>
+    </div>
+
+    <!-- Gestion des catégories -->
+    <div id="cat-manager" style="margin-top:2rem"></div>
+  </div>
+
+</div>
+</div><!-- fin flash -->
+
+<!-- ── Edit modal ── -->
+<div class="confirm-overlay" id="edit-overlay">
+  <div class="confirm-box" style="max-width:480px;text-align:left">
+    <h3 style="margin-bottom:1.2rem">Modifier la carte</h3>
+    <div style="font-family:var(--mono);font-size:0.68rem;color:var(--ink2);margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:.08em">Catégorie</div>
+    <select id="edit-cat" style="width:100%;margin-bottom:0.9rem;padding:0.45rem 0.7rem;border:1.5px solid var(--border);border-radius:4px;font-family:var(--mono);font-size:0.82rem;background:var(--bg);color:var(--ink)"></select>
+    <div style="font-family:var(--mono);font-size:0.68rem;color:var(--ink2);margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:.08em">Question</div>
+    <textarea id="edit-q" rows="3" style="width:100%;margin-bottom:0.9rem;padding:0.5rem 0.7rem;border:1.5px solid var(--border);border-radius:4px;font-family:var(--serif);font-size:0.9rem;color:var(--ink);background:var(--bg);resize:vertical"></textarea>
+    <div style="font-family:var(--mono);font-size:0.68rem;color:var(--ink2);margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:.08em">Réponse</div>
+    <textarea id="edit-a" rows="4" style="width:100%;margin-bottom:1.2rem;padding:0.5rem 0.7rem;border:1.5px solid var(--border);border-radius:4px;font-family:var(--serif);font-size:0.9rem;color:var(--ink);background:var(--bg);resize:vertical"></textarea>
+    <div class="confirm-btns">
+      <button class="btn-confirm-cancel" onclick="closeEdit()">Annuler</button>
+      <button class="btn-confirm-ok" style="background:var(--accent3)" onclick="saveEdit()">✓ Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Confirm overlay ── -->
+<div class="confirm-overlay" id="confirm-overlay">
+  <div class="confirm-box">
+    <h3 id="confirm-title">Confirmer</h3>
+    <p id="confirm-msg">Es-tu sûr(e) ?</p>
+    <div class="confirm-btns">
+      <button class="btn-confirm-cancel" onclick="closeConfirm()">Annuler</button>
+      <button class="btn-confirm-ok" id="confirm-ok-btn">Supprimer</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════
+// DONNÉES & PERSISTANCE
+// ════════════════════════════════════════════════
+const INTERVALS   = [0, 1, 3, 7, 14, 30];
+const SCORE_LABELS = ['Jamais vu','Ok','Ok','Bien','Bien','Maîtrisé'];
+
+// Catégories : tableau de { id, label }
+// id = slug unique, label = nom affiché
+const DEFAULT_CATS = [
+  { id:'general', label:'Général' },
+  { id:'2024',    label:'Sujet 2024' },
+  { id:'2025',    label:'Sujet 2025' },
+];
+
+let cats  = JSON.parse(localStorage.getItem('fc_cats')  || 'null') || DEFAULT_CATS;
+let cards = JSON.parse(localStorage.getItem('fc_cards') || 'null') || [
+  {q:"Qu'est-ce qu'un moniteur Java ?",       a:"Un objet Java dont les méthodes synchronized partagent un verrou implicite. On utilise wait() pour attendre et notifyAll() pour réveiller les threads.", cat:"general", score:0, next:0},
+  {q:"Différence wait() vs sleep()",           a:"wait() libère le verrou de l'objet et attend un notify(). sleep() maintient tous les verrous et attend une durée fixe.", cat:"general", score:0, next:0},
+  {q:"Qu'est-ce qu'un sémaphore ?",            a:"Un compteur de permis. acquire() décrémente (bloque si 0), release() incrémente. Contrôle l'accès à des ressources partagées.", cat:"general", score:0, next:0},
+  {q:"Section critique : 3 propriétés ?",      a:"(1) Exclusion mutuelle : un seul thread à la fois. (2) Progression : si libre, un thread peut entrer. (3) Attente bornée : pas d'attente infinie.", cat:"general", score:0, next:0},
+  {q:"Qu'est-ce qu'un interblocage ?",         a:"Deux threads s'attendent mutuellement : T1 attend R2 tenu par T2, T2 attend R1 tenu par T1. Aucun ne peut progresser.", cat:"general", score:0, next:0},
+  {q:"Inversion de priorité ?",                a:"Un thread haute priorité attend un verrou tenu par un thread basse priorité, lui-même préempté par un thread intermédiaire.", cat:"general", score:0, next:0},
+  {q:"Sujet 2024 : pourquoi buf initialisé avec null ?", a:"Pour réserver des slots fixes : indices 0..n/2-1 pour les profs, n/2..n-1 pour les étudiants. null = place libre.", cat:"2024", score:0, next:0},
+  {q:"Sujet 2024 : que fait addSession() avec les sémaphores ?", a:"acquire() sur vide → acquire() mutex → écrit → release() mutex → release() plein.", cat:"2024", score:0, next:0},
+  {q:"Sujet 2024 II.4 : comment éviter l'exclusion mutuelle entre types ?", a:"Deux mutex séparés (mutexProf et mutexStudent) : un prof et un étudiant peuvent retirer simultanément.", cat:"2024", score:0, next:0},
+  {q:"Sujet 2025 : que signifie 'priorité aux lecteurs' ?", a:"Les nouveaux lecteurs ne bloquent que si writing == true. Lectures parallèles autorisées. Risque : famine des rédacteurs.", cat:"2025", score:0, next:0},
+  {q:"Sujet 2025 : comment implémenter la priorité aux rédacteurs ?", a:"Ajout de nbWritersWaiting. readMetadata bloque si writing || nbWritersWaiting > 0.", cat:"2025", score:0, next:0},
+  {q:"Sujet 2025 II.4 : risque de chaque stratégie ?", a:"Priorité lecteurs → famine rédacteurs. Priorité rédacteurs → famine lecteurs. Solution : ReentrantReadWriteLock(true).", cat:"2025", score:0, next:0},
+  {q:"notifyAll() vs notify() ?",              a:"notify() réveille un seul thread (aléatoire), risque de livelock. notifyAll() réveille tous, plus sûr.", cat:"general", score:0, next:0},
+  {q:"Micro-noyau vs monolithique ?",          a:"Micro-noyau : services en espace utilisateur (modulaire, sûr, lent). Monolithique : tout dans le noyau (rapide, mais fragile).", cat:"general", score:0, next:0},
+];
+
+function saveAll() {
+  localStorage.setItem('fc_cats',  JSON.stringify(cats));
+  localStorage.setItem('fc_cards', JSON.stringify(cards));
+}
+
+// ════════════════════════════════════════════════
+// GITHUB SYNC
+// ════════════════════════════════════════════════
+function ghConfig() {
+  const user  = document.getElementById('gh-user').value.trim();
+  const repo  = document.getElementById('gh-repo').value.trim();
+  const token = document.getElementById('gh-token').value.trim();
+  return { user, repo, token };
+}
+
+function openGithubPanel() {
+  const panel = document.getElementById('github-panel');
+  panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+  // Restaurer les valeurs sauvegardées
+  const saved = JSON.parse(localStorage.getItem('gh_config') || '{}');
+  if(saved.user)  document.getElementById('gh-user').value  = saved.user;
+  if(saved.repo)  document.getElementById('gh-repo').value  = saved.repo;
+  if(saved.token) document.getElementById('gh-token').value = saved.token;
+}
+function closeGithubPanel() {
+  document.getElementById('github-panel').style.display = 'none';
+}
+
+function ghStatus(msg, cls='gh-info') {
+  const el = document.getElementById('gh-status');
+  el.innerHTML = `<span class="${cls}">${msg}</span>`;
+}
+
+function saveGhConfig() {
+  const { user, repo, token } = ghConfig();
+  localStorage.setItem('gh_config', JSON.stringify({ user, repo, token }));
+}
+
+// ── PUSH : envoie les données locales vers GitHub ──
+async function githubPush() {
+  const { user, repo, token } = ghConfig();
+  if(!user || !repo || !token) { ghStatus('⚠️ Remplis tous les champs.', 'gh-err'); return; }
+  saveGhConfig();
+  ghStatus('⏳ Envoi en cours…');
+
+  const data = { cats, cards };
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+  const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/cards.json`;
+
+  try {
+    // Récupère le SHA actuel du fichier (nécessaire pour le mettre à jour)
+    let sha = null;
+    const getRes = await fetch(apiUrl, {
+      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if(getRes.ok) {
+      const getJson = await getRes.json();
+      sha = getJson.sha;
+    }
+
+    // Envoie le fichier mis à jour
+    const body = {
+      message: `Mise à jour cards.json – ${new Date().toLocaleString('fr-FR')}`,
+      content,
+      ...(sha ? { sha } : {})
+    };
+    const putRes = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${token}`,
+        Accept: 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    });
+
+    if(putRes.ok) {
+      ghStatus(`✓ Synchronisé sur GitHub (${new Date().toLocaleTimeString('fr-FR')})`, 'gh-ok');
+    } else {
+      const err = await putRes.json();
+      ghStatus(`✗ Erreur : ${err.message}`, 'gh-err');
+    }
+  } catch(e) {
+    ghStatus(`✗ Erreur réseau : ${e.message}`, 'gh-err');
+  }
+}
+
+// ── PULL : récupère les données depuis GitHub ──
+async function githubPull() {
+  const { user, repo, token } = ghConfig();
+  if(!user || !repo || !token) { ghStatus('⚠️ Remplis tous les champs.', 'gh-err'); return; }
+  saveGhConfig();
+  ghStatus('⏳ Récupération en cours…');
+
+  const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/cards.json`;
+  try {
+    const res = await fetch(apiUrl, {
+      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if(!res.ok) { ghStatus(`✗ Fichier introuvable (${res.status})`, 'gh-err'); return; }
+
+    const json = await res.json();
+    const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g,''))));
+    const data = JSON.parse(decoded);
+
+    if(data.cats)  cats  = data.cats;
+    if(data.cards) cards = data.cards;
+    saveAll();
+    rebuildAllUI();
+    ghStatus(`✓ Données récupérées depuis GitHub (${cards.length} cartes, ${cats.length} catégories)`, 'gh-ok');
+  } catch(e) {
+    ghStatus(`✗ Erreur : ${e.message}`, 'gh-err');
+  }
+}
+
+// Utilitaire : label d'une catégorie
+function catLabel(id) {
+  const c = cats.find(c => c.id === id);
+  return c ? c.label : id;
+}
+
+// Slugifier pour créer un id depuis un label
+function slugify(str) {
+  return str.trim().toLowerCase()
+    .replace(/[àâä]/g,'a').replace(/[éèêë]/g,'e')
+    .replace(/[îï]/g,'i').replace(/[ôö]/g,'o').replace(/[ùûü]/g,'u')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+}
+
+// ════════════════════════════════════════════════
+// NAV & TABS
+// ════════════════════════════════════════════════
+function showPage(id, e) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  e.target.classList.add('active');
+  if (id === 'flash') { rebuildAllUI(); }
+}
+function showSubj(id, btn) {
+  document.querySelectorAll('.subj').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.stab').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+function switchTab(tab) {
+  const isStudy = tab === 'study';
+  document.getElementById('panel-study').style.display = isStudy ? 'block' : 'none';
+  document.getElementById('panel-list').style.display  = isStudy ? 'none'  : 'block';
+  document.getElementById('tab-study').classList.toggle('active',  isStudy);
+  document.getElementById('tab-list').classList.toggle('active',  !isStudy);
+  if (!isStudy) renderList();
+}
+
+// ════════════════════════════════════════════════
+// REBUILD ALL UI (appelé à chaque changement de cats)
+// ════════════════════════════════════════════════
+function rebuildAllUI() {
+  renderCatFilters();   // boutons de filtre révision
+  renderCatSelect();    // <select> ajout de carte
+  renderListFilter();   // <select> filtre liste
+  renderCatManager();   // section gestion des catégories
+  updateStats();
+  startSession();
+}
+
+// ── Boutons filtres révision (remplace l'ancien fc-modes) ──
+function renderCatFilters() {
+  const wrap = document.getElementById('fc-modes');
+  wrap.innerHTML = '';
+  // Bouton "Toutes"
+  const btnAll = document.createElement('button');
+  btnAll.className = 'mode-btn' + (currentCat === 'all' ? ' active' : '');
+  btnAll.textContent = 'Toutes';
+  btnAll.onclick = () => setCat('all', btnAll);
+  wrap.appendChild(btnAll);
+  // Un bouton par catégorie
+  cats.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'mode-btn' + (currentCat === cat.id ? ' active' : '');
+    btn.textContent = cat.label;
+    btn.dataset.cat = cat.id;
+    btn.onclick = () => setCat(cat.id, btn);
+    wrap.appendChild(btn);
+  });
+}
+
+// ── <select> catégorie dans le formulaire d'ajout ──
+function renderCatSelect() {
+  const sel = document.getElementById('inp-cat');
+  const prev = sel.value;
+  sel.innerHTML = cats.map(c =>
+    `<option value="${c.id}" ${c.id === prev ? 'selected' : ''}>${c.label}</option>`
+  ).join('');
+}
+
+// ── <select> filtre dans le panneau liste ──
+function renderListFilter() {
+  const sel = document.getElementById('list-filter');
+  const prev = sel.value;
+  sel.innerHTML = `<option value="all">Toutes les catégories</option>` +
+    cats.map(c => `<option value="${c.id}" ${c.id === prev ? 'selected':''}>${c.label}</option>`).join('');
+}
+
+// ════════════════════════════════════════════════
+// SESSION DE RÉVISION
+// ════════════════════════════════════════════════
+let currentCat = 'all';
+let queue = [], idx = 0, flipped = false, sessionOk = 0, sessionKo = 0;
+
+function setCat(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  startSession();
+}
+
+function buildQueue() {
+  let src = currentCat === 'all' ? [...cards] : cards.filter(c => c.cat === currentCat);
+  // mélange
+  for(let i = src.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
+    [src[i], src[j]] = [src[j], src[i]];
+  }
+  return src;
+}
+
+function startSession() {
+  queue = buildQueue();
+  idx = 0; sessionOk = 0; sessionKo = 0; flipped = false;
+  renderFC();
+}
+
+// ════════════════════════════════════════════════
+// RENDER CARTE
+// ════════════════════════════════════════════════
+function renderFC() {
+  updateStats();
+  updateProgress();
+  const main = document.getElementById('fc-main');
+  if(!main) return;
+
+  if(queue.length === 0) {
+    const label = currentCat === 'all' ? '' : ` dans « ${catLabel(currentCat)} »`;
+    main.innerHTML = `<div class="done-screen">
+      <h2>Aucune carte${label}</h2>
+      <p>Ajoute des cartes depuis le formulaire ci-dessous,<br>ou choisis une autre catégorie.</p>
+    </div>`;
+    return;
+  }
+
+  if(idx >= queue.length) {
+    main.innerHTML = `<div class="done-screen">
+      <h2>Session terminée !</h2>
+      <p>Tu as parcouru ${queue.length} carte${queue.length>1?'s':''}.</p>
+      <div class="done-grid">
+        <div class="done-stat"><div class="big" style="color:var(--accent3)">${sessionOk}</div><div class="label">SU ✓</div></div>
+        <div class="done-stat"><div class="big" style="color:var(--accent)">${sessionKo}</div><div class="label">À REVOIR ✗</div></div>
+        <div class="done-stat"><div class="big">${Math.round(sessionOk/queue.length*100)}%</div><div class="label">RÉUSSITE</div></div>
+      </div>
+      <button class="fc-btn btn-secondary" style="max-width:200px;margin:0 auto" onclick="startSession()">↩ Recommencer</button>
+    </div>`;
+    return;
+  }
+
+  const card = queue[idx];
+  const scoreLabel = SCORE_LABELS[card.score];
+  main.innerHTML = `
+    <div style="font-family:var(--mono);font-size:0.7rem;color:var(--ink2);margin-bottom:0.6rem;display:flex;justify-content:space-between">
+      <span>${idx+1} / ${queue.length}</span>
+      <span>${scoreLabel} · ${catLabel(card.cat)}</span>
+    </div>
+    <div class="fc-scene" onclick="flipCard()">
+      <div class="fc-card" id="fccard">
+        <div class="fc-face front">
+          <div class="fc-face-label">Question</div>
+          <div class="fc-question">${esc(card.q)}</div>
+          <div class="fc-hint">Cliquez pour révéler la réponse</div>
+        </div>
+        <div class="fc-face back">
+          <div class="fc-face-label">Réponse</div>
+          <div class="fc-answer">${formatAnswer(card.a)}</div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-actions" id="fc-actions" style="display:none">
+      <button class="fc-btn btn-ko" onclick="answer(false)">✗ À revoir</button>
+      <button class="fc-btn btn-ok" onclick="answer(true)">✓ Je savais</button>
+    </div>
+    <div id="fc-flip-hint" style="text-align:center">
+      <button class="fc-btn btn-secondary" style="max-width:200px;margin:0 auto" onclick="flipCard()">Retourner la carte</button>
+    </div>`;
+}
+
+function formatAnswer(a) { return a.replace(/`([^`]+)`/g, '<code>$1</code>'); }
+
+function flipCard() {
+  if(flipped) return;
+  flipped = true;
+  document.getElementById('fccard').classList.add('flipped');
+  document.getElementById('fc-actions').style.display = 'flex';
+  document.getElementById('fc-flip-hint').style.display = 'none';
+}
+
+function answer(knew) {
+  const card = queue[idx];
+  const gc = cards.find(c => c.q === card.q && c.cat === card.cat);
+  if(knew) { sessionOk++; if(gc) gc.score = Math.min(5, gc.score+1); }
+  else      { sessionKo++; if(gc) gc.score = Math.max(0, gc.score-1); }
+  if(gc) gc.next = Date.now() + INTERVALS[gc.score] * 86400000;
+  saveAll();
+  idx++; flipped = false;
+  renderFC();
+}
+
+function updateStats() {
+  const el = document.getElementById('stats');
+  if(!el) return;
+  const mastered = cards.filter(c => c.score === 5).length;
+  const src = currentCat === 'all' ? cards : cards.filter(c => c.cat === currentCat);
+  el.innerHTML =
+    `Total : <span class="stat-val">${src.length}</span> carte${src.length>1?'s':''}<br>` +
+    `Maîtrisées : <span class="stat-val">${mastered}</span> / ${cards.length}`;
+}
+
+function updateProgress() {
+  const el = document.getElementById('progress');
+  if(!el) return;
+  el.style.width = (queue.length ? idx/queue.length*100 : 0) + '%';
+}
+
+// ── Ajouter une carte ──
+function addCard() {
+  const q = document.getElementById('inp-q').value.trim();
+  const a = document.getElementById('inp-a').value.trim();
+  const cat = document.getElementById('inp-cat').value;
+  if(!q || !a) return;
+  cards.push({q, a, cat, score:0, next:0});
+  saveAll();
+  document.getElementById('inp-q').value = '';
+  document.getElementById('inp-a').value = '';
+  startSession();
+  updateStats();
+}
+
+// ════════════════════════════════════════════════
+// PANNEAU LISTE DES CARTES
+// ════════════════════════════════════════════════
+function renderList() {
+  const f = document.getElementById('list-filter').value;
+  const filtered = f === 'all' ? cards : cards.filter(c => c.cat === f);
+  const tbody  = document.getElementById('card-tbody');
+  const empty  = document.getElementById('list-empty');
+  const table  = document.getElementById('card-table');
+  document.getElementById('list-count').textContent =
+    `${filtered.length} carte${filtered.length > 1 ? 's' : ''}`;
+
+  if(filtered.length === 0) {
+    table.style.display = 'none'; empty.style.display = 'block'; return;
+  }
+  table.style.display = 'table'; empty.style.display = 'none';
+  tbody.innerHTML = '';
+  filtered.forEach((card, i) => {
+    const gi = cards.indexOf(card);
+    let pips = '';
+    for(let p=0;p<5;p++) pips += `<span class="score-pip ${p<card.score?'filled':''}"></span>`;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="color:var(--ink2);font-family:var(--mono);font-size:0.72rem">${i+1}</td>
+      <td class="td-q"><span class="truncate" title="${esc(card.q)}">${esc(card.q)}</span></td>
+      <td class="td-a"><span class="truncate" title="${esc(card.a)}">${esc(card.a)}</span></td>
+      <td class="td-cat"><span class="cat-badge" style="${catStyle(card.cat)}">${catLabel(card.cat)}</span></td>
+      <td class="td-score">${pips}<br><span style="font-size:0.62rem;color:var(--ink2)">${SCORE_LABELS[card.score]}</span></td>
+      <td class="td-actions">
+        <button class="btn-row-edit" onclick="openEdit(${gi})">✏️</button>
+        <button class="btn-row-del"  onclick="askDeleteOne(${gi})">🗑</button>
+      </td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+// Couleur dynamique pour les badges de catégorie
+const CAT_COLORS = [
+  ['#ede9fe','#5b21b6'], ['#dbeafe','#1d4ed8'], ['#d1fae5','#065f46'],
+  ['#fef3c7','#92400e'], ['#fce7f3','#9d174d'], ['#e0f2fe','#0369a1'],
+  ['#f0fdf4','#15803d'], ['#fff7ed','#c2410c'],
+];
+function catStyle(id) {
+  const i = cats.findIndex(c => c.id === id);
+  const [bg, fg] = CAT_COLORS[i % CAT_COLORS.length] || ['#f0ead8','#4a3f35'];
+  return `background:${bg};color:${fg}`;
+}
+
+// ════════════════════════════════════════════════
+// GESTION DES CATÉGORIES (dans le panneau liste)
+// ════════════════════════════════════════════════
+function renderCatManager() {
+  const wrap = document.getElementById('cat-manager');
+  if(!wrap) return;
+  wrap.innerHTML = `
+    <div class="cat-mgr-title">Catégories</div>
+    <div class="cat-chips" id="cat-chips">
+      ${cats.map(c => `
+        <span class="cat-chip" style="${catStyle(c.id)}">
+          ${esc(c.label)}
+          <button class="cat-chip-del" onclick="deleteCategory('${c.id}')" title="Supprimer cette catégorie">×</button>
+        </span>`).join('')}
+    </div>
+    <div class="cat-add-row">
+      <input id="new-cat-inp" type="text" placeholder="Nouvelle catégorie…" maxlength="40"
+             onkeydown="if(event.key==='Enter') addCategory()">
+      <button class="btn-add" onclick="addCategory()">+ Ajouter</button>
+    </div>`;
+}
+
+function addCategory() {
+  const inp = document.getElementById('new-cat-inp');
+  const label = inp.value.trim();
+  if(!label) return;
+  let id = slugify(label) || ('cat-' + Date.now());
+  // Éviter les doublons d'id
+  if(cats.find(c => c.id === id)) id = id + '-' + Date.now();
+  cats.push({ id, label });
+  saveAll();
+  inp.value = '';
+  rebuildAllUI();
+  // Reste sur le panneau liste
+  switchTab('list');
+  renderList();
+}
+
+function deleteCategory(id) {
+  const cat = cats.find(c => c.id === id);
+  if(!cat) return;
+  const count = cards.filter(c => c.cat === id).length;
+  const msg = count > 0
+    ? `La catégorie « ${cat.label} » contient ${count} carte${count>1?'s':''} qui seront réaffectées à « Général ».\nContinuer ?`
+    : `Supprimer la catégorie « ${cat.label} » ?`;
+  showConfirm(
+    'Supprimer la catégorie',
+    msg,
+    () => {
+      // Réaffecter les cartes orphelines à "general" (ou à la première cat disponible)
+      const fallback = cats.find(c => c.id !== id)?.id || 'general';
+      cards.forEach(c => { if(c.cat === id) c.cat = fallback; });
+      cats = cats.filter(c => c.id !== id);
+      // Assurer qu'on a au moins une catégorie par défaut
+      if(cats.length === 0) cats.push({ id:'general', label:'Général' });
+      saveAll();
+      if(currentCat === id) currentCat = 'all';
+      rebuildAllUI();
+      switchTab('list');
+      renderList();
+    }
+  );
+}
+
+// ════════════════════════════════════════════════
+// ÉDITION DE CARTE
+// ════════════════════════════════════════════════
+let editingIdx = -1;
+
+function openEdit(gi) {
+  const card = cards[gi];
+  if(!card) return;
+  editingIdx = gi;
+
+  // Remplir le select catégories
+  const sel = document.getElementById('edit-cat');
+  sel.innerHTML = cats.map(c =>
+    `<option value="${c.id}" ${c.id === card.cat ? 'selected':''}>${c.label}</option>`
+  ).join('');
+
+  document.getElementById('edit-q').value = card.q;
+  document.getElementById('edit-a').value = card.a;
+  document.getElementById('edit-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('edit-q').focus(), 50);
+}
+
+function saveEdit() {
+  const card = cards[editingIdx];
+  if(!card) return;
+  const q = document.getElementById('edit-q').value.trim();
+  const a = document.getElementById('edit-a').value.trim();
+  const cat = document.getElementById('edit-cat').value;
+  if(!q || !a) return;
+  card.q = q; card.a = a; card.cat = cat;
+  saveAll();
+  closeEdit();
+  startSession();
+  renderList();
+  updateStats();
+}
+
+function closeEdit() {
+  document.getElementById('edit-overlay').classList.remove('open');
+  editingIdx = -1;
+}
+document.getElementById('edit-overlay').addEventListener('click', function(e) {
+  if(e.target === this) closeEdit();
+});
+
+// ════════════════════════════════════════════════
+// SUPPRESSION DE CARTES
+// ════════════════════════════════════════════════
+function askDeleteOne(gi) {
+  const card = cards[gi];
+  if(!card) return;
+  showConfirm(
+    'Supprimer cette carte ?',
+    `« ${card.q.slice(0,80)}${card.q.length>80?'…':''} »`,
+    () => { cards.splice(gi, 1); saveAll(); startSession(); renderList(); updateStats(); }
+  );
+}
+
+function askDeleteAll() {
+  const f = document.getElementById('list-filter').value;
+  const filtered = f === 'all' ? cards : cards.filter(c => c.cat === f);
+  if(!filtered.length) return;
+  const lbl = f === 'all' ? 'toutes les cartes' : `les cartes « ${catLabel(f)} »`;
+  showConfirm(
+    'Supprimer la sélection',
+    `Tu vas supprimer ${filtered.length} carte${filtered.length>1?'s':''} (${lbl}). Irréversible.`,
+    () => {
+      if(f === 'all') cards.length = 0;
+      else for(let i=cards.length-1;i>=0;i--) if(cards[i].cat===f) cards.splice(i,1);
+      saveAll(); startSession(); renderList(); updateStats();
+    }
+  );
+}
+
+// ════════════════════════════════════════════════
+// CONFIRM
+// ════════════════════════════════════════════════
+function showConfirm(title, msg, onOk) {
+  document.getElementById('confirm-title').textContent = title;
+  document.getElementById('confirm-msg').textContent   = msg;
+  document.getElementById('confirm-ok-btn').onclick    = () => { onOk(); closeConfirm(); };
+  document.getElementById('confirm-overlay').classList.add('open');
+}
+function closeConfirm() {
+  document.getElementById('confirm-overlay').classList.remove('open');
+}
+document.getElementById('confirm-overlay').addEventListener('click', function(e) {
+  if(e.target === this) closeConfirm();
+});
+
+function esc(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════
+rebuildAllUI();
+</script>
+</body>
+</html>
