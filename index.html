@@ -506,44 +506,35 @@ pre { background:#1a1410; color:#e8dfc8; font-family:var(--mono); font-size:0.71
 // ═══════════════════════════════════════
 // CONSTANTES & DONNÉES
 // ═══════════════════════════════════════
-const INTERVALS  = [0,1,3,7,14,30];
-// score → statut JSON
-// 0     → "new"    (jamais vu)
-// 1-2   → "review" (à revoir)
-// 3-5   → "known"  (connu / maîtrisé)
-const SCORE_TO_STATUS = s => s===0?'new':s<=2?'review':'known';
-const STATUS_LABELS   = { new:'🔵 Nouvelle', review:'🟡 À revoir', known:'🟢 Connue' };
-const STATUS_CSS      = { new:'new', review:'review', known:'known' };
-const SCORE_LABELS    = ['Jamais vu','À revoir','À revoir','Connu','Connu','Maîtrisé'];
+// Seul champ de progression : status ("new" | "review" | "known")
+const STATUS_LABELS = { new:'🔵 Nouvelle', review:'🟡 À revoir', known:'🟢 Connue' };
+const STATUS_CSS    = { new:'new', review:'review', known:'known' };
 
 const DEFAULT_CATS = [{id:'general',label:'Général'},{id:'2024',label:'Sujet 2024'},{id:'2025',label:'Sujet 2025'}];
 const CAT_COLORS   = [['#ede9fe','#5b21b6'],['#dbeafe','#1d4ed8'],['#d1fae5','#065f46'],['#fef3c7','#92400e'],['#fce7f3','#9d174d'],['#e0f2fe','#0369a1'],['#f0fdf4','#15803d'],['#fff7ed','#c2410c']];
 
 let cats  = JSON.parse(localStorage.getItem('fc_cats') ||'null') || DEFAULT_CATS;
 let cards = JSON.parse(localStorage.getItem('fc_cards')||'null') || [
-  {q:"Qu'est-ce qu'un moniteur Java ?",a:"Un objet Java dont les méthodes synchronized partagent un verrou implicite. On utilise wait() pour attendre et notifyAll() pour réveiller les threads.",cat:"general",score:0,next:0},
-  {q:"Différence wait() vs sleep()",a:"wait() libère le verrou et attend un notify(). sleep() maintient tous les verrous et attend une durée fixe.",cat:"general",score:0,next:0},
-  {q:"Qu'est-ce qu'un sémaphore ?",a:"Un compteur de permis. acquire() décrémente (bloque si 0), release() incrémente.",cat:"general",score:0,next:0},
-  {q:"Section critique : 3 propriétés ?",a:"(1) Exclusion mutuelle. (2) Progression. (3) Attente bornée.",cat:"general",score:0,next:0},
-  {q:"Qu'est-ce qu'un interblocage ?",a:"T1 attend R2 tenu par T2, T2 attend R1 tenu par T1. Blocage mutuel permanent.",cat:"general",score:0,next:0},
-  {q:"Inversion de priorité ?",a:"Thread haute priorité attend un verrou tenu par un thread basse priorité, préempté par un intermédiaire.",cat:"general",score:0,next:0},
-  {q:"notifyAll() vs notify() ?",a:"notify() réveille un seul thread (aléatoire). notifyAll() réveille tous → plus sûr.",cat:"general",score:0,next:0},
-  {q:"Micro-noyau vs monolithique ?",a:"Micro-noyau : services en espace utilisateur (modulaire, sûr, lent). Monolithique : tout dans le noyau (rapide, fragile).",cat:"general",score:0,next:0},
-  {q:"Sujet 2024 : pourquoi buf initialisé avec null ?",a:"Slots fixes : 0..n/2-1 pour profs, n/2..n-1 pour étudiants. null = place libre.",cat:"2024",score:0,next:0},
-  {q:"Sujet 2024 : que fait addSession() avec les sémaphores ?",a:"acquire() vide → acquire() mutex → écrit → release() mutex → release() plein.",cat:"2024",score:0,next:0},
-  {q:"Sujet 2024 II.4 : comment éviter l'exclusion mutuelle entre types ?",a:"Deux mutex séparés (mutexProf et mutexStudent) : prof et étudiant retirent simultanément.",cat:"2024",score:0,next:0},
-  {q:"Sujet 2025 : que signifie 'priorité aux lecteurs' ?",a:"Les lecteurs ne bloquent que si writing == true. Risque : famine des rédacteurs.",cat:"2025",score:0,next:0},
-  {q:"Sujet 2025 : comment implémenter la priorité aux rédacteurs ?",a:"Ajout de nbWritersWaiting. readMetadata bloque si writing || nbWritersWaiting > 0.",cat:"2025",score:0,next:0},
-  {q:"Sujet 2025 II.4 : risque de chaque stratégie ?",a:"Priorité lecteurs → famine rédacteurs. Priorité rédacteurs → famine lecteurs. Solution : ReentrantReadWriteLock(true).",cat:"2025",score:0,next:0},
+  {q:"Qu'est-ce qu'un moniteur Java ?",a:"Un objet Java dont les méthodes synchronized partagent un verrou implicite. On utilise wait() pour attendre et notifyAll() pour réveiller les threads.",cat:"general",status:"new"},
+  {q:"Différence wait() vs sleep()",a:"wait() libère le verrou et attend un notify(). sleep() maintient tous les verrous et attend une durée fixe.",cat:"general",status:"new"},
+  {q:"Qu'est-ce qu'un sémaphore ?",a:"Un compteur de permis. acquire() décrémente (bloque si 0), release() incrémente.",cat:"general",status:"new"},
+  {q:"Section critique : 3 propriétés ?",a:"(1) Exclusion mutuelle. (2) Progression. (3) Attente bornée.",cat:"general",status:"new"},
+  {q:"Qu'est-ce qu'un interblocage ?",a:"T1 attend R2 tenu par T2, T2 attend R1 tenu par T1. Blocage mutuel permanent.",cat:"general",status:"new"},
+  {q:"Inversion de priorité ?",a:"Thread haute priorité attend un verrou tenu par un thread basse priorité, préempté par un intermédiaire.",cat:"general",status:"new"},
+  {q:"notifyAll() vs notify() ?",a:"notify() réveille un seul thread (aléatoire). notifyAll() réveille tous → plus sûr.",cat:"general",status:"new"},
+  {q:"Micro-noyau vs monolithique ?",a:"Micro-noyau : services en espace utilisateur (modulaire, sûr, lent). Monolithique : tout dans le noyau (rapide, fragile).",cat:"general",status:"new"},
+  {q:"Sujet 2024 : pourquoi buf initialisé avec null ?",a:"Slots fixes : 0..n/2-1 pour profs, n/2..n-1 pour étudiants. null = place libre.",cat:"2024",status:"new"},
+  {q:"Sujet 2024 : que fait addSession() avec les sémaphores ?",a:"acquire() vide → acquire() mutex → écrit → release() mutex → release() plein.",cat:"2024",status:"new"},
+  {q:"Sujet 2024 II.4 : comment éviter l'exclusion mutuelle entre types ?",a:"Deux mutex séparés (mutexProf et mutexStudent) : prof et étudiant retirent simultanément.",cat:"2024",status:"new"},
+  {q:"Sujet 2025 : que signifie 'priorité aux lecteurs' ?",a:"Les lecteurs ne bloquent que si writing == true. Risque : famine des rédacteurs.",cat:"2025",status:"new"},
+  {q:"Sujet 2025 : comment implémenter la priorité aux rédacteurs ?",a:"Ajout de nbWritersWaiting. readMetadata bloque si writing || nbWritersWaiting > 0.",cat:"2025",status:"new"},
+  {q:"Sujet 2025 II.4 : risque de chaque stratégie ?",a:"Priorité lecteurs → famine rédacteurs. Priorité rédacteurs → famine lecteurs. Solution : ReentrantReadWriteLock(true).",cat:"2025",status:"new"},
 ];
 
-// Assure que chaque carte a bien un champ status cohérent avec score
-function syncStatus(card){ card.status = SCORE_TO_STATUS(card.score||0); }
-cards.forEach(syncStatus);
+// Assure que toute carte importée (ancien format avec score) a bien un status
+cards.forEach(c=>{ if(!c.status) c.status='new'; delete c.score; delete c.next; });
 
 function saveAll(){
-  // Met à jour status avant de sauvegarder
-  cards.forEach(c=>{ c.status = SCORE_TO_STATUS(c.score||0); });
   localStorage.setItem('fc_cats',  JSON.stringify(cats));
   localStorage.setItem('fc_cards', JSON.stringify(cards));
 }
@@ -627,7 +618,7 @@ function setStatusFilter(f,btn){
 function buildQueue(){
   let src = currentCat==='all' ? [...cards] : cards.filter(c=>c.cat===currentCat);
   if(currentStatusFilter!=='all'){
-    src = src.filter(c=>SCORE_TO_STATUS(c.score||0)===currentStatusFilter);
+    src = src.filter(c=>(c.status||'new')===currentStatusFilter);
   }
   for(let i=src.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[src[i],src[j]]=[src[j],src[i]];}
   return src;
@@ -642,10 +633,10 @@ function askResetCat(){
   const label = currentCat==='all'?'toutes les cartes':`les cartes « ${catLabel(currentCat)} »`;
   showConfirm(
     '↺ Remettre à zéro',
-    `Remettre le score de ${label} à 0 ? Elles repasseront en statut "Nouvelle".`,
+    `Remettre ${label} en statut "Nouvelle" ?`,
     ()=>{
       const src = currentCat==='all'?cards:cards.filter(c=>c.cat===currentCat);
-      src.forEach(c=>{c.score=0;c.next=0;c.status='new';});
+      src.forEach(c=>{ c.status='new'; });
       saveAll();startSession();updateStats();renderList();
     }
   );
@@ -680,7 +671,7 @@ function renderFC(){
   }
 
   const card   = queue[idx];
-  const status = SCORE_TO_STATUS(card.score||0);
+  const status = card.status || 'new';
 
   main.innerHTML=`
     <div style="font-family:var(--mono);font-size:0.66rem;color:var(--ink2);margin-bottom:0.6rem;display:flex;justify-content:space-between;align-items:center">
@@ -718,8 +709,8 @@ function flipCard(){
   document.getElementById('fccard').classList.add('flipped');
   document.getElementById('post-flip').style.display='block';
   document.getElementById('fc-flip-hint').style.display='none';
-  // Désactiver le click sur la carte (évite de re-flip en cliquant la réponse)
-  document.getElementById('fc-scene').onclick=null;
+  // Cliquer sur la carte retournée = revoir la question
+  document.getElementById('fc-scene').onclick=unflipCard;
 }
 
 // Remettre à l'endroit (réponse → question)
@@ -728,25 +719,24 @@ function unflipCard(){
   document.getElementById('fccard').classList.remove('flipped');
   document.getElementById('post-flip').style.display='none';
   document.getElementById('fc-flip-hint').style.display='block';
-  // Réactiver le click
+  // Réactiver le flip normal
   document.getElementById('fc-scene').onclick=flipCard;
 }
 
 function answer(knew){
   const card=queue[idx];
   const gc=cards.find(c=>c.q===card.q&&c.cat===card.cat);
-  if(knew){sessionOk++;if(gc)gc.score=Math.min(5,gc.score+1);}
-  else{sessionKo++;if(gc)gc.score=Math.max(0,gc.score-1);}
-  if(gc){gc.next=Date.now()+INTERVALS[gc.score]*86400000; gc.status=SCORE_TO_STATUS(gc.score);}
+  if(gc) gc.status = knew ? 'known' : 'review';
+  if(knew) sessionOk++; else sessionKo++;
   saveAll();idx++;flipped=false;renderFC();
 }
 
 function updateStats(){
   const el=document.getElementById('stats');if(!el)return;
   const src = currentCat==='all'?cards:cards.filter(c=>c.cat===currentCat);
-  const known  = src.filter(c=>SCORE_TO_STATUS(c.score||0)==='known').length;
-  const review = src.filter(c=>SCORE_TO_STATUS(c.score||0)==='review').length;
-  const newC   = src.filter(c=>SCORE_TO_STATUS(c.score||0)==='new').length;
+  const known  = src.filter(c=>(c.status||'new')==='known').length;
+  const review = src.filter(c=>(c.status||'new')==='review').length;
+  const newC   = src.filter(c=>(c.status||'new')==='new').length;
   el.innerHTML=
     `<span style="color:#1d4ed8">🔵 ${newC}</span> · <span style="color:#92400e">🟡 ${review}</span> · <span style="color:#15803d">🟢 ${known}</span><br>`+
     `<span class="stat-val">${src.length}</span> carte${src.length>1?'s':''}`;
@@ -760,7 +750,7 @@ function addCard(){
   const a=document.getElementById('inp-a').value.trim();
   const cat=document.getElementById('inp-cat').value;
   if(!q||!a)return;
-  cards.push({q,a,cat,score:0,next:0,status:'new'});saveAll();
+  cards.push({q,a,cat,status:'new'});saveAll();
   document.getElementById('inp-q').value='';document.getElementById('inp-a').value='';
   startSession();updateStats();
 }
@@ -768,8 +758,8 @@ function addCard(){
 // ═══════════════════════════════════════
 // LISTE
 // ═══════════════════════════════════════
-function statusBadgeHtml(score){
-  const s=SCORE_TO_STATUS(score||0);
+function statusBadgeHtml(card){
+  const s=card.status||'new';
   return `<span class="status-badge ${s}">${STATUS_LABELS[s]}</span>`;
 }
 
@@ -793,7 +783,7 @@ function renderList(){
       <td class="td-q"><span class="truncate" title="${esc(card.q)}">${esc(card.q)}</span></td>
       <td class="td-a"><span class="truncate" title="${esc(card.a)}">${esc(card.a)}</span></td>
       <td><span class="cat-badge" style="${catStyle(card.cat)}">${catLabel(card.cat)}</span></td>
-      <td class="td-score">${statusBadgeHtml(card.score)}</td>
+      <td class="td-score">${statusBadgeHtml(card)}</td>
       <td style="white-space:nowrap">
         <button class="btn-row-edit" onclick="openEdit(${gi})">✏️</button>
         <button class="btn-row-del"  onclick="askDeleteOne(${gi})">🗑</button>
@@ -811,7 +801,7 @@ function renderList(){
       <div class="mc-footer">
         <div class="mc-meta">
           <span class="cat-badge" style="${catStyle(card.cat)}">${catLabel(card.cat)}</span>
-          ${statusBadgeHtml(card.score)}
+          ${statusBadgeHtml(card)}
         </div>
         <div class="mc-actions">
           <button class="mc-btn" onclick="openEdit(${gi})">✏️ Modifier</button>
@@ -933,7 +923,6 @@ async function githubPush(){
   const{u,r,t}=ghConf();
   if(!u||!r||!t){ghStatus('⚠️ Remplis tous les champs.','gh-err');return;}
   ghStatus('⏳ Envoi en cours…');
-  cards.forEach(c=>{c.status=SCORE_TO_STATUS(c.score||0);});
   const content=btoa(unescape(encodeURIComponent(JSON.stringify({cats,cards},null,2))));
   const url=`https://api.github.com/repos/${u}/${r}/contents/cards.json`;
   const h={Authorization:`token ${t}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'};
@@ -956,7 +945,11 @@ async function githubPull(){
     const j=await res.json();
     const data=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
     if(data.cats)cats=data.cats;
-    if(data.cards){cards=data.cards;cards.forEach(syncStatus);}
+    if(data.cards){
+      cards=data.cards;
+      // Migration : anciens formats avec score
+      cards.forEach(c=>{ if(!c.status) c.status='new'; delete c.score; delete c.next; });
+    }
     saveAll();rebuildAllUI();
     ghStatus(`✓ ${cards.length} cartes, ${cats.length} catégories récupérées`,'gh-ok');
   }catch(e){ghStatus(`✗ ${e.message}`,'gh-err');}
