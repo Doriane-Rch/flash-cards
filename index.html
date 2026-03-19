@@ -107,7 +107,7 @@ pre { background:#1a1410; color:#e8dfc8; font-family:var(--mono); font-size:0.71
 .add-section { background:var(--paper); border:1.5px solid var(--border); border-radius:var(--r); padding:1rem; margin-top:1.2rem; }
 .add-section h4 { font-family:var(--mono); font-size:0.7rem; color:var(--ink2); letter-spacing:0.08em; margin-bottom:0.8rem; }
 .add-row { display:flex; gap:0.5rem; flex-wrap:wrap; }
-.add-row input, .add-row select { flex:1; min-width:140px; background:var(--bg); border:1.5px solid var(--border); font-family:var(--serif); font-size:0.9rem; color:var(--ink); padding:0.52rem 0.7rem; border-radius:4px; }
+.add-row input, .add-row select{ flex:1; min-width:140px; background:var(--bg); border:1.5px solid var(--border); font-family:var(--serif); font-size:0.9rem; color:var(--ink); padding:0.52rem 0.7rem; border-radius:4px; }
 .add-row input:focus, .add-row select:focus { outline:none; border-color:var(--accent2); }
 .btn-add { background:var(--ink); color:var(--bg); border:none; border-radius:4px; font-family:var(--mono); font-size:0.76rem; font-weight:600; padding:0.55rem 1rem; cursor:pointer; white-space:nowrap; }
 .btn-add:active { opacity:0.75; }
@@ -118,9 +118,6 @@ pre { background:#1a1410; color:#e8dfc8; font-family:var(--mono); font-size:0.71
 .cat-chip { display:inline-flex; align-items:center; gap:0.35rem; padding:0.28rem 0.5rem 0.28rem 0.72rem; border-radius:20px; font-family:var(--mono); font-size:0.7rem; font-weight:600; }
 .cat-chip-del { background:none; border:none; cursor:pointer; font-size:0.9rem; line-height:1; opacity:0.5; padding:0; color:inherit; }
 .cat-chip-del:active { opacity:1; }
-.cat-add-row { display:flex; gap:0.5rem; }
-.cat-add-row input { flex:1; min-width:0; background:var(--bg); border:1.5px solid var(--border); font-family:var(--serif); font-size:0.88rem; color:var(--ink); padding:0.45rem 0.7rem; border-radius:4px; }
-.cat-add-row input:focus { outline:none; border-color:var(--accent2); }
 
 /* LISTE TOOLBAR */
 .list-toolbar { display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; flex-wrap:wrap; }
@@ -182,7 +179,7 @@ pre { background:#1a1410; color:#e8dfc8; font-family:var(--mono); font-size:0.71
   .fc-layout { padding:1rem 0.75rem; }
   .fc-face { padding:1.1rem 0.9rem; }
   .add-row { flex-direction:column; }
-  .add-row input, .add-row select, .btn-add, .cat-add-row input { width:100%; }
+  .add-row input, .add-row select, .btn-add { width:100%; }
   .list-toolbar { flex-direction:column; align-items:stretch; }
   .list-toolbar select, .btn-danger { width:100%; text-align:center; }
   .card-table { display:none; }
@@ -769,7 +766,7 @@ function renderCatManager(){
   wrap.innerHTML=`
     <h4>+ AJOUTER UNE CATEGORIE</h4>
     <div class="cat-chips">${cats.map(c=>`<span class="cat-chip" style="${catStyle(c.id)}">${esc(c.label)}<button class="cat-chip-del" onclick="deleteCategory('${c.id}')">×</button></span>`).join('')}</div>
-    <div class="cat-add-row">
+    <div class="add-row">
       <input id="new-cat-inp" type="text" placeholder="Nouvelle catégorie…">
       <button class="btn-add" onclick="addCategory()">Ajouter</button>
     </div>`;
