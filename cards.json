@@ -598,6 +598,1756 @@
       "cat": "systeme",
       "score": 0,
       "next": 0
-    }
+    },
+    {
+      "q": "Qu'est-ce que le contrôle de gestion ?",
+      "a": "Le contrôle de gestion est un système de pilotage mis en œuvre dans une société ou une institution, avec pour objectif d'optimiser les performances des services et d'améliorer le rapport entre les moyens engagés et les résultats obtenus.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "À quoi sert le contrôle de gestion ?",
+      "a": "Il sert à analyser les performances de l'ensemble des activités de l'entreprise, afin de déterminer les gains de productivité possibles ou les synergies envisageables.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont les 4 principes du contrôle de gestion ?",
+      "a": "1. Planification budgétaire pour anticiper les besoins. 2. Reporting régulier pour suivre les indicateurs. 3. Analyse des performances pour identifier les axes d'amélioration. 4. Mise en place d'actions correctives pour atteindre les objectifs fixés.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Où se situe le contrôle de gestion dans la hiérarchie de l'entreprise ?",
+      "a": "Le contrôle de gestion est l'un des organes de la direction générale. Il se situe entre la planification stratégique (direction) et la gestion opérationnelle (responsables d'unités).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Avec quels services le contrôleur de gestion travaille-t-il ?",
+      "a": "Il travaille en lien direct avec le service comptable ou financier, ainsi qu'avec les unités opérationnelles présentes sur le terrain.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les unités opérationnelles sont-elles indispensables au contrôle de gestion ?",
+      "a": "Parce qu'elles sont seules capables de produire des indicateurs fiables, précis et cohérents.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment le contrôle de gestion établit-il son évaluation ?",
+      "a": "Il établit son évaluation à partir de données chiffrées collectées dans l'entreprise, en puisant dans la comptabilité générale ou analytique, et en mettant en place des indicateurs mesurant l'écart entre les objectifs et la situation réelle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les managers ne doivent pas se contenter des indicateurs du contrôle de gestion ?",
+      "a": "Parce que les indicateurs ne détectent pas tout. Les managers doivent aussi constater régulièrement ce qui se passe sur le terrain (unités et clients).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre la comptabilité générale et la comptabilité de gestion concernant l'objet ?",
+      "a": "La comptabilité générale donne une vue globale et synthétique de l'activité de l'entreprise et est obligatoire. La comptabilité de gestion donne une vue détaillée de chacune des activités et est facultative.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre la comptabilité générale et la comptabilité de gestion concernant la présentation et les méthodes de calcul ?",
+      "a": "La comptabilité générale a une présentation et des méthodes de calcul normalisées. La comptabilité de gestion est libre dans sa présentation et ses méthodes.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qui utilise la comptabilité générale et qui utilise la comptabilité de gestion ?",
+      "a": "La comptabilité générale est utilisée en interne et par des partenaires externes (État...). La comptabilité de gestion est utilisée en interne exclusivement.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la périodicité de publication de la comptabilité générale ?",
+      "a": "Elle est imposée annuellement pour des raisons fiscales.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la périodicité de publication de la comptabilité de gestion ?",
+      "a": "Sans contrainte réglementaire, mais elle est très régulière en pratique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la portée de la comptabilité générale vs la comptabilité de gestion ?",
+      "a": "La comptabilité générale a une portée financière et fiscale. La comptabilité de gestion a une portée stratégique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un coût complet ?",
+      "a": "Le coût complet est la somme de tous les coûts (charges directes + charges indirectes) nécessaires à la production ou la vente d'un bien ou service.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une marge en contrôle de gestion ?",
+      "a": "La marge est la différence entre le prix de vente HT et les coûts (coût de revient).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un coût en contrôle de gestion ?",
+      "a": "Un coût est un ensemble de charges regroupées selon un critère (produit, activité, service...).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge en contrôle de gestion ?",
+      "a": "Une charge est un élément consommé dans le cadre de l'activité de l'entreprise.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge directe ? Donnez un exemple.",
+      "a": "Une charge directe est une charge affectée à un seul bien ou produit. Exemple : les matières premières (lait, farine...).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge indirecte ? Donnez un exemple.",
+      "a": "Une charge indirecte est une charge qui concerne l'ensemble de l'activité et ne peut pas être affectée directement à un seul produit. Exemple : l'électricité, les charges administratives.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le résultat analytique ?",
+      "a": "Résultat analytique = Prix de vente unitaire HT - Coût de revient.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quel est le lien entre les résultats analytiques et le résultat comptable de l'entreprise ?",
+      "a": "La somme des résultats analytiques de tous les produits/services est égale au résultat comptable de l'entreprise.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi calcule-t-on un résultat analytique par produit ?",
+      "a": "Pour savoir si chaque produit ou service est rentable individuellement, identifier les produits déficitaires et prendre des décisions de gestion adaptées (maintenir, arrêter, modifier le prix...).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple du KIRI, quelles sont les charges directes ?",
+      "a": "Les matières premières : lait (1,5€), crème fraîche (1,5€), sels de fonte et autres (0,10€), et la main-d'œuvre de production.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple du KIRI, quelles sont les charges indirectes ?",
+      "a": "L'eau, l'électricité, et la main-d'œuvre RH et administrative (3€ au total dans l'exercice).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple du KIRI, quel est le coût de revient au kg ?",
+      "a": "Coût de revient = 1,5 + 1,5 + 0,10 + 3 = 6,10€/kg.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple du KIRI, quel est le résultat analytique au kg ?",
+      "a": "Résultat analytique = PVHT - Coût de revient = 11,15 - 6,10 = 5,05€/kg.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le coût de revient complet ?",
+      "a": "Le coût de revient complet est la somme de toutes les charges directes et indirectes supportées pour produire et vendre un bien ou service.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un processus en contrôle de gestion ?",
+      "a": "Un processus est une suite d'activités ou d'étapes organisées qui transforment des entrées (matières, informations) en sorties (produits, services), en créant de la valeur.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi analyse-t-on les processus en contrôle de gestion ?",
+      "a": "Pour identifier à quelle étape du processus se situent les problèmes (rupture d'approvisionnement, déchets de fabrication, hausse des coûts de livraison...) et mettre en place des actions correctives.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les étapes du processus de fabrication présenté dans le cours (exemple textile) ?",
+      "a": "1. Matières premières → 2. Fournitures → 3. Découpage → 4. Assemblage → 5. Emballage → 6. Vente.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont les problèmes identifiables lors d'une analyse de processus ?",
+      "a": "Par exemple : rupture d'approvisionnement, hausse du prix des matières premières, déchets lors de la fabrication, produits mis au rebut pour défaut de qualité, hausse du coût de la livraison.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre le processus d'une entreprise commerciale et d'une entreprise industrielle ?",
+      "a": "Une entreprise commerciale a un processus : Approvisionnement → Stock de marchandises → Vente (coût d'achat + coût de revient). Une entreprise industrielle ajoute une étape de production : Approvisionnement matières → Production → Stock produits finis → Vente.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi inclut-on les stocks dans le calcul des coûts ?",
+      "a": "Car les stocks représentent des charges déjà engagées (achat de matières, coûts de production) qui n'ont pas encore généré de revenus. Les inclure permet d'avoir le coût réel de ce qui est vendu et d'éviter de distordre le résultat.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment se décompose le coût de revient complet dans un processus de fabrication ?",
+      "a": "Coût d'approvisionnement + Coût de fabrication + Coût de distribution + Coût administratif = Coût de revient complet.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la marge brute ?",
+      "a": "La marge brute est la différence entre le prix de vente HT et le coût d'achat des marchandises (pour une entreprise commerciale), avant déduction des charges de distribution et administratives.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la marge nette (bénéfice) ?",
+      "a": "La marge nette est la différence entre le prix de vente HT et le coût de revient complet (toutes charges incluses). C'est le résultat analytique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre le PVHT et le PVTTC ?",
+      "a": "Le PVHT est le prix de vente hors taxes. Le PVTTC inclut la TVA (taxe sur la valeur ajoutée). PVTTC = PVHT + montant TVA.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la TVA et pourquoi ne l'intègre-t-on pas dans le résultat analytique ?",
+      "a": "La TVA est une taxe collectée par l'entreprise pour le compte de l'État. Elle ne constitue pas un revenu pour l'entreprise, c'est pourquoi le résultat analytique se calcule sur la base du prix HT.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans quel document comptable retrouve-t-on le résultat global de l'entreprise ?",
+      "a": "Dans le compte de résultat, qui présente les charges (d'exploitation, financières, exceptionnelles) et les produits (d'exploitation, financiers, exceptionnels), et fait apparaître le résultat avant et après impôt.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les grandes catégories de charges dans le compte de résultat ?",
+      "a": "Les charges d'exploitation, les charges financières et les charges exceptionnelles.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les grandes catégories de produits dans le compte de résultat ?",
+      "a": "Les produits d'exploitation, les produits financiers et les produits exceptionnels.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi le service informatique est-il de plus en plus indispensable au contrôle de gestion ?",
+      "a": "Parce que le contrôle de gestion utilise des outils d'évaluation toujours plus divers et nombreux, nécessitant le traitement de grandes quantités de données, ce qui requiert l'appui de systèmes d'information performants.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple Gamex (guacamole), quelles sont les charges directes des pots ?",
+      "a": "Avocats, huile, citrons, épices, pots, main-d'œuvre de broyage, main-d'œuvre de contrôle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple Gamex (guacamole), quelles sont les charges indirectes des pots ?",
+      "a": "Les charges de broyage, d'émulsion, de la ligne 1 et du contrôle qualité (ateliers partagés entre plusieurs produits).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi une même charge (ex : main-d'œuvre) peut-elle être directe dans un cas et indirecte dans un autre ?",
+      "a": "Cela dépend de si elle est affectable à un seul produit (directe) ou si elle concerne plusieurs produits ou l'ensemble de l'activité (indirecte). Par exemple, la main-d'œuvre affectée exclusivement à la fabrication d'un produit est directe, mais la main-d'œuvre RH est indirecte.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi l'entreprise Gamex a-t-elle besoin d'un système de calcul de coûts ?",
+      "a": "Parce que le marché de la grande distribution est très agressif et les centrales d'achat réclament fréquemment des remises. Il faut pouvoir répondre rapidement aux demandes des clients tout en préservant la marge de l'entreprise.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une décision de gestion ?",
+      "a": "Une décision de gestion est un choix effectué par les managers à partir des informations fournies par le contrôle de gestion (coûts, marges, indicateurs...) pour orienter l'activité de l'entreprise et atteindre ses objectifs.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quel est le rôle des indicateurs en contrôle de gestion ?",
+      "a": "Les indicateurs permettent de mesurer l'écart entre les objectifs poursuivis et la situation réelle, afin de détecter les problèmes et de déclencher des actions correctives.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi dit-on qu'il n'existe pas de définition unanime du contrôle de gestion ?",
+      "a": "Parce que le contrôle de gestion recouvre des pratiques très diverses selon les organisations (entreprises privées, institutions publiques, taille de la structure...), ce qui rend difficile une définition unique et universelle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du coût de revient complet ?",
+      "a": "Coût de revient complet = Coût d'acquisition des matières premières + Coût de production des produits fabriqués + Coût de distribution des produits vendus + Coût d'administration.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le coût de revient complet ?",
+      "a": "C'est le coût d'un produit, d'un service ou d'une commande au stade final du processus, c'est-à-dire coût de distribution (vente) inclus.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les 4 grandes étapes du processus de calcul du coût de revient complet ?",
+      "a": "1. Achats MP + Stockage → Coût d'acquisition. 2. Production + Stockage → Coût de production. 3. Distribution → Coût de distribution. 4. Administration → Coût d'administration. La somme donne le coût de revient complet.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi calcule-t-on un résultat analytique unitaire ?",
+      "a": "Pour connaître la rentabilité de chaque unité vendue et comparer différents produits entre eux. Il permet de savoir combien rapporte (ou coûte) chaque unité produite et vendue.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le résultat analytique unitaire ?",
+      "a": "Résultat analytique unitaire = Prix de vente unitaire HT - Coût de revient unitaire complet.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un résultat analytique négatif signifie pour un produit ?",
+      "a": "Cela signifie que le produit est vendu à perte : le coût de revient est supérieur au prix de vente. L'entreprise perd de l'argent sur chaque unité vendue.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des bagues (exercice corrigé), quel est le résultat analytique du produit B2 ?",
+      "a": "Le résultat analytique de B2 est négatif : -3 174,50€ (coût de revient unitaire de 6,99€ pour un prix de vente de 6,00€, soit -0,99€ par unité).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la rentabilité ?",
+      "a": "La rentabilité est le rapport entre le revenu de l'entreprise et les sommes mobilisées pour y parvenir (rapport valeur/coût).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la profitabilité ?",
+      "a": "La profitabilité est le fait de générer du profit. Elle se mesure par le rapport Profit/Production (définition INSEE).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre rentabilité et profitabilité ?",
+      "a": "La rentabilité mesure le rapport entre le revenu et les sommes investies (valeur/coût). La profitabilité mesure le rapport entre le profit et la production. La rentabilité concerne les moyens engagés, la profitabilité concerne l'activité produite.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la performance en contrôle de gestion ?",
+      "a": "La performance est le niveau de réalisation des résultats. Elle englobe l'efficacité (atteindre les objectifs) et l'efficience (atteindre les objectifs avec le minimum de moyens).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la pérennité d'une entreprise ?",
+      "a": "La pérennité est la durabilité de l'entreprise dans le temps. Le postulat de départ en contrôle de gestion est qu'une entreprise pérenne doit être profitable.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quel est le postulat de départ du cours 3 en contrôle de gestion ?",
+      "a": "Entreprise pérenne = Profitable. Pour durer dans le temps, une entreprise doit être capable de générer du profit.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le chiffre d'affaires (CA) ?",
+      "a": "Le chiffre d'affaires est le montant total des ventes réalisées par l'entreprise sur une période donnée.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge fixe ? Donnez un exemple.",
+      "a": "Une charge fixe est une charge dont le montant reste le même quel que soit le niveau d'activité de l'entreprise. Exemple : le loyer.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge variable ? Donnez un exemple.",
+      "a": "Une charge variable évolue en fonction du volume de production. Exemple : l'achat de matières premières.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre une charge fixe et une charge variable ?",
+      "a": "Une charge fixe reste constante quel que soit le niveau de production (ex : loyer), tandis qu'une charge variable augmente ou diminue proportionnellement au volume produit ou vendu (ex : matières premières).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le LOA / leasing en contrôle de gestion ?",
+      "a": "Le LOA (Location avec Option d'Achat) est une charge externe : au lieu d'investir dans du matériel, l'entreprise le loue sur 3 ou 4 ans avec la possibilité de l'acquérir à la fin. C'est courant pour les véhicules, photocopieurs et l'informatique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont les avantages du leasing / LOA pour une entreprise ?",
+      "a": "L'entretien (et parfois l'assurance) est compris, ce qui permet de maîtriser son budget. On ne se préoccupe pas de la revente. On peut remplacer régulièrement le matériel par du neuf.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont les inconvénients du leasing / LOA pour une entreprise ?",
+      "a": "C'est plus cher que l'achat et cela augmente les charges fixes. Il faut rendre le matériel en bon état et respecter les conditions d'utilisation (km, copies, heures), car les dépassements coûtent très cher.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi de plus en plus d'entreprises préfèrent-elles le leasing à l'achat ?",
+      "a": "Pour ne pas bloquer leurs finances dans des investissements et maintenir une plus grande flexibilité de trésorerie.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la problématique centrale de la méthode des centres d'analyse ?",
+      "a": "Comment répartir les charges indirectes sur les produits ? Les charges directes s'affectent facilement à un produit, mais les charges indirectes concernent l'ensemble de l'activité et doivent être ventilées selon une clé de répartition.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un centre d'analyse ?",
+      "a": "Un centre d'analyse est un regroupement de charges indirectes correspondant à une activité ou un service de l'entreprise. Il permet de répartir ces charges sur les produits via une unité d'œuvre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les deux grandes catégories de centres d'analyse ?",
+      "a": "Les centres opérationnels (en relation directe avec le produit, mesurables par une unité d'œuvre physique) et les centres de structure (correspondant aux services administratifs, non mesurables par une unité d'œuvre physique).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre un centre auxiliaire et un centre principal ?",
+      "a": "Un centre auxiliaire travaille pour l'ensemble de l'entreprise et ses coûts sont imputés sur les centres principaux. Un centre principal correspond aux principales fonctions de l'entreprise et ses coûts sont imputés directement sur les produits fabriqués.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Donnez des exemples de centres auxiliaires.",
+      "a": "Le service entretien et la gestion du personnel. Leurs coûts sont répartis sur les centres principaux (approvisionnement, production, distribution).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Donnez des exemples de centres principaux.",
+      "a": "L'approvisionnement, la production et la distribution. Leurs coûts sont imputés directement sur les produits fabriqués.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un centre de structure ? Donnez un exemple.",
+      "a": "Un centre de structure correspond aux services administratifs de l'entreprise. Son activité ne peut pas être mesurée par une unité d'œuvre physique. Exemple : l'administration.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une unité d'œuvre (UO) ?",
+      "a": "L'unité d'œuvre est la mesure de l'activité d'un centre d'analyse. Elle permet de calculer le coût unitaire du centre et de l'imputer aux produits. Exemples : heure machine, kg acheté, unité vendue, heure de main-d'œuvre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le coût d'une unité d'œuvre ?",
+      "a": "Coût de l'UO = Total des charges du centre d'analyse / Nombre d'unités d'œuvre du centre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la répartition primaire des charges indirectes ?",
+      "a": "La répartition primaire consiste à affecter toutes les charges indirectes dans les différents centres d'analyse (auxiliaires et principaux) selon leur nature.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la répartition secondaire des charges indirectes ?",
+      "a": "La répartition secondaire consiste à vider les centres auxiliaires en répartissant leurs coûts sur les centres principaux, selon une clé de répartition (ex : % d'utilisation).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre répartition primaire et répartition secondaire ?",
+      "a": "La répartition primaire affecte les charges indirectes à tous les centres (auxiliaires et principaux). La répartition secondaire transfère ensuite les coûts des centres auxiliaires vers les centres principaux pour que toutes les charges soient imputées aux produits.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une clé de répartition ?",
+      "a": "Une clé de répartition est un critère permettant de ventiler les charges indirectes entre plusieurs centres ou produits de manière proportionnelle. Exemple : répartir l'électricité en fonction de la surface occupée par chaque service.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Donnez un exemple de charge directe au produit, directe au service et indirecte aux deux.",
+      "a": "Directe au produit : le tissu d'un vêtement. Directe au service concerné mais indirecte au produit : le salaire du responsable d'un service. Indirecte aux services et indirecte au produit : la facture EDF.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les deux méthodes de calcul des charges indirectes présentées dans le cours ?",
+      "a": "La méthode des centres d'analyse et la méthode ABC (Activity Based Costing).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des jouets en bois (cas Y), quels sont les 3 problèmes de gestion identifiés ?",
+      "a": "1. L'accroissement du coût des matières premières. 2. La présence de déchets importants lors de la fabrication. 3. Des rebuts représentant un coût élevé (même si en diminution).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le coût des déchets de matières premières ?",
+      "a": "Les déchets résultent de la différence entre le poids de matière première utilisée par produit et le poids du produit fini. Ce surplus est multiplié par le prix au kg de la matière première.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les produits mis au rebut sont-ils particulièrement coûteux pour l'entreprise ?",
+      "a": "En plus du coût de la matière première perdue, les produits mis au rebut ne seront pas vendus, ce qui entraîne une baisse potentielle du chiffre d'affaires.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les pistes de solution proposées pour améliorer la rentabilité de l'entreprise de jouets ?",
+      "a": "1. Réduire les déchets en améliorant le processus de production. 2. Diminuer les rebuts en visant la qualité des meilleurs produits. 3. Négocier le prix d'achat des matières premières avec les fournisseurs actuels ou de nouveaux fournisseurs.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des jouets, quelle économie une négociation du prix d'achat de -10% permettrait-elle de réaliser ?",
+      "a": "Une réduction de 10% du prix permettrait une économie de 0,46€ par kg de matière première par rapport au dernier prix d'achat.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les informations chiffrées du cas Y sont-elles qualifiées de 'pertinentes mais insuffisantes' ?",
+      "a": "Elles sont pertinentes car elles permettent d'évaluer rapidement les problèmes liés à la production. Mais elles sont insuffisantes car elles ne permettent pas d'identifier clairement les causes des dysfonctionnements, comme le processus de fabrication ou les relations avec les fournisseurs.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment impute-t-on les charges indirectes d'un centre d'approvisionnement aux produits ?",
+      "a": "Le coût du centre approvisionnement est réparti en fonction des kg achetés (UO = unité achetée). On multiplie le coût unitaire de l'UO par le nombre de kg achetés pour chaque produit.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment impute-t-on les charges indirectes d'un centre de production aux produits ?",
+      "a": "Le coût du centre production est réparti en fonction des heures de main-d'œuvre ou heures machine (UO = heure Main d'Œuvre ou heure machine). On multiplie le coût de l'UO par le nombre d'heures utilisées pour chaque produit.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment impute-t-on les charges indirectes d'un centre de distribution aux produits ?",
+      "a": "Le coût du centre distribution est réparti en fonction des quantités vendues (UO = unité vendue). On multiplie le coût unitaire de l'UO par le nombre d'unités vendues pour chaque produit.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment impute-t-on les charges d'un centre d'administration (centre de structure) aux produits ?",
+      "a": "Les charges d'administration sont réparties en pourcentage du coût de production des produits vendus (% du coût total), car on ne peut pas les mesurer par une unité d'œuvre physique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les centres de structure ne peuvent-ils pas utiliser une unité d'œuvre physique ?",
+      "a": "Parce que leur activité (administrative, financière...) ne se mesure pas par une quantité physique comme des heures machine ou des kg. On utilise donc un pourcentage du coût total ou d'autres critères financiers.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice des bagues, le produit B1 est-il rentable ? Pourquoi ?",
+      "a": "Oui, B1 est rentable : son coût de revient unitaire est de 2,95€ pour un prix de vente de 3,00€, ce qui donne un résultat analytique positif de 0,05€ par unité, soit 1 079,24€ au total.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice des bagues, que devrait faire l'entreprise face au résultat négatif de B2 ?",
+      "a": "L'entreprise devrait envisager d'augmenter le prix de vente de B2, de réduire ses coûts de production, ou d'arrêter de commercialiser ce produit s'il n'est pas possible de le rendre rentable.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un mode de financement à court terme vs long terme ?",
+      "a": "Le financement à court terme couvre des besoins immédiats ou de moins d'un an (ex : découvert bancaire, crédit fournisseur). Le financement à long terme couvre des investissements durables sur plusieurs années (ex : emprunt bancaire, leasing, capital).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi est-il important de distinguer les charges directes des charges indirectes dans le calcul du coût de revient ?",
+      "a": "Les charges directes s'affectent simplement au produit concerné. Les charges indirectes nécessitent une répartition via des clés ou des centres d'analyse, car elles concernent plusieurs produits. Ne pas les répartir correctement fausserait le coût de revient et donc les décisions de gestion.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un stock en contrôle de gestion ?",
+      "a": "Un stock est un ensemble de biens qui interviennent dans le cycle d'exploitation pour être consommés ou vendus. On distingue : les stocks de matières premières/marchandises, les en-cours de production/semi-finis/produits intermédiaires, et les produits finis.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les 3 grandes catégories de stocks ?",
+      "a": "1. Les stocks de matières premières et marchandises. 2. Les en-cours de production, produits semi-finis et produits intermédiaires. 3. Les produits finis.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi est-il nécessaire de valoriser les stocks en contrôle de gestion ?",
+      "a": "Pour déterminer le coût d'approvisionnement (charges directes + charges indirectes) des matières premières, produits semi-finis ou produits finis à leur sortie de stock, afin de calculer correctement le coût de revient complet.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi inclut-on les stocks dans le calcul du coût de revient ?",
+      "a": "Car les stocks représentent des charges déjà engagées (achats, coûts de production) qui n'ont pas encore généré de revenus. Les inclure permet d'avoir le coût réel de ce qui est vendu et d'éviter de fausser le résultat analytique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le coût d'approvisionnement des matières premières ?",
+      "a": "Charges directes : quantité achetée × prix unitaire = montant. Charges indirectes : nombre d'UO × coût de l'UO du centre Approvisionnement = montant. Le total donne le coût d'approvisionnement.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les deux méthodes principales de valorisation des stocks présentées dans le cours ?",
+      "a": "La méthode CMUP (Coût Moyen Unitaire Pondéré) et la méthode PEPS (Premier Entré, Premier Sorti).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la méthode CMUP ?",
+      "a": "Le CMUP (Coût Moyen Unitaire Pondéré) est une méthode de valorisation des stocks qui consiste à calculer un coût moyen en divisant le total des entrées en valeur par le total des entrées en quantité. Ce coût est utilisé pour valoriser toutes les sorties et le stock final.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du CMUP ?",
+      "a": "CMUP = Total des entrées en valeur (montant) / Total des entrées en quantité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quand calcule-t-on le CMUP 'en fin de période' ?",
+      "a": "Le CMUP en fin de période se calcule une seule fois à la fin de la période (mois, trimestre...) en totalisant toutes les entrées (stock initial + achats). Les sorties et le stock final sont ensuite tous valorisés à ce CMUP unique.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre le CMUP en fin de période et le CMUP après chaque entrée ?",
+      "a": "Le CMUP en fin de période se calcule une seule fois à la clôture de la période. Le CMUP après chaque entrée se recalcule à chaque nouvelle entrée en stock, ce qui permet une valorisation plus précise et en temps réel des sorties.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment fonctionne le CMUP après chaque entrée ?",
+      "a": "À chaque nouvelle entrée en stock, on recalcule le CMUP en divisant la valeur totale du stock (ancienne valeur + nouvelle entrée) par la quantité totale en stock. Les sorties qui suivent sont valorisées à ce nouveau CMUP jusqu'à la prochaine entrée.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la méthode PEPS ?",
+      "a": "PEPS signifie Premier Entré, Premier Sorti (FIFO en anglais). Les sorties de stock sont valorisées en priorité sur les produits les plus anciens. On consomme d'abord ce qui est entré en premier dans le stock.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans la méthode PEPS, comment valorise-t-on les sorties de stock ?",
+      "a": "Les sorties sont prélevées en priorité sur les produits les plus anciens (premier entré = premier sorti). Si une sortie dépasse la quantité du lot le plus ancien, on complète avec le lot suivant à son propre prix.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la principale différence entre CMUP et PEPS ?",
+      "a": "Le CMUP lisse les prix en calculant une moyenne pondérée, ce qui donne un prix de sortie unique pour toute la période. Le PEPS conserve les prix d'achat historiques et sort les articles dans l'ordre d'entrée, ce qui peut donner des prix de sortie différents selon les lots.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quel impact la méthode de valorisation choisie a-t-elle sur le résultat ?",
+      "a": "Le choix de la méthode (CMUP ou PEPS) influence la valeur des sorties et donc le coût de revient. Avec le PEPS, si les prix augmentent, les sorties sont moins chères (anciens prix) et le stock final est plus cher. Avec le CMUP, les effets sont lissés. Le résultat analytique peut donc varier selon la méthode.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une fiche de stock ?",
+      "a": "Une fiche de stock est un tableau de suivi qui enregistre toutes les entrées (achats, fabrications) et les sorties (consommations, ventes) d'un article en stock, avec les quantités, prix unitaires et montants. Elle permet de calculer le stock final à tout moment.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les informations contenues dans une fiche de stock ?",
+      "a": "Date, libellé (nature du mouvement), quantité, prix unitaire, montant, et pour la présentation en liste : reste en stock (quantité, prix unitaire, montant). On distingue les colonnes Entrées et Sorties.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le stock initial (SI) ?",
+      "a": "Le stock initial est la quantité et la valeur du stock disponible au début de la période. Il constitue la première ligne des entrées dans la fiche de stock.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le stock final (SF) ?",
+      "a": "Le stock final est la quantité et la valeur du stock restant à la fin de la période, après toutes les entrées et sorties. Il deviendra le stock initial de la période suivante.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la relation entre stock initial, entrées, sorties et stock final ?",
+      "a": "Stock final = Stock initial + Entrées - Sorties. En valeur : Total des entrées (montant) = Total des sorties (montant) + Stock final (montant). Les deux colonnes de la fiche de stock doivent être équilibrées.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi le choix entre CMUP et PEPS est-il une décision de gestion importante ?",
+      "a": "Parce que ces deux méthodes peuvent donner des valeurs de stock final et de coût de revient différentes, influençant ainsi le résultat analytique, la valeur du bilan et les décisions de gestion (prix de vente, rentabilité...).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas LANDA, quelle est la valeur du stock final de matières premières en PEPS ?",
+      "a": "Le stock final en PEPS est de 300 unités à 8,00€, soit 2 400,00€. Ces 300 unités correspondent au lot acheté le plus récemment (21/01/N à 8€).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas LANDA, quelle est la valeur du stock final de matières premières en CMUP ?",
+      "a": "En CMUP, le stock final est de 300 unités à 5,93€, soit 1 780,00€. Le CMUP est calculé : 8 900€ / 1 500 unités = 5,93€.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Que constate-t-on en comparant CMUP et PEPS dans le cas LANDA ?",
+      "a": "Le stock final est plus élevé en PEPS (2 400€) qu'en CMUP (1 780€), et les sorties sont moins chères en CMUP. Le PEPS valorise le stock final aux prix les plus récents (souvent plus élevés), tandis que le CMUP lisse les prix sur l'ensemble de la période.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment valorise-t-on les produits finis fabriqués entrant dans le stock ?",
+      "a": "Les produits finis fabriqués entrent dans le stock à leur coût de production unitaire (charges directes + charges indirectes de production). Ce coût constitue leur 'prix d'entrée' en stock.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des Casques GPA, quel est le coût de production total ?",
+      "a": "Le coût de production total des Casques GPA est de 37 478,00€ pour 500 casques (coût d'acquisition 17 200€ + charges directes 11 500€ + charges indirectes 8 778€).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des Casques GPA, quel est le CMUP du stock de produits finis ?",
+      "a": "Le CMUP du stock de produits finis est de 73,60€ : (stock initial 150 × 69,08€ + fabrication 500 × 74,956€) / 650 = 73,60€.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas des Casques GPA, quel est le résultat analytique ?",
+      "a": "CA : 600 × 102,40€ = 61 440€. Coût de revient complet : 45 484,80€. Résultat analytique = 61 440 - 45 484,80 = 15 955,20€, soit 26,59€ par unité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que les 'entrées' dans une fiche de stock de produits finis ?",
+      "a": "Les entrées dans un stock de produits finis correspondent aux fabrications (productions terminées). Elles sont valorisées au coût de production unitaire de chaque lot fabriqué.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que les 'sorties' dans une fiche de stock de produits finis ?",
+      "a": "Les sorties dans un stock de produits finis correspondent aux ventes réalisées. Elles sont valorisées selon la méthode choisie (CMUP ou PEPS) et permettent de calculer le coût de production des produits vendus.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment passe-t-on du coût de production au coût de revient complet dans le cas des Casques GPA ?",
+      "a": "Coût de production (produits vendus) : 600 × 73,60€ = 44 160€. + Charges indirectes de distribution : 44 160 × 0,030 = 1 324,80€. = Coût de revient complet : 45 484,80€ (soit 75,808€ par unité).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi le stock final doit-il être intégré dans le calcul du coût de revient complet ?",
+      "a": "Car seuls les produits vendus doivent être inclus dans le coût de revient. Le stock final représente des produits fabriqués mais non encore vendus. Ne pas en tenir compte reviendrait à imputer leurs coûts sur les produits vendus, ce qui fausserait le résultat.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans la méthode PEPS, comment gère-t-on une sortie de stock supérieure à la quantité du premier lot ?",
+      "a": "On épuise d'abord entièrement le lot le plus ancien à son prix, puis on complète la sortie avec le lot suivant à son propre prix. On peut ainsi avoir plusieurs lignes de sortie à des prix différents pour une même date.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas Paloma (CMUP en fin de période), quel est le CMUP calculé ?",
+      "a": "CMUP = 38 640 / 230 = 168€. Ce CMUP est utilisé pour valoriser toutes les sorties de la période (50 unités le 10-août et 170 unités le 26-août).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas Paloma (PEPS), quelle est la valeur du stock final ?",
+      "a": "En PEPS, le stock final est de 10 unités à 171€, soit 1 710€. Ces 10 unités proviennent du lot acheté le 20-août (le plus récent), les lots antérieurs ayant été entièrement consommés.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle méthode de valorisation de stock est la plus simple à mettre en œuvre ?",
+      "a": "Le CMUP en fin de période est la plus simple : il suffit d'additionner toutes les entrées en valeur et en quantité puis de diviser pour obtenir un prix unique appliqué à toutes les sorties. Le PEPS est plus complexe car il faut suivre chaque lot individuellement.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans quel contexte le PEPS est-il particulièrement adapté ?",
+      "a": "Le PEPS est adapté aux produits périssables ou dont la gestion exige de consommer les plus anciens en premier (alimentaire, pharmaceutique...). Il reflète bien la réalité physique des flux de stock dans ces secteurs.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont les deux types de présentation d'une fiche de stock ?",
+      "a": "La présentation synthétique (en tableau avec entrées à gauche et sorties + stock final à droite) et la présentation en liste (chronologique avec date, libellé, entrées, sorties et reste en stock sur chaque ligne).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le cycle d'exploitation d'une entreprise ?",
+      "a": "Le cycle d'exploitation désigne l'ensemble des opérations réalisées par l'entreprise de l'achat des matières premières jusqu'à la vente des produits finis. Les stocks interviennent à chaque étape de ce cycle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas LANDA, que signifie 'une unité fabriquée de produit fini consomme une unité de matière première' ?",
+      "a": "Cela signifie que le ratio de consommation est de 1 pour 1 : pour produire 1 produit fini, il faut exactement 1 unité de matière première. Les sorties du stock de MP sont donc égales aux quantités fabriquées de produits finis.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi le stock de produits finis a-t-il des entrées valorisées à des prix différents selon les lots ?",
+      "a": "Parce que le coût de production peut varier d'un lot à l'autre, notamment en fonction du coût des matières premières utilisées (qui évoluent selon la méthode de valorisation du stock de MP) et des charges indirectes imputées.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "À quoi sert le contrôle de gestion ?",
+      "a": "Le contrôle de gestion permet de mesurer, analyser et piloter les performances d'une entreprise. Il aide à calculer les coûts, comprendre les marges et prendre des décisions stratégiques (tarification, rentabilité, optimisation des charges).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi inclut-on les stocks dans le contrôle de gestion ?",
+      "a": "Les stocks représentent des ressources acquises mais pas encore consommées ou vendues. Les inclure permet de calculer correctement les coûts (coût d'achat, coût de production) et d'évaluer la valeur réelle des actifs de l'entreprise à un instant donné.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le CUMP-P et comment se calcule-t-il ?",
+      "a": "Le CUMP-P est le Coût Unitaire Moyen Pondéré après entrées. Il se calcule en divisant le total des montants en stock (stock initial + entrées) par le total des quantités (stock initial + entrées).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans une fiche de stock, qu'indique le 'stock final' ?",
+      "a": "Le stock final correspond à la quantité restante à la fin de la période. Il se calcule ainsi : Stock Final = Stock Initial + Entrées - Sorties.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le coût d'achat d'une matière première ?",
+      "a": "Le coût d'achat est la somme du prix d'achat (charge directe) et des charges indirectes du centre Approvisionnement. Il représente le coût réel de l'acquisition de la matière première.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le coût de production ?",
+      "a": "Le coût de production regroupe les charges directes (matières premières consommées au CUMP, main-d'œuvre directe) et les charges indirectes des ateliers de fabrication. Il représente le coût total de fabrication des produits finis.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le coût de revient ?",
+      "a": "Le coût de revient est le coût total supporté pour vendre un produit. Il se compose du coût de production des produits vendus (au CUMP) et des charges indirectes de distribution et d'administration.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le résultat analytique ?",
+      "a": "Résultat analytique = Chiffre d'affaires (prix de vente × quantités vendues) - Coût de revient total. Un résultat positif indique un bénéfice, négatif une perte.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre une charge directe et une charge indirecte ?",
+      "a": "Une charge directe est affectable sans calcul intermédiaire à un produit ou service (ex : matière première, main-d'œuvre directe). Une charge indirecte concerne plusieurs produits et doit être répartie via des clés de répartition ou des inducteurs (ex : électricité, loyer).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un centre d'analyse ?",
+      "a": "Un centre d'analyse est un regroupement de charges indirectes correspondant à une fonction ou à un centre de responsabilité de l'entreprise (ex : Approvisionnement, Atelier fabrication, Distribution, Administration). Les charges y sont réparties puis imputées aux produits via des unités d'œuvre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une unité d'œuvre dans la méthode des centres d'analyse ?",
+      "a": "L'unité d'œuvre est la mesure qui permet d'imputer les charges d'un centre aux produits. Par exemple : kg de matière achetée pour l'Approvisionnement, heure de MOD pour un Atelier, euros de vente pour la Distribution.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le coût d'une unité d'œuvre ?",
+      "a": "Coût de l'unité d'œuvre = Total des charges indirectes du centre ÷ Nombre total d'unités d'œuvre du centre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la répartition primaire dans un tableau de charges indirectes ?",
+      "a": "La répartition primaire consiste à ventiler l'ensemble des charges indirectes entre tous les centres d'analyse (auxiliaires et principaux) selon des clés de répartition définies.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la répartition secondaire dans un tableau de charges indirectes ?",
+      "a": "La répartition secondaire consiste à répartir les charges des centres auxiliaires (dont le total après répartition secondaire doit être égal à 0) vers les centres principaux, selon des clés de répartition appropriées.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice Lumières d'ailleurs, quel est le coût d'achat unitaire du bronze ?",
+      "a": "Le coût d'achat unitaire du bronze est de 29,50 € par kg (prix d'achat 27 € + charges indirectes Approvisionnement 2,50 €).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice Lumières d'ailleurs, comment calcule-t-on le CUMP-P du bronze ?",
+      "a": "CUMP-P bronze = (Stock initial + Entrées) / Quantité totale = (5 600 + 23 600) / (200 + 800) = 29 200 / 1 000 = 29,20 € par kg.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice Lumières d'ailleurs, quel est le coût de production unitaire d'un chandelier ?",
+      "a": "Le coût de production unitaire est de 77 € par chandelier (bronze consommé : 21 900 € + MOD : 15 200 € + charges indirectes atelier : 16 800 € = 53 900 € / 700 chandeliers).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice Lumières d'ailleurs, comment calcule-t-on le CUMP-P des chandeliers ?",
+      "a": "CUMP-P chandeliers = (Stock initial + Entrées) / Quantité totale = (8 100 + 53 900) / (120 + 700) = 62 000 / 820 = 75,61 € par chandelier.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exercice Lumières d'ailleurs, quel est le résultat analytique et comment le commenter ?",
+      "a": "Le résultat est de +2 604 € (bénéfice de 4,34 € par chandelier vendu), soit 5,3% du CA. Ce résultat est positif mais relativement faible, ce qui nécessite une vigilance sur la maîtrise des coûts.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre une entreprise industrielle, commerciale et de services ?",
+      "a": "L'entreprise industrielle transforme des matières premières en produits finis. L'entreprise commerciale achète des marchandises pour les revendre sans transformation. L'entreprise de services fournit des prestations immatérielles sans fabriquer ni transformer de bien matériel.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels types de stocks possède une entreprise industrielle ?",
+      "a": "Une entreprise industrielle possède des stocks de matières premières (à l'achat), des stocks d'en-cours de production (en fabrication) et des stocks de produits finis (après fabrication, avant vente).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Une entreprise de services possède-t-elle des stocks ? Pourquoi ?",
+      "a": "Non, une entreprise de services ne possède généralement pas de stocks, car elle ne fabrique ni ne transforme rien de matériel. Elle produit des prestations immatérielles consommées au moment de leur réalisation.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les principales charges d'une entreprise de services ?",
+      "a": "Les principales charges d'une entreprise de services sont les salaires et charges sociales (masse salariale), les services extérieurs et les dotations aux amortissements. L'essentiel est constitué par la masse salariale.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment se calcule la marge nette dans une entreprise industrielle ?",
+      "a": "Marge nette (entreprise industrielle) = Chiffre d'affaires (ventes de produits finis) - Coût d'achat des matières premières - Coût de fabrication - Coût de distribution - Coût d'administration.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment se calcule la marge nette dans une entreprise de services ?",
+      "a": "Marge nette (entreprise de services) = Chiffre d'affaires (prestations facturées) - Salaires versés (conception, distribution, administration).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment se calcule la marge nette dans une entreprise commerciale ?",
+      "a": "Marge nette (entreprise commerciale) = Chiffre d'affaires (ventes de marchandises) - Coût d'achat des marchandises vendues - Coût de distribution - Coût d'administration.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la méthode ABC (Activity Based Costing) ?",
+      "a": "La méthode ABC est une méthode de calcul des coûts qui répartit les charges indirectes non pas par centres d'analyse mais par activités, à l'aide d'inducteurs de coût précis. Elle permet une affectation plus fine et plus pertinente des charges aux produits ou services.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un inducteur de coût dans la méthode ABC ?",
+      "a": "Un inducteur de coût est le facteur qui déclenche et explique la consommation de ressources par une activité. C'est l'équivalent de l'unité d'œuvre dans la méthode des centres d'analyse, mais choisi de façon plus précise et causale (ex : nombre d'appels, durée d'intervention, nombre de commandes).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les grandes étapes de la méthode ABC ?",
+      "a": "1. Division en centres de travail. 2. Décomposition en activités. 3. Choix d'un inducteur par activité. 4. Regroupement des activités ayant le même inducteur en centres de regroupement. 5. Calcul du coût unitaire des inducteurs. 6. Répartition des charges indirectes sur les objets de coût.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'un centre de regroupement dans la méthode ABC ?",
+      "a": "Un centre de regroupement réunit toutes les activités partageant le même inducteur de coût. Cela permet de simplifier le calcul en additionnant leurs charges et en divisant par le volume total de l'inducteur commun.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le coût unitaire d'un inducteur dans la méthode ABC ?",
+      "a": "Coût unitaire de l'inducteur = Total des charges indirectes du centre de regroupement ÷ Volume total de l'inducteur. Exemple : 143 000 € / 25 000 appels = 5,72 € par appel.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les limites de la méthode des centres d'analyse qui ont conduit à développer la méthode ABC ?",
+      "a": "La méthode des centres d'analyse présente trois limites principales : l'importance grandissante des charges indirectes (R&D, SAV...) qu'elle gère mal ; elle suit le processus de production mais pas les processus transversaux ; les clés de répartition sont choisies de façon arbitraire, ce qui fausse le calcul des coûts.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quel est l'intérêt principal de la méthode ABC par rapport aux centres d'analyse ?",
+      "a": "La méthode ABC offre un découpage plus fin des charges indirectes, permettant de mieux repérer les coûts réels par produit ou segment, de mieux les comprendre, et donc de prendre des décisions plus éclairées (tarification, abandon de segment, optimisation).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas MIXPI, quelle différence majeure observe-t-on entre les résultats de la méthode centres d'analyse et la méthode ABC ?",
+      "a": "Avec la méthode des centres d'analyse, les trois segments (particuliers, PME, administrations) sont bénéficiaires. Avec la méthode ABC, le segment des particuliers devient déficitaire (-33 444 €) car il consomme beaucoup de charges indirectes (nombreux appels, interventions importantes), ce que la méthode des centres d'analyse ne révélait pas.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans le cas MIXPI, quelle préconisation peut-on faire suite à l'analyse ABC ?",
+      "a": "Il faut revoir la tarification des abonnements : augmenter le prix pour les particuliers (segment déficitaire, très consommateur de ressources) et éventuellement baisser le prix pour les administrations afin d'attirer une clientèle plus large sur ce segment rentable.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi les particuliers sont-ils déficitaires dans la méthode ABC chez MIXPI ?",
+      "a": "Bien que peu nombreux (280 abonnés, 31% du total), les particuliers génèrent un nombre disproportionné d'appels (24% du total) et ont un abonnement très bas (10€/mois). Ils consomment beaucoup de ressources indirectes par rapport à leur chiffre d'affaires, ce que révèle la méthode ABC grâce à ses inducteurs précis.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que l'inventaire permanent ?",
+      "a": "L'inventaire permanent est une méthode de suivi des stocks qui enregistre en temps réel toutes les entrées et sorties, permettant de connaître à tout moment la valeur et la quantité de stock disponible. Il nécessite le calcul du CUMP à chaque mouvement.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment se présente une fiche de stock (inventaire permanent) ?",
+      "a": "Une fiche de stock présente côté gauche les entrées (stock initial + achats) avec quantité, coût unitaire et montant ; et côté droit les sorties (consommations ou ventes) et le stock final. Le CUMP est calculé en bas de la colonne 'coût unitaire' après les entrées.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre 'sortie' d'une fiche de stock matière première et d'une fiche de stock produit fini ?",
+      "a": "Pour une matière première, la sortie correspond à la consommation en production (valorisée au CUMP). Pour un produit fini, la sortie correspond aux ventes (valorisées au CUMP du produit fini).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la production stockée dans un compte de résultat ?",
+      "a": "La production stockée correspond à la variation de stock de produits finis (Stock final - Stock initial). Si positive, elle augmente les produits (production non vendue). Si négative, elle diminue les produits. Elle corrige le décalage entre production et ventes.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre 'marchandises' et 'matières premières' dans un compte de résultat ?",
+      "a": "Les matières premières sont utilisées dans une entreprise industrielle pour fabriquer un produit fini (transformation). Les marchandises sont des biens achetés dans une entreprise commerciale pour être revendus en l'état, sans transformation.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi le bilan d'une entreprise industrielle est-il plus lourd en immobilisations qu'une entreprise de services ?",
+      "a": "Car une entreprise industrielle nécessite des investissements importants (usines, machines, outils de production) pour transformer les matières premières. Une entreprise de services produit des prestations immatérielles et n'a donc pas besoin de ces équipements lourds.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la composition du bilan d'une entreprise commerciale ?",
+      "a": "Une entreprise commerciale a un actif dominé par les stocks de marchandises et les créances clients (actif circulant), avec peu d'immobilisations. Le passif comprend les dettes fournisseurs, les dettes sociales et fiscales, ainsi que les capitaux propres.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple de l'entreprise PTIFABRIC, comment identifie-t-on qu'il s'agit d'une entreprise industrielle ?",
+      "a": "On identifie PTIFABRIC comme industrielle car son bilan d'ouverture contient des immobilisations importantes (90 000 €), son compte de résultat mentionne des achats de matières premières, une variation de stocks de produits, et une production stockée. Elle fabrique des jouets.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple PTITIDEE, comment identifie-t-on qu'il s'agit d'une entreprise de services ?",
+      "a": "PTITIDEE est une entreprise de services car son bilan ne contient pas de stocks, son actif est uniquement constitué de créances clients et de banque, et son compte de résultat montre des salaires comme principale charge face à une 'production vendue de prestations de services'.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la marge brute dans une entreprise commerciale ?",
+      "a": "La marge brute d'une entreprise commerciale = Prix de vente des marchandises - Coût d'achat des marchandises vendues. Elle mesure la rentabilité avant les charges de structure (distribution, administration).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi est-il important de choisir un bon inducteur de coût dans la méthode ABC ?",
+      "a": "Un inducteur bien choisi reflète réellement la consommation de ressources par une activité. Un mauvais inducteur fausse la répartition des charges et donne une image erronée des coûts, pouvant conduire à de mauvaises décisions (tarification incorrecte, abandon d'un segment rentable).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels sont des exemples d'inducteurs de coût utilisés chez MIXPI ?",
+      "a": "Chez MIXPI : nombre d'appels (réception des appels), durée de l'appel (évaluation de la demande), nombre de commandes (commande de pièces détachées, livraison, facturation), nombre de clients (suivi relation client), nombre d'interventions, durée de l'intervention.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment la méthode ABC s'applique-t-elle à une entreprise de services comme MIXPI ?",
+      "a": "Pour une entreprise de services, la méthode ABC identifie les activités du processus de réalisation des prestations (réception appels, évaluation, planning, intervention, rapport...), choisit un inducteur par activité, regroupe les activités par inducteur commun, calcule le coût unitaire de chaque inducteur et l'affecte à chaque segment de clientèle selon sa consommation réelle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment représente-t-on le processus de réalisation chez MIXPI ?",
+      "a": "Le processus MIXPI se divise en deux flux depuis la réception des appels : (1) Installation → Planning → Intervention → Rapport. (2) Dépannage → Évaluation de la panne → Commander les pièces détachées → Planning → Intervention → Rapport.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que l'objectif de résultat courant dans une ESN comme Treize ?",
+      "a": "L'objectif de résultat courant est le niveau de bénéfice visé par les dirigeants, exprimé en pourcentage du chiffre d'affaires. Pour l'entreprise Treize, cet objectif est fixé à 12% du CA depuis la création de l'entreprise.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans une ESN (Entreprise de Services du Numérique) comme Treize, qu'est-ce qui constitue le chiffre d'affaires ?",
+      "a": "Le chiffre d'affaires correspond aux heures de travail des informaticiens salariés facturées aux clients. La facturation se fait avec un coefficient multiplicateur appliqué à une base variant selon la difficulté du projet et le niveau du salarié.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans une ESN, quelle est la nature des charges directes ?",
+      "a": "Dans une ESN, les charges directes correspondent à la masse salariale (salaires, traitements et charges sociales) des informaticiens affectés aux projets clients. Ce sont des charges directement imputables à chaque projet ou segment de clientèle.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi la méthode des centres d'analyse peut-elle donner une image trompeuse de la rentabilité par segment ?",
+      "a": "Parce que la méthode des centres d'analyse répartit les charges indirectes via une clé unique (souvent le CA ou le nombre d'abonnés), sans tenir compte des différences réelles de consommation de ressources entre segments. Un segment peu rentable peut ainsi paraître bénéficiaire.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on la charge indirecte imputée à un produit dans la méthode des centres d'analyse ?",
+      "a": "Charge indirecte imputée = Nombre d'unités d'œuvre consommées par le produit × Coût de l'unité d'œuvre du centre. Exemple : 800 kg × 2,50 €/kg = 2 000 € pour le centre Approvisionnement.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la variation des stocks de marchandises dans un compte de résultat ?",
+      "a": "La variation des stocks de marchandises = Stock initial - Stock final. Elle figure en charges dans le compte de résultat. Si positive (stock initial > stock final), les charges augmentent. Si négative (stock final > stock initial), les charges diminuent, car on a vendu plus que ce qu'on a acheté cette période.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans l'exemple PTICOMMERCE, pourquoi le stock de marchandises est-il nul au bilan de fin d'année ?",
+      "a": "Car le stock initial était de 15 000 €, la variation des stocks est de +15 000 € en charges (stock initial - stock final = 15 000 - 0), ce qui signifie que toutes les marchandises ont été vendues dans l'année.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre un centre auxiliaire et un centre principal dans la méthode des centres d'analyse ?",
+      "a": "Un centre auxiliaire fournit des prestations à d'autres centres (il ne travaille pas directement pour les produits). Ses charges sont réparties sur les autres centres lors de la répartition secondaire jusqu'à ce que son total soit nul. Un centre principal travaille directement pour les produits et impute ses charges aux coûts via des unités d'œuvre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le seuil de rentabilité (SDR) ?",
+      "a": "Le seuil de rentabilité est le chiffre d'affaires critique à partir duquel l'entreprise couvre la totalité de ses charges (fixes et variables) sans perte ni bénéfice. C'est le niveau à partir duquel l'entreprise devient rentable.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quels paramètres intègre le seuil de rentabilité ?",
+      "a": "Le seuil de rentabilité intègre trois paramètres : le chiffre d'affaires (CA), les charges fixes (CF) et les charges variables (CV).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le chiffre d'affaires (CA) ?",
+      "a": "Le chiffre d'affaires représente le total des ventes de biens ou de services facturées par l'entreprise sur un exercice.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que les charges d'une entreprise ?",
+      "a": "Les charges sont l'ensemble des achats et des frais engagés par l'entreprise pour produire des biens et services destinés à la vente.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la différence entre charges directes et charges indirectes ?",
+      "a": "Les charges directes sont affectées directement à un produit (ex : achat de matières premières, main d'œuvre de fabrication). Les charges indirectes doivent être réparties sur différents produits (ex : frais de publicité, loyer, assurances, dotations aux amortissements).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge fixe ? Donnez des exemples.",
+      "a": "Une charge fixe est liée à l'existence de l'entreprise et est relativement indépendante du volume d'activité. Exemples : amortissements des immobilisations, loyers, charges du personnel administratif et d'encadrement, publicité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce qu'une charge variable ? Donnez des exemples.",
+      "a": "Une charge variable est liée au fonctionnement de l'entreprise et évolue en fonction du volume d'activité (CA). Exemples : matières premières, énergie consommée, charges du personnel productif, commissions des commerciaux, frais de transport.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du compte de résultat par variabilité ?",
+      "a": "CA - Charges variables = Marge sur Coût Variable (MCV) ; MCV - Charges fixes = Résultat.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on la Marge sur Coût Variable (MCV) ?",
+      "a": "MCV = Chiffre d'affaires - Charges variables.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on le Taux de Marge sur Coût Variable (TMSCV) ?",
+      "a": "TMSCV = MCV / CA (exprimé en pourcentage du CA).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du seuil de rentabilité en valeur ?",
+      "a": "SR (en valeur) = Charges fixes / Taux de Marge sur Coût Variable (TMSCV).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du seuil de rentabilité en quantité ?",
+      "a": "SR (en quantité) = SR en valeur / Prix de vente unitaire, ou SR (en quantité) = Charges fixes / MCV unitaire.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment interpréter le résultat par rapport au seuil de rentabilité ?",
+      "a": "Si CA = SR : résultat = 0 (ni bénéfice ni perte). Si CA > SR : résultat > 0 (bénéfice). Si CA < SR : résultat < 0 (perte).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que le point mort ?",
+      "a": "Le point mort correspond à la date à laquelle l'entreprise atteint son seuil de rentabilité, c'est-à-dire la date à partir de laquelle elle commence à réaliser des bénéfices.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du point mort en jours ?",
+      "a": "Point mort = (SR / CA) × 360 jours (avec une année de 12 mois de 30 jours).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelle est la formule du point mort en mois ?",
+      "a": "Point mort = (SR / CA) × 12 mois.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Qu'est-ce que la marge de sécurité ?",
+      "a": "La marge de sécurité est le montant de CA dégagé au-delà du seuil de rentabilité. Elle se calcule ainsi : Marge de sécurité = CA - SR.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment calcule-t-on l'indice de sécurité ?",
+      "a": "Indice de sécurité = Marge de sécurité / CA (exprimé en pourcentage). Il indique la part du CA qui dépasse le seuil de rentabilité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Sur la représentation graphique du SR, que se passe-t-il en dessous du seuil de rentabilité ?",
+      "a": "En dessous du SR, la MSCV est inférieure aux charges fixes (MSCV < CF) : l'entreprise ne couvre pas ses charges fixes et réalise une perte. C'est la zone de pertes.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Sur la représentation graphique du SR, que se passe-t-il au-delà du seuil de rentabilité ?",
+      "a": "Au-delà du SR, la MSCV est supérieure aux charges fixes (MSCV > CF) : l'entreprise couvre ses charges fixes et réalise un bénéfice. C'est la zone de bénéfices.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Graphiquement, comment est représentée la marge sur coût variable ?",
+      "a": "La marge sur coût variable est représentée par la droite y1 = ax, où a correspond au TMSCV et x au chiffre d'affaires.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Graphiquement, comment sont représentées les charges fixes ?",
+      "a": "Les charges fixes sont représentées par une droite horizontale y2 = b, où b est la valeur constante des charges fixes.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "À quoi sert le calcul du seuil de rentabilité ?",
+      "a": "Le calcul du SR permet de rechercher à partir de quelle valeur (ou volume) les ventes doivent atteindre pour couvrir toutes les charges. Il sert à faire des prévisions, élaborer des scénarios et envisager des solutions d'amélioration de la rentabilité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les trois solutions pour améliorer la rentabilité d'une entreprise ?",
+      "a": "Pour améliorer la rentabilité, l'entreprise peut : 1) diminuer les charges fixes, 2) diminuer les charges variables, 3) augmenter le chiffre d'affaires.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment une entreprise peut-elle diminuer ses charges fixes ?",
+      "a": "Elle peut sous-traiter (pour réduire les investissements) ou agir sur la masse salariale : accroître la part variable des salaires, externaliser des fonctions, recourir aux nouvelles formes de travail (intérim, portage salarial, salariat indépendant).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les principales charges fixes d'une entreprise ?",
+      "a": "Les principales charges fixes sont les gros investissements (immobilisations) et la masse salariale (salaires du personnel non productif, encadrement).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Dans quel document comptable trouve-t-on les charges fixes ?",
+      "a": "Les charges fixes se trouvent dans le compte de résultat (charges d'exploitation, charges financières) et certains éléments comme les amortissements figurent à la fois dans le compte de résultat et au bilan (actif immobilisé).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : Un jouet est vendu 35 €, 450 unités vendues, charges variables unitaires de 19,70 €, charges fixes de 4 300 €. Calculez le CA.",
+      "a": "CA = Prix de vente × Quantités = 35 × 450 = 15 750 €.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : CA = 15 750 €, charges variables = 8 865 €. Calculez la MCV et le TMSCV.",
+      "a": "MCV = 15 750 - 8 865 = 6 885 €. TMSCV = 6 885 / 15 750 = 43,71 %.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : MCV = 6 885 €, charges fixes = 4 300 €. Calculez le résultat.",
+      "a": "Résultat = MCV - Charges fixes = 6 885 - 4 300 = 2 585 €.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : Charges fixes = 4 300 €, TMSCV = 43,71 %. Calculez le seuil de rentabilité en valeur.",
+      "a": "SR = 4 300 / 0,4371 = 9 837,57 €.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : SR = 9 837,57 €, prix de vente unitaire = 35 €. Calculez le SR en volume.",
+      "a": "SR en volume = 9 837,57 / 35 = 281 jeux.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : SR = 9 837,57 €, CA = 15 750 €. Calculez le point mort en jours et en mois.",
+      "a": "Point mort = (9 837,57 / 15 750) × 360 = 224,86 jours = 224,86 / 30 = 7,5 mois. Soit au cours du 8e mois (7 mois pleins + 0,5 mois du 8e mois). Le point mort s'établit au 15 août.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Application : CA = 15 750 €, SR = 9 837,57 €. Calculez la marge de sécurité et l'indice de sécurité.",
+      "a": "Marge de sécurité = 15 750 - 9 837,57 = 5 912,43 €. Indice de sécurité = 5 912,43 / 15 750 = 37,54 %.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Exercice entreprise articles informatiques : le SR = 3 984 273,82 € et l'entreprise est fermée en août. Calculez le point mort.",
+      "a": "L'entreprise travaille 11 mois (330 jours). Point mort = (3 984 273,82 / 4 272 000) × 330 = 307,77 soit 308 jours. 308 / 30 = 10,27 mois soit 10 mois complets. Le SR est atteint le 8e jour du 11e mois. Le point mort est le 8 novembre.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Exercice Entreprise Montagne : CA = 2 300 000 €, TMSCV = 28,3 %, CF = 550 000 €. Calculez le SR.",
+      "a": "SR = 550 000 / 0,283 = 1 943 463 €.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Exercice Entreprise Montagne : CA = 2 300 000 €, SR = 1 943 463 €. Calculez la marge de sécurité.",
+      "a": "Marge de sécurité = 2 300 000 - 1 943 463 = 356 537 €. Cela représente le montant de CA dégagé au-delà du seuil de rentabilité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment classer les charges de personnel dans le calcul charges fixes / variables ?",
+      "a": "La partie fixe correspond aux salaires de base du personnel administratif et d'encadrement. La partie variable correspond aux primes liées aux performances (ex : 20 % des charges de personnel si elles correspondent à des primes sur ventes).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Comment classer les 'autres achats et charges externes' quand elles sont à 50 % fixes et 50 % variables ?",
+      "a": "On divise le montant total par deux : 50 % du montant va dans les charges variables et 50 % dans les charges fixes.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Pourquoi la formule du point mort change-t-elle si l'entreprise est fermée un mois ?",
+      "a": "Si l'entreprise est fermée un mois (ex : août), elle ne travaille que 11 mois, soit 330 jours au lieu de 360. On utilise alors 330 jours dans la formule : Point mort = (SR / CA) × 330. Le résultat en jours correspond à des jours ouvrés (les mois sont comptés hors fermeture).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Quelles sont les dotations aux amortissements : charges fixes ou variables ?",
+      "a": "Les dotations aux amortissements sont des charges fixes, car elles correspondent à la dépréciation des immobilisations et sont indépendantes du volume d'activité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "Le loyer est-il une charge fixe ou variable ?",
+      "a": "Le loyer est une charge fixe, car il ne varie pas en fonction du volume d'activité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : La formule du seuil de rentabilité en valeur est : a) CA - CF - CV, b) CF / MCV, c) CF / TMSCV",
+      "a": "La bonne réponse est c) CF / TMSCV (Charges fixes divisées par le Taux de Marge sur Coût Variable).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : Le calcul du SR nécessite : a) MCV et CF, b) CA et CF, c) CA, CV et CF",
+      "a": "Les bonnes réponses sont a) et c). En pratique, on a besoin du CA, des CV et des CF pour calculer d'abord la MCV, puis le TMSCV, puis le SR.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : Le résultat par variabilité peut être calculé par : a) CA - CV - CF, b) CF + CV, c) MCV - CF",
+      "a": "Les bonnes réponses sont a) et c). Résultat = CA - CV - CF = MCV - CF.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : La marge sur coût variable est égale à : a) Résultat + CV, b) CA - CV, c) Résultat + CF",
+      "a": "La bonne réponse est b) CA - CV. La MCV = Chiffre d'affaires - Charges variables.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : Le seuil de rentabilité représente : a) le niveau de résultat maximal, b) le CA à partir duquel l'entreprise devient bénéficiaire, c) le CA qui couvre les charges variables.",
+      "a": "La bonne réponse est b) : le SR est le CA à partir duquel l'activité de l'entreprise devient bénéficiaire.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : Le calcul du point mort permet de déterminer : a) la date à partir de laquelle l'entreprise réalise des bénéfices, b) le résultat prévisionnel, c) le CA prévisionnel.",
+      "a": "La bonne réponse est a) : le point mort est la date à partir de laquelle l'entreprise commence à réaliser des bénéfices.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : Sur la représentation graphique, le SR est atteint lorsque : a) les droites CF et CV se croisent, b) les droites CF et MCV se croisent, c) les droites CV et CA se croisent.",
+      "a": "La bonne réponse est b) : le SR est atteint lorsque la droite de la marge sur coût variable (y1 = ax) croise la droite des charges fixes (y2 = b).",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
+    {
+      "q": "QCM : La marge de sécurité est égale à : a) SR - résultat net, b) résultat net - CA, c) CA - SR.",
+      "a": "La bonne réponse est c) CA - SR. La marge de sécurité = Chiffre d'affaires - Seuil de rentabilité.",
+      "cat": "controle-de-gestion",
+      "score": 0,
+      "next": 0
+    },
   ]
 }
