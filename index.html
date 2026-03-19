@@ -674,8 +674,8 @@ function renderFC(){
   const status = card.status || 'new';
 
   main.innerHTML=`
-    <div style="font-family:var(--mono);font-size:0.66rem;color:var(--ink2);margin-bottom:0.6rem;display:flex;justify-content:space-between;align-items:center">
-      <span>${idx+1} / ${queue.length}</span>
+    <div style="font-family:var(--mono);font-size:0.66rem;color:var(--ink2);margin-bottom:0.6rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.3rem">
+      <span>${idx+1} / ${queue.length} &nbsp;·&nbsp; <span style="color:var(--accent3)">✓ ${sessionOk}</span> &nbsp; <span style="color:var(--accent)">✗ ${sessionKo}</span></span>
       <span><span class="status-badge ${STATUS_CSS[status]}">${STATUS_LABELS[status]}</span> · ${catLabel(card.cat)}</span>
     </div>
     <div class="fc-scene" id="fc-scene" onclick="flipCard()">
@@ -724,11 +724,16 @@ function unflipCard(){
 }
 
 function answer(knew){
-  const card=queue[idx];
-  const gc=cards.find(c=>c.q===card.q&&c.cat===card.cat);
-  if(gc) gc.status = knew ? 'known' : 'review';
+  const card = queue[idx];
+  // Trouve la carte dans le tableau global par index (plus fiable que par référence)
+  const gi = cards.findIndex(c => c.q === card.q && c.cat === card.cat);
+  if(gi !== -1) cards[gi].status = knew ? 'known' : 'review';
   if(knew) sessionOk++; else sessionKo++;
-  saveAll();idx++;flipped=false;renderFC();
+  saveAll();
+  idx++;
+  flipped = false;
+  updateStats();   // met à jour les compteurs header immédiatement
+  renderFC();
 }
 
 function updateStats(){
