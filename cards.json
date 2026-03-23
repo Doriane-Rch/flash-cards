@@ -655,30 +655,6 @@
       "status": "review"
     },
     {
-      "q": "Dans l'exemple du KIRI, quelles sont les charges directes ?",
-      "a": "Les matières premières : lait (1,5€), crème fraîche (1,5€), sels de fonte et autres (0,10€), et la main-d'œuvre de production.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exemple du KIRI, quelles sont les charges indirectes ?",
-      "a": "L'eau, l'électricité, et la main-d'œuvre RH et administrative (3€ au total dans l'exercice).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exemple du KIRI, quel est le coût de revient au kg ?",
-      "a": "Coût de revient = 1,5 + 1,5 + 0,10 + 3 = 6,10€/kg.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exemple du KIRI, quel est le résultat analytique au kg ?",
-      "a": "Résultat analytique = PVHT - Coût de revient = 11,15 - 6,10 = 5,05€/kg.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Qu'est-ce que le coût de revient complet ?",
       "a": "Le coût de revient complet est la somme de toutes les charges directes et indirectes supportées pour produire et vendre un bien ou service.",
       "cat": "controle-de-gestion",
@@ -775,26 +751,8 @@
       "status": "new"
     },
     {
-      "q": "Dans l'exemple Gamex (guacamole), quelles sont les charges directes des pots ?",
-      "a": "Avocats, huile, citrons, épices, pots, main-d'œuvre de broyage, main-d'œuvre de contrôle.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Dans l'exemple Gamex (guacamole), quelles sont les charges indirectes des pots ?",
-      "a": "Les charges de broyage, d'émulsion, de la ligne 1 et du contrôle qualité (ateliers partagés entre plusieurs produits).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Pourquoi une même charge (ex : main-d'œuvre) peut-elle être directe dans un cas et indirecte dans un autre ?",
       "a": "Cela dépend de si elle est affectable à un seul produit (directe) ou si elle concerne plusieurs produits ou l'ensemble de l'activité (indirecte). Par exemple, la main-d'œuvre affectée exclusivement à la fabrication d'un produit est directe, mais la main-d'œuvre RH est indirecte.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Pourquoi l'entreprise Gamex a-t-elle besoin d'un système de calcul de coûts ?",
-      "a": "Parce que le marché de la grande distribution est très agressif et les centrales d'achat réclament fréquemment des remises. Il faut pouvoir répondre rapidement aux demandes des clients tout en préservant la marge de l'entreprise.",
       "cat": "controle-de-gestion",
       "status": "review"
     },
@@ -849,12 +807,6 @@
     {
       "q": "Qu'est-ce qu'un résultat analytique négatif signifie pour un produit ?",
       "a": "Cela signifie que le produit est vendu à perte : le coût de revient est supérieur au prix de vente. L'entreprise perd de l'argent sur chaque unité vendue.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas des bagues (exercice corrigé), quel est le résultat analytique du produit B2 ?",
-      "a": "Le résultat analytique de B2 est négatif : -3 174,50€ (coût de revient unitaire de 6,99€ pour un prix de vente de 6,00€, soit -0,99€ par unité).",
       "cat": "controle-de-gestion",
       "status": "review"
     },
@@ -1033,12 +985,6 @@
       "status": "new"
     },
     {
-      "q": "Dans le cas des jouets en bois (cas Y), quels sont les 3 problèmes de gestion identifiés ?",
-      "a": "1. L'accroissement du coût des matières premières. 2. La présence de déchets importants lors de la fabrication. 3. Des rebuts représentant un coût élevé (même si en diminution).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Comment calcule-t-on le coût des déchets de matières premières ?",
       "a": "Les déchets résultent de la différence entre le poids de matière première utilisée par produit et le poids du produit fini. Ce surplus est multiplié par le prix au kg de la matière première.",
       "cat": "controle-de-gestion",
@@ -1049,18 +995,6 @@
       "a": "En plus du coût de la matière première perdue, les produits mis au rebut ne seront pas vendus, ce qui entraîne une baisse potentielle du chiffre d'affaires.",
       "cat": "controle-de-gestion",
       "status": "known"
-    },
-    {
-      "q": "Quelles sont les pistes de solution proposées pour améliorer la rentabilité de l'entreprise de jouets ?",
-      "a": "1. Réduire les déchets en améliorant le processus de production. 2. Diminuer les rebuts en visant la qualité des meilleurs produits. 3. Négocier le prix d'achat des matières premières avec les fournisseurs actuels ou de nouveaux fournisseurs.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas des jouets, quelle économie une négociation du prix d'achat de -10% permettrait-elle de réaliser ?",
-      "a": "Une réduction de 10% du prix permettrait une économie de 0,46€ par kg de matière première par rapport au dernier prix d'achat.",
-      "cat": "controle-de-gestion",
-      "status": "review"
     },
     {
       "q": "Pourquoi les informations chiffrées du cas Y sont-elles qualifiées de 'pertinentes mais insuffisantes' ?",
@@ -1095,18 +1029,6 @@
     {
       "q": "Pourquoi les centres de structure ne peuvent-ils pas utiliser une unité d'œuvre physique ?",
       "a": "Parce que leur activité (administrative, financière...) ne se mesure pas par une quantité physique comme des heures machine ou des kg. On utilise donc un pourcentage du coût total ou d'autres critères financiers.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exercice des bagues, le produit B1 est-il rentable ? Pourquoi ?",
-      "a": "Oui, B1 est rentable : son coût de revient unitaire est de 2,95€ pour un prix de vente de 3,00€, ce qui donne un résultat analytique positif de 0,05€ par unité, soit 1 079,24€ au total.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exercice des bagues, que devrait faire l'entreprise face au résultat négatif de B2 ?",
-      "a": "L'entreprise devrait envisager d'augmenter le prix de vente de B2, de réduire ses coûts de production, ou d'arrêter de commercialiser ce produit s'il n'est pas possible de le rendre rentable.",
       "cat": "controle-de-gestion",
       "status": "review"
     },
@@ -1249,46 +1171,10 @@
       "status": "new"
     },
     {
-      "q": "Dans le cas LANDA, quelle est la valeur du stock final de matières premières en PEPS ?",
-      "a": "Le stock final en PEPS est de 300 unités à 8,00€, soit 2 400,00€. Ces 300 unités correspondent au lot acheté le plus récemment (21/01/N à 8€).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas LANDA, quelle est la valeur du stock final de matières premières en CMUP ?",
-      "a": "En CMUP, le stock final est de 300 unités à 5,93€, soit 1 780,00€. Le CMUP est calculé : 8 900€ / 1 500 unités = 5,93€.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Que constate-t-on en comparant CMUP et PEPS dans le cas LANDA ?",
-      "a": "Le stock final est plus élevé en PEPS (2 400€) qu'en CMUP (1 780€), et les sorties sont moins chères en CMUP. Le PEPS valorise le stock final aux prix les plus récents (souvent plus élevés), tandis que le CMUP lisse les prix sur l'ensemble de la période.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Comment valorise-t-on les produits finis fabriqués entrant dans le stock ?",
       "a": "Les produits finis fabriqués entrent dans le stock à leur coût de production unitaire (charges directes + charges indirectes de production). Ce coût constitue leur 'prix d'entrée' en stock.",
       "cat": "controle-de-gestion",
       "status": "review"
-    },
-    {
-      "q": "Dans le cas des Casques GPA, quel est le coût de production total ?",
-      "a": "Le coût de production total des Casques GPA est de 37 478,00€ pour 500 casques (coût d'acquisition 17 200€ + charges directes 11 500€ + charges indirectes 8 778€).",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Dans le cas des Casques GPA, quel est le CMUP du stock de produits finis ?",
-      "a": "Le CMUP du stock de produits finis est de 73,60€ : (stock initial 150 × 69,08€ + fabrication 500 × 74,956€) / 650 = 73,60€.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Dans le cas des Casques GPA, quel est le résultat analytique ?",
-      "a": "CA : 600 × 102,40€ = 61 440€. Coût de revient complet : 45 484,80€. Résultat analytique = 61 440 - 45 484,80 = 15 955,20€, soit 26,59€ par unité.",
-      "cat": "controle-de-gestion",
-      "status": "new"
     },
     {
       "q": "Qu'est-ce que les 'entrées' dans une fiche de stock de produits finis ?",
@@ -1303,12 +1189,6 @@
       "status": "known"
     },
     {
-      "q": "Comment passe-t-on du coût de production au coût de revient complet dans le cas des Casques GPA ?",
-      "a": "Coût de production (produits vendus) : 600 × 73,60€ = 44 160€. + Charges indirectes de distribution : 44 160 × 0,030 = 1 324,80€. = Coût de revient complet : 45 484,80€ (soit 75,808€ par unité).",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
       "q": "Pourquoi le stock final doit-il être intégré dans le calcul du coût de revient complet ?",
       "a": "Car seuls les produits vendus doivent être inclus dans le coût de revient. Le stock final représente des produits fabriqués mais non encore vendus. Ne pas en tenir compte reviendrait à imputer leurs coûts sur les produits vendus, ce qui fausserait le résultat.",
       "cat": "controle-de-gestion",
@@ -1319,18 +1199,6 @@
       "a": "On épuise d'abord entièrement le lot le plus ancien à son prix, puis on complète la sortie avec le lot suivant à son propre prix. On peut ainsi avoir plusieurs lignes de sortie à des prix différents pour une même date.",
       "cat": "controle-de-gestion",
       "status": "known"
-    },
-    {
-      "q": "Dans le cas Paloma (CMUP en fin de période), quel est le CMUP calculé ?",
-      "a": "CMUP = 38 640 / 230 = 168€. Ce CMUP est utilisé pour valoriser toutes les sorties de la période (50 unités le 10-août et 170 unités le 26-août).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas Paloma (PEPS), quelle est la valeur du stock final ?",
-      "a": "En PEPS, le stock final est de 10 unités à 171€, soit 1 710€. Ces 10 unités proviennent du lot acheté le 20-août (le plus récent), les lots antérieurs ayant été entièrement consommés.",
-      "cat": "controle-de-gestion",
-      "status": "review"
     },
     {
       "q": "Quelle méthode de valorisation de stock est la plus simple à mettre en œuvre ?",
@@ -1353,12 +1221,6 @@
     {
       "q": "Qu'est-ce que le cycle d'exploitation d'une entreprise ?",
       "a": "Le cycle d'exploitation désigne l'ensemble des opérations réalisées par l'entreprise de l'achat des matières premières jusqu'à la vente des produits finis. Les stocks interviennent à chaque étape de ce cycle.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas LANDA, que signifie 'une unité fabriquée de produit fini consomme une unité de matière première' ?",
-      "a": "Cela signifie que le ratio de consommation est de 1 pour 1 : pour produire 1 produit fini, il faut exactement 1 unité de matière première. Les sorties du stock de MP sont donc égales aux quantités fabriquées de produits finis.",
       "cat": "controle-de-gestion",
       "status": "review"
     },
@@ -1453,36 +1315,6 @@
       "status": "review"
     },
     {
-      "q": "Dans l'exercice Lumières d'ailleurs, quel est le coût d'achat unitaire du bronze ?",
-      "a": "Le coût d'achat unitaire du bronze est de 29,50 € par kg (prix d'achat 27 € + charges indirectes Approvisionnement 2,50 €).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exercice Lumières d'ailleurs, comment calcule-t-on le CUMP-P du bronze ?",
-      "a": "CUMP-P bronze = (Stock initial + Entrées) / Quantité totale = (5 600 + 23 600) / (200 + 800) = 29 200 / 1 000 = 29,20 € par kg.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exercice Lumières d'ailleurs, quel est le coût de production unitaire d'un chandelier ?",
-      "a": "Le coût de production unitaire est de 77 € par chandelier (bronze consommé : 21 900 € + MOD : 15 200 € + charges indirectes atelier : 16 800 € = 53 900 € / 700 chandeliers).",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Dans l'exercice Lumières d'ailleurs, comment calcule-t-on le CUMP-P des chandeliers ?",
-      "a": "CUMP-P chandeliers = (Stock initial + Entrées) / Quantité totale = (8 100 + 53 900) / (120 + 700) = 62 000 / 820 = 75,61 € par chandelier.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exercice Lumières d'ailleurs, quel est le résultat analytique et comment le commenter ?",
-      "a": "Le résultat est de +2 604 € (bénéfice de 4,34 € par chandelier vendu), soit 5,3% du CA. Ce résultat est positif mais relativement faible, ce qui nécessite une vigilance sur la maîtrise des coûts.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Quelle est la différence entre une entreprise industrielle, commerciale et de services ?",
       "a": "L'entreprise industrielle transforme des matières premières en produits finis. L'entreprise commerciale achète des marchandises pour les revendre sans transformation. L'entreprise de services fournit des prestations immatérielles sans fabriquer ni transformer de bien matériel.",
       "cat": "controle-de-gestion",
@@ -1567,24 +1399,6 @@
       "status": "new"
     },
     {
-      "q": "Dans le cas MIXPI, quelle différence majeure observe-t-on entre les résultats de la méthode centres d'analyse et la méthode ABC ?",
-      "a": "Avec la méthode des centres d'analyse, les trois segments (particuliers, PME, administrations) sont bénéficiaires. Avec la méthode ABC, le segment des particuliers devient déficitaire (-33 444 €) car il consomme beaucoup de charges indirectes (nombreux appels, interventions importantes), ce que la méthode des centres d'analyse ne révélait pas.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans le cas MIXPI, quelle préconisation peut-on faire suite à l'analyse ABC ?",
-      "a": "Il faut revoir la tarification des abonnements : augmenter le prix pour les particuliers (segment déficitaire, très consommateur de ressources) et éventuellement baisser le prix pour les administrations afin d'attirer une clientèle plus large sur ce segment rentable.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Pourquoi les particuliers sont-ils déficitaires dans la méthode ABC chez MIXPI ?",
-      "a": "Bien que peu nombreux (280 abonnés, 31% du total), les particuliers génèrent un nombre disproportionné d'appels (24% du total) et ont un abonnement très bas (10€/mois). Ils consomment beaucoup de ressources indirectes par rapport à leur chiffre d'affaires, ce que révèle la méthode ABC grâce à ses inducteurs précis.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
       "q": "Qu'est-ce que l'inventaire permanent ?",
       "a": "L'inventaire permanent est une méthode de suivi des stocks qui enregistre en temps réel toutes les entrées et sorties, permettant de connaître à tout moment la valeur et la quantité de stock disponible. Il nécessite le calcul du CUMP à chaque mouvement.",
       "cat": "controle-de-gestion",
@@ -1627,18 +1441,6 @@
       "status": "review"
     },
     {
-      "q": "Dans l'exemple de l'entreprise PTIFABRIC, comment identifie-t-on qu'il s'agit d'une entreprise industrielle ?",
-      "a": "On identifie PTIFABRIC comme industrielle car son bilan d'ouverture contient des immobilisations importantes (90 000 €), son compte de résultat mentionne des achats de matières premières, une variation de stocks de produits, et une production stockée. Elle fabrique des jouets.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans l'exemple PTITIDEE, comment identifie-t-on qu'il s'agit d'une entreprise de services ?",
-      "a": "PTITIDEE est une entreprise de services car son bilan ne contient pas de stocks, son actif est uniquement constitué de créances clients et de banque, et son compte de résultat montre des salaires comme principale charge face à une 'production vendue de prestations de services'.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
       "q": "Qu'est-ce que la marge brute dans une entreprise commerciale ?",
       "a": "La marge brute d'une entreprise commerciale = Prix de vente des marchandises - Coût d'achat des marchandises vendues. Elle mesure la rentabilité avant les charges de structure (distribution, administration).",
       "cat": "controle-de-gestion",
@@ -1647,36 +1449,6 @@
     {
       "q": "Pourquoi est-il important de choisir un bon inducteur de coût dans la méthode ABC ?",
       "a": "Un inducteur bien choisi reflète réellement la consommation de ressources par une activité. Un mauvais inducteur fausse la répartition des charges et donne une image erronée des coûts, pouvant conduire à de mauvaises décisions (tarification incorrecte, abandon d'un segment rentable).",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Quels sont des exemples d'inducteurs de coût utilisés chez MIXPI ?",
-      "a": "Chez MIXPI : nombre d'appels (réception des appels), durée de l'appel (évaluation de la demande), nombre de commandes (commande de pièces détachées, livraison, facturation), nombre de clients (suivi relation client), nombre d'interventions, durée de l'intervention.",
-      "cat": "controle-de-gestion",
-      "status": "new"
-    },
-    {
-      "q": "Comment la méthode ABC s'applique-t-elle à une entreprise de services comme MIXPI ?",
-      "a": "Pour une entreprise de services, la méthode ABC identifie les activités du processus de réalisation des prestations (réception appels, évaluation, planning, intervention, rapport...), choisit un inducteur par activité, regroupe les activités par inducteur commun, calcule le coût unitaire de chaque inducteur et l'affecte à chaque segment de clientèle selon sa consommation réelle.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Comment représente-t-on le processus de réalisation chez MIXPI ?",
-      "a": "Le processus MIXPI se divise en deux flux depuis la réception des appels : (1) Installation → Planning → Intervention → Rapport. (2) Dépannage → Évaluation de la panne → Commander les pièces détachées → Planning → Intervention → Rapport.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Qu'est-ce que l'objectif de résultat courant dans une ESN comme Treize ?",
-      "a": "L'objectif de résultat courant est le niveau de bénéfice visé par les dirigeants, exprimé en pourcentage du chiffre d'affaires. Pour l'entreprise Treize, cet objectif est fixé à 12% du CA depuis la création de l'entreprise.",
-      "cat": "controle-de-gestion",
-      "status": "review"
-    },
-    {
-      "q": "Dans une ESN (Entreprise de Services du Numérique) comme Treize, qu'est-ce qui constitue le chiffre d'affaires ?",
-      "a": "Le chiffre d'affaires correspond aux heures de travail des informaticiens salariés facturées aux clients. La facturation se fait avec un coefficient multiplicateur appliqué à une base variant selon la difficulté du projet et le niveau du salarié.",
       "cat": "controle-de-gestion",
       "status": "review"
     },
@@ -1703,12 +1475,6 @@
       "a": "La variation des stocks de marchandises = Stock initial - Stock final. Elle figure en charges dans le compte de résultat. Si positive (stock initial > stock final), les charges augmentent. Si négative (stock final > stock initial), les charges diminuent, car on a vendu plus que ce qu'on a acheté cette période.",
       "cat": "controle-de-gestion",
       "status": "new"
-    },
-    {
-      "q": "Dans l'exemple PTICOMMERCE, pourquoi le stock de marchandises est-il nul au bilan de fin d'année ?",
-      "a": "Car le stock initial était de 15 000 €, la variation des stocks est de +15 000 € en charges (stock initial - stock final = 15 000 - 0), ce qui signifie que toutes les marchandises ont été vendues dans l'année.",
-      "cat": "controle-de-gestion",
-      "status": "review"
     },
     {
       "q": "Quelle est la différence entre un centre auxiliaire et un centre principal dans la méthode des centres d'analyse ?",
@@ -1745,18 +1511,6 @@
       "a": "Les charges directes sont affectées directement à un produit (ex : achat de matières premières, main d'œuvre de fabrication). Les charges indirectes doivent être réparties sur différents produits (ex : frais de publicité, loyer, assurances, dotations aux amortissements).",
       "cat": "controle-de-gestion",
       "status": "new"
-    },
-    {
-      "q": "Qu'est-ce qu'une charge fixe ? Donnez des exemples.",
-      "a": "Une charge fixe est liée à l'existence de l'entreprise et est relativement indépendante du volume d'activité. Exemples : loyers, charges du personnel et publicité.",
-      "cat": "controle-de-gestion",
-      "status": "known"
-    },
-    {
-      "q": "Qu'est-ce qu'une charge variable ? Donnez des exemples.",
-      "a": "Une charge variable est liée au fonctionnement de l'entreprise et évolue en fonction du volume d'activité (CA). Exemples : matières premières, énergie consommée, charges du personnel productif, commissions des commerciaux, frais de transport.",
-      "cat": "controle-de-gestion",
-      "status": "known"
     },
     {
       "q": "Quelle est la formule du compte de résultat par variabilité ?",
@@ -1875,12 +1629,6 @@
     {
       "q": "Dans quel document comptable trouve-t-on les charges fixes ?",
       "a": "Les charges fixes se trouvent dans le compte de résultat (charges d'exploitation, charges financières) et certains éléments comme les amortissements figurent à la fois dans le compte de résultat et au bilan (actif immobilisé).",
-      "cat": "controle-de-gestion",
-      "status": "known"
-    },
-    {
-      "q": "Application : Un jouet est vendu 35 €, 450 unités vendues, charges variables unitaires de 19,70 €, charges fixes de 4 300 €. Calculez le CA.",
-      "a": "CA = Prix de vente × Quantités = 35 × 450 = 15 750 €.",
       "cat": "controle-de-gestion",
       "status": "known"
     },
