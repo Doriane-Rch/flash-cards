@@ -15,6 +15,18 @@
     {
       "id": "systeme",
       "label": "Système"
+    },
+    { 
+      "id": "maths", 
+      "label": "Maths & formules" 
+    },
+    { 
+      "id": "epidemie", 
+      "label": "Épidémie" 
+    },
+    { 
+      "id": "neutralite", 
+      "label": "Neutralité technique" 
     }
   ],
   "cards": [
@@ -1763,6 +1775,162 @@
       "a": "CA - SR\nLa marge de sécurité = Chiffre d'affaires - Seuil de rentabilité.",
       "cat": "controle-de-gestion",
       "status": "known"
+    },
+    {
+      "q": "Définition : phénomène exponentiel",
+      "a": "Un phénomène dont la valeur est multipliée par un facteur constant à chaque période. Il suit la loi u_n = u₀ · qⁿ (suite géométrique de raison q).",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Donner 3 exemples de croissance exponentielle",
+      "a": "Démographie, intérêts bancaires, croissance économique, pandémies, réactions de fission nucléaire, consommation de ressources.",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Donner 2 exemples de décroissance exponentielle",
+      "a": "Déchets nucléaires (demi-vie), pannes de composants électroniques, hauteur de mousse dans un verre.",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Formule : suite géométrique de raison q",
+      "a": "uₙ = u₀ · qⁿ\n\nOù u₀ est le premier terme et q la raison (facteur multiplicatif par période).",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Quelle est la relation entre taux τ et facteur multiplicatif ?",
+      "a": "Facteur = 1 + τ\nTaux = Facteur – 1\n\nEx : hausse de 5% → facteur 1,05\nEx : facteur 1,5 → hausse de 50%",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Formule des intérêts composés",
+      "a": "Cₙ = C₀ · (1 + τ)ⁿ\n\nC₀ : capital initial, τ : taux par période, n : nombre de périodes.\nIntérêts cumulés : Iₙ = C₀ · ((1+τ)ⁿ − 1)",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Exemple : 1000 € à 5% sur 10 ans (intérêts composés)",
+      "a": "C₁₀ = 1000 × 1,05¹⁰ = 1000 × 1,629 = 1 629 €\nIntérêts : 629 €",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Formule de la valeur actuelle (actualisation)",
+      "a": "C₀ = Cₙ · (1 + τ)⁻ⁿ\n\nEx : disposer de 10 000 € dans 20 ans à 5% :\nC₀ = 10000 × 1,05⁻²⁰ = 3 769 €",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Formule : temps de doublement",
+      "a": "T = ln(2) / ln(q)\n\nOù q est la raison de la suite (q = 1 + τ).\nEx : taux de 2%/an → T = ln(2)/ln(1,02) ≈ 35 ans",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Formule : temps pour multiplier par m",
+      "a": "tₘ = ln(m) / ln(q)\n\nGénéralisation du temps de doublement (m=2).",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Temps de doublement à 1%, 3%, 7%, 10%",
+      "a": "1% → ~70 ans\n3% → ~23 ans\n7% → ~10 ans\n10% → ~7,3 ans\n\n(Règle approchée : T ≈ 70/taux%)",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Taux d'intérêt mensuel équivalent à un taux annuel τₐ",
+      "a": "τₘ = (1 + τₐ)^(1/12) − 1\n\nEx : τₐ = 12% → τₘ = 1,12^(1/12) − 1 ≈ 0,95%\n\nAttention : τₘ ≠ τₐ/12 (c'est le taux proportionnel, non le taux équivalent !)",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Modèle démographique : formule de la population",
+      "a": "Pₙ = Pₙ₋₁ + Nₙ − Mₙ\n\nAvec Nₙ = Pₙ₋₁ · τN et Mₙ = Pₙ₋₁ · τM\n\nDonc : Pₙ = Pₙ₋₁ · (1 + τN − τM)\n\nEx : 18‰ naissances, 7‰ décès → doublement en 63 ans.",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Rappels log : ln(eˣ), ln(ab), ln(xⁿ), log_a(x)",
+      "a": "ln(eˣ) = x\nln(a·b) = ln(a) + ln(b)\nln(xⁿ) = n · ln(x)\nlog_a(x) = ln(x) / ln(a)\nlog_a(aˣ) = x",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Rappels puissances : x^(1/2), (xᵃ)ⁿ, x⁻ⁿ",
+      "a": "√x = x^(1/2) ; ⁿ√x = x^(1/n)\n(xᵃ)ⁿ = x^(a·n)\nx^a · x^b = x^(a+b)\nx⁻ⁿ = 1/xⁿ",
+      "cat": "maths",
+      "status": "new"
+    },
+    {
+      "q": "Définition : R₀ en épidémiologie",
+      "a": "Nombre de reproduction de base : nombre moyen de personnes qu'un malade contamine directement pendant sa phase contagieuse, dans une population entièrement sensible.",
+      "cat": "epidemie",
+      "status": "new"
+    },
+    {
+      "q": "R₀ = 5, phase contagieuse = 3 jours. Combien de cas après 21 jours ?",
+      "a": "21 jours = 7 périodes de 3 jours.\nNombre de cas = 5⁷ = 78 125 personnes contaminées.",
+      "cat": "epidemie",
+      "status": "new"
+    },
+    {
+      "q": "À partir de quel R₀ l'épidémie régresse-t-elle ?",
+      "a": "Quand R₀ < 1 : chaque malade contamine en moyenne moins d'une personne, donc la chaîne de transmission s'éteint.",
+      "cat": "epidemie",
+      "status": "new"
+    },
+    {
+      "q": "Définition et formule du R_effectif",
+      "a": "Reff = (1 − f) · R₀\n\nf = fraction de la population immunisée (vaccinée ou guérie).\nL'épidémie régresse quand Reff < 1, soit f > 1 − 1/R₀.",
+      "cat": "epidemie",
+      "status": "new"
+    },
+    {
+      "q": "Thèse principale de Langdon Winner sur la technique",
+      "a": "Les technologies ont des effets politiques, intentionnels ou non. Ex : les ponts bas de Long Island empêchaient les bus (pauvres) d'accéder aux plages. Certains dispositifs (comme le nucléaire) sont intrinsèquement politiques.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Qu'est-ce que la « dissonance cognitive » de l'ingénieur selon Lefebvre ?",
+      "a": "L'ingénieur réalise que son travail façonne le monde selon une direction qu'il juge indésirable, mais continue à le faire. La technique a des effets sociaux plus importants que les politiques gouvernementales, sans débat démocratique.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Argument de Lefebvre : pourquoi ne peut-on pas simplement retirer une technologie ?",
+      "a": "La société s'adapte et se restructure autour de la technique. Supprimer l'automobile n'aboutirait pas à un monde passé qui aurait évolué sans elle — le tissu social, urbain et économique est transformé.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Exemple de Benasayag sur la technique et la norme (implant cochléaire)",
+      "a": "L'implant cochléaire impose la norme de l'entendant comme supérieure. Cela peut effacer des cultures (langue des signes) au nom du « bien ». La technique instaure une hiérarchie entre façons d'être.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Paradoxe de Rosa sur l'accélération technique",
+      "a": "L'accélération technique augmente le rendement par unité de temps, mais paradoxalement le temps devient de plus en plus rare. Ex : l'email devait faire gagner du temps, il a multiplié les sollicitations.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Définition : « décalage prométhéen » (Günther Anders)",
+      "a": "À l'échelle industrielle, l'être humain ne peut plus se représenter les effets de ce qu'il produit. Le « faire » dépasse le « sentir » et le « comprendre ». Ex emblématique : la bombe atomique.",
+      "cat": "neutralite",
+      "status": "new"
+    },
+    {
+      "q": "Qu'est-ce que questionner la neutralité de la technique ?",
+      "a": "Se demander si la technique est un simple outil ou si elle induit des transformations sociales et politiques. Interroger les valeurs portées par les nouveaux environnements techniques et la distinction développement/usage.",
+      "cat": "neutralite",
+      "status": "new"
     }
   ]
 }
